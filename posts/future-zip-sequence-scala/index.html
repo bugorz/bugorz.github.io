@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="keywords" content="scala,future"><meta property="og:title" content="Future Zip Sequence Scala" />
+<meta name="keywords" content="scala,future"><meta property="og:title" content="Future.zip versus Future.sequence in Scala" />
 <meta property="og:description" content="Future.sequence is a handy method to deal with a sequence futures of the same type. However, if you want to combine futures of different types, you should use Future.zip to avoid losing type information.
 Let’s take a look at an example:
 scala&gt; import scala.concurrent.ExecutionContext.Implicits.global import scala.concurrent.ExecutionContext.Implicits.global scala&gt; val f1 = Future.successful(55) f1: scala.concurrent.Future[Int] = scala.concurrent.impl.Promise$KeptPromise@57855c9a scala&gt; val f2 = Future.successful(“Six Six”) f2: scala.concurrent.Future[String] = scala.concurrent.impl.Promise$KeptPromise@475530b9 // note the type is Future[Seq[Any]] because `55` and `Six Six` are of different types scala&gt; val fSeq = Future." />
@@ -14,7 +14,7 @@ scala&gt; import scala.concurrent.ExecutionContext.Implicits.global import scala
 <meta property="article:published_time" content="2017-03-15T19:46:46+08:00" />
 <meta property="article:modified_time" content="2017-03-15T19:46:46+08:00" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Future Zip Sequence Scala"/>
+<meta name="twitter:title" content="Future.zip versus Future.sequence in Scala"/>
 <meta name="twitter:description" content="Future.sequence is a handy method to deal with a sequence futures of the same type. However, if you want to combine futures of different types, you should use Future.zip to avoid losing type information.
 Let’s take a look at an example:
 scala&gt; import scala.concurrent.ExecutionContext.Implicits.global import scala.concurrent.ExecutionContext.Implicits.global scala&gt; val f1 = Future.successful(55) f1: scala.concurrent.Future[Int] = scala.concurrent.impl.Promise$KeptPromise@57855c9a scala&gt; val f2 = Future.successful(“Six Six”) f2: scala.concurrent.Future[String] = scala.concurrent.impl.Promise$KeptPromise@475530b9 // note the type is Future[Seq[Any]] because `55` and `Six Six` are of different types scala&gt; val fSeq = Future."/>
@@ -24,7 +24,7 @@ scala&gt; import scala.concurrent.ExecutionContext.Implicits.global import scala
   <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/all.css" />
 <link rel="stylesheet" href="https://bugorz.github.io/css/katex.min.css" crossorigin="anonymous">
   <script defer src="https://bugorz.github.io/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-  <script defer src="https://bugorz.github.io/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><title>Future Zip Sequence Scala | 大隻雞慢啼</title></head>
+  <script defer src="https://bugorz.github.io/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><title>Future.zip versus Future.sequence in Scala | 大隻雞慢啼</title></head>
 <body><header>
 
   <div id="avatar">
@@ -74,7 +74,7 @@ scala&gt; import scala.concurrent.ExecutionContext.Implicits.global import scala
 </div>
 
 <div class="matter">
-<h1 class="title">Future Zip Sequence Scala</h1>
+<h1 class="title">Future.zip versus Future.sequence in Scala</h1>
 </div>
 </div>
 <div class="markdown">
