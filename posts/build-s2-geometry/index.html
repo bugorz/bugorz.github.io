@@ -79,21 +79,21 @@
 <li>You need to install Xcode from App Store</li>
 <li>Clone <code>googletest</code> and <code>openssl</code> from GitHub, see below:</li>
 </ul>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/google/googletest
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/google/googletest
 
-<span style="color:#888"># Note that there are `googlemock` and `googletest` under the root `googletest` dir,</span> 
-<span style="color:#888"># please use the more specific `googletest/googletest` as the `GTEST_ROOT`.</span>
-<span style="color:#963">GTEST_ROOT</span><span style="color:#333">=</span><span style="background-color:#fff0f0">`</span>realpath googletest/googletest<span style="background-color:#fff0f0">`</span>
-</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install openssl
-<span style="color:#963">OPENSSL_ROOT</span><span style="color:#333">=</span><span style="background-color:#fff0f0">`</span>brew --prefix openssl<span style="background-color:#fff0f0">`</span>
+<span style="color:#586e75"># Note that there are `googlemock` and `googletest` under the root `googletest` dir,</span> 
+<span style="color:#586e75"># please use the more specific `googletest/googletest` as the `GTEST_ROOT`.</span>
+<span style="color:#268bd2">GTEST_ROOT</span><span style="color:#719e07">=</span><span style="color:#586e75">`</span>realpath googletest/googletest<span style="color:#586e75">`</span>
+</code></pre></div><div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install openssl
+<span style="color:#268bd2">OPENSSL_ROOT</span><span style="color:#719e07">=</span><span style="color:#586e75">`</span>brew --prefix openssl<span style="color:#586e75">`</span>
 </code></pre></div><h3 id="build-s2geometry">Build s2geometry</h3>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/google/s2geometry.git
-<span style="color:#007020">cd</span> s2geometry
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/google/s2geometry.git
+<span style="color:#b58900">cd</span> s2geometry
 mkdir build
-<span style="color:#007020">cd</span> build
-cmake -DOPENSSL_INCLUDE_DIR<span style="color:#333">=</span><span style="background-color:#eee">${</span><span style="color:#963">OPENSSL_ROOT</span><span style="background-color:#eee">}</span>/include -DGTEST_ROOT<span style="color:#333">=</span><span style="background-color:#eee">${</span><span style="color:#963">GTEST_ROOT</span><span style="background-color:#eee">}</span> ..
+<span style="color:#b58900">cd</span> build
+cmake -DOPENSSL_INCLUDE_DIR<span style="color:#719e07">=</span><span style="color:#2aa198">${</span><span style="color:#268bd2">OPENSSL_ROOT</span><span style="color:#2aa198">}</span>/include -DGTEST_ROOT<span style="color:#719e07">=</span><span style="color:#2aa198">${</span><span style="color:#268bd2">GTEST_ROOT</span><span style="color:#2aa198">}</span> ..
 make
-make <span style="color:#007020">test</span>
+make <span style="color:#b58900">test</span>
 sudo make install
 </code></pre></div><h3 id="run-s2geometry-tests-in-clion">Run s2geometry tests in CLion</h3>
 <ul>

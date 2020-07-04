@@ -84,11 +84,11 @@
 <ul>
 <li>Installing SML/NJ in macOS (recommend using homebrew): <a href="https://smlnj.org/dist/working/110.96/macos.html">https://smlnj.org/dist/working/110.96/macos.html</a></li>
 </ul>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew cask install smlnj
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew cask install smlnj
 </code></pre></div><ul>
 <li>Remember to export the path to SML in bash/zsh:</li>
 </ul>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#007020">export</span> <span style="color:#963">PATH</span><span style="color:#333">=</span><span style="color:#080;font-weight:bold">$(</span>brew --prefix<span style="color:#080;font-weight:bold">)</span>/smlnj/bin:<span style="background-color:#fff0f0">&#34;</span><span style="color:#963">$PATH</span><span style="background-color:#fff0f0">&#34;</span>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#b58900">export</span> <span style="color:#268bd2">PATH</span><span style="color:#719e07">=</span><span style="color:#719e07">$(</span>brew --prefix<span style="color:#719e07">)</span>/smlnj/bin:<span style="color:#2aa198">&#34;</span><span style="color:#268bd2">$PATH</span><span style="color:#2aa198">&#34;</span>
 </code></pre></div><h3 id="my-repl-like-sml-development-environment">My REPL-like SML development environment</h3>
 <ul>
 <li>I am too lazy to memorize those Emasc keyboard shortcuts so I decided to create a REPL-like environment by myself. See steps below:</li>
@@ -105,10 +105,10 @@
 <ul>
 <li>Note that SML/NJ interactive shell doesn&rsquo;t support array keys so you can&rsquo;t use up/down to cycle through the history. However, I found a stack overflow <a href="https://stackoverflow.com/questions/1911861/how-to-fix-the-sml-nj-interactive-system-to-use-arrow-keys">post</a> and resolved it by <code>socat</code></li>
 </ul>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install socat
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install socat
 
-<span style="color:#888"># Then in your .bach_profile or .zshrc, add this alias</span>
-<span style="color:#007020">alias</span> <span style="color:#963">sml</span><span style="color:#333">=</span><span style="background-color:#fff0f0">&#39;socat READLINE EXEC:sml&#39;</span>
+<span style="color:#586e75"># Then in your .bach_profile or .zshrc, add this alias</span>
+<span style="color:#b58900">alias</span> <span style="color:#268bd2">sml</span><span style="color:#719e07">=</span><span style="color:#2aa198">&#39;socat READLINE EXEC:sml&#39;</span>
 </code></pre></div><h3 id="cool-stuff-i-learned">Cool stuff I learned</h3>
 <ul>
 <li><code>oneOf type</code> (Option, List). Read more on this: <a href="https://reasonablypolymorphic.com/blog/protos-are-wrong/">https://reasonablypolymorphic.com/blog/protos-are-wrong/</a></li>
