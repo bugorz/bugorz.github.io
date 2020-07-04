@@ -6,16 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="keywords" content="macos,sml,programming language,coursera"><meta property="og:title" content="SML on macOS" />
-<meta property="og:description" content="Standard ML on macOS I had a chance to complete Programming Languages, Part A by Dan Grossman from University of Washington. Dan is a great teacher and this is definitely an A&#43; course.
-Installation  Installing SML/NJ in macOS (recommend using homebrew): https://smlnj.org/dist/working/110.96/macos.html Remember to export the path in bash/zsh  My SML development environment  Install Visual Studio Code: https://code.visualstudio.com Install Standard ML plugin: https://marketplace.visualstudio.com/items?itemName=freebroccolo.sml Open terminal and enter SML/NJ shell load the SML code in editing  (Important) Tune your SML/NJ interactive shell:  Note that SML/NJ interactive shell doesn&rsquo;t support array keys so you can&rsquo;t use up/down to cycle through the history." />
+<meta property="og:description" content="Standard ML on macOS  I completed Programming Languages, Part A by Dan Grossman from University of Washington. In Part A, Dan taught us many programming language concepts using Standard ML (SML) Dan is a great teacher and this course definitely deserve an A&#43;.  SML Installation  Installing SML/NJ in macOS (recommend using homebrew): https://smlnj.org/dist/working/110.96/macos.html  brew cask install smlnj  Remember to export the path to SML in bash/zsh:  export PATH=$(brew --prefix)/smlnj/bin:&#34;$PATH&#34; My REPL-like SML development environment  I am too lazy to memorize those Emasc keyboard shortcuts so I decided to create a REPL-like environment by myself." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://bugorz.github.io/posts/sml-on-macos/" />
 <meta property="article:published_time" content="2020-07-04T16:38:25+08:00" />
 <meta property="article:modified_time" content="2020-07-04T16:38:25+08:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="SML on macOS"/>
-<meta name="twitter:description" content="Standard ML on macOS I had a chance to complete Programming Languages, Part A by Dan Grossman from University of Washington. Dan is a great teacher and this is definitely an A&#43; course.
-Installation  Installing SML/NJ in macOS (recommend using homebrew): https://smlnj.org/dist/working/110.96/macos.html Remember to export the path in bash/zsh  My SML development environment  Install Visual Studio Code: https://code.visualstudio.com Install Standard ML plugin: https://marketplace.visualstudio.com/items?itemName=freebroccolo.sml Open terminal and enter SML/NJ shell load the SML code in editing  (Important) Tune your SML/NJ interactive shell:  Note that SML/NJ interactive shell doesn&rsquo;t support array keys so you can&rsquo;t use up/down to cycle through the history."/>
+<meta name="twitter:description" content="Standard ML on macOS  I completed Programming Languages, Part A by Dan Grossman from University of Washington. In Part A, Dan taught us many programming language concepts using Standard ML (SML) Dan is a great teacher and this course definitely deserve an A&#43;.  SML Installation  Installing SML/NJ in macOS (recommend using homebrew): https://smlnj.org/dist/working/110.96/macos.html  brew cask install smlnj  Remember to export the path to SML in bash/zsh:  export PATH=$(brew --prefix)/smlnj/bin:&#34;$PATH&#34; My REPL-like SML development environment  I am too lazy to memorize those Emasc keyboard shortcuts so I decided to create a REPL-like environment by myself."/>
 
   <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/normalize.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/main.css" />
@@ -77,18 +75,31 @@ Installation  Installing SML/NJ in macOS (recommend using homebrew): https://sml
 </div>
 <div class="markdown">
 <h2 id="standard-ml-onmacos">Standard ML on macOS</h2>
-<p>I had a chance to complete <a href="https://www.coursera.org/learn/programming-languages">Programming Languages, Part A</a> by <a href="https://homes.cs.washington.edu/~djg/">Dan Grossman</a> from University of Washington. Dan is a great teacher and this is definitely an A+ course.</p>
-<h3 id="installation">Installation</h3>
+<ul>
+<li>I completed <a href="https://www.coursera.org/learn/programming-languages">Programming Languages, Part A</a> by <a href="https://homes.cs.washington.edu/~djg/">Dan Grossman</a> from University of Washington.</li>
+<li>In Part A, Dan taught us many programming language concepts using Standard ML (SML)</li>
+<li>Dan is a great teacher and this course definitely deserve an A+.</li>
+</ul>
+<h3 id="sml-installation">SML Installation</h3>
 <ul>
 <li>Installing SML/NJ in macOS (recommend using homebrew): <a href="https://smlnj.org/dist/working/110.96/macos.html">https://smlnj.org/dist/working/110.96/macos.html</a></li>
-<li>Remember to export the path in bash/zsh</li>
 </ul>
-<h3 id="my-sml-development-environment">My SML development environment</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew cask install smlnj
+</code></pre></div><ul>
+<li>Remember to export the path to SML in bash/zsh:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export PATH<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>brew --prefix<span style="color:#66d9ef">)</span>/smlnj/bin:<span style="color:#e6db74">&#34;</span>$PATH<span style="color:#e6db74">&#34;</span>
+</code></pre></div><h3 id="my-repl-like-sml-development-environment">My REPL-like SML development environment</h3>
 <ul>
+<li>I am too lazy to memorize those Emasc keyboard shortcuts so I decided to create a REPL-like environment by myself. See steps below:</li>
 <li>Install Visual Studio Code: <a href="https://code.visualstudio.com">https://code.visualstudio.com</a></li>
-<li>Install Standard ML plugin: <a href="https://marketplace.visualstudio.com/items?itemName=freebroccolo.sml">https://marketplace.visualstudio.com/items?itemName=freebroccolo.sml</a></li>
-<li>Open terminal and enter SML/NJ shell</li>
-<li>load the SML code in editing</li>
+<li>Install Standard ML plugin (not perfect but it works): <a href="https://marketplace.visualstudio.com/items?itemName=freebroccolo.sml">https://marketplace.visualstudio.com/items?itemName=freebroccolo.sml</a></li>
+<li>When you edit SML code in Visual Studio Code, also open a terminal (<code>View</code> -&gt; <code>Terminal</code>) and enter <code>sml</code> (The SML/NJ interactive shell)
+<ul>
+<li>You can then load the SML file. For example: <code>use &quot;hw3test.sml&quot;;</code></li>
+<li>Exit the shell by <strong>Ctrl+D</strong></li>
+</ul>
+</li>
 </ul>
 <h3 id="important-tune-your-smlnj-interactive-shell">(Important) Tune your SML/NJ interactive shell:</h3>
 <ul>
