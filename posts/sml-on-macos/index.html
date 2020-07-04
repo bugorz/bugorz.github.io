@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="http://example.org/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    <title>SML on macOS</title>
+</head>
+<body><header id="banner">
+    <h2><a href="http://example.org/">第三代宅男</a></h2>
+    <nav>
+        <ul>
+            
+        </ul>
+    </nav>
+</header>
+<main id="content">
+<article>
+    <header id="post-header">
+        <h1>SML on macOS</h1><time>July 4, 2020</time></header><h2 id="standard-ml-onmacos">Standard ML on macOS</h2>
+<p>I had a chance to complete <a href="https://www.coursera.org/learn/programming-languages">Programming Languages, Part A</a> by <a href="https://homes.cs.washington.edu/~djg/">Dan Grossman</a> from University of Washington. Dan is a great teacher and this is definitely an A+ course.</p>
+<h3 id="installation">Installation</h3>
+<ul>
+<li>Installing SML/NJ in macOS (recommend using homebrew): <a href="https://smlnj.org/dist/working/110.96/macos.html">https://smlnj.org/dist/working/110.96/macos.html</a></li>
+<li>Remember to export the path in bash/zsh</li>
+</ul>
+<h3 id="my-sml-development-environment">My SML development environment</h3>
+<ul>
+<li>Install Visual Studio Code: <a href="https://code.visualstudio.com">https://code.visualstudio.com</a></li>
+<li>Install Standard ML plugin: <a href="https://marketplace.visualstudio.com/items?itemName=freebroccolo.sml">https://marketplace.visualstudio.com/items?itemName=freebroccolo.sml</a></li>
+<li>Open terminal and enter SML/NJ shell</li>
+<li>load the SML code in editing</li>
+</ul>
+<h3 id="important-tune-your-smlnj-interactive-shell">(Important) Tune your SML/NJ interactive shell:</h3>
+<ul>
+<li>Note that SML/NJ interactive shell doesn&rsquo;t support array keys so you can&rsquo;t use up/down to cycle through the history. However, I found a stack overflow <a href="https://stackoverflow.com/questions/1911861/how-to-fix-the-sml-nj-interactive-system-to-use-arrow-keys">post</a> and resolved it by <code>socat</code></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install socat
+
+<span style="color:#75715e"># Then in your .bach_profile or .zshrc, add this alias</span>
+alias sml<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;socat READLINE EXEC:sml&#39;</span>
+</code></pre></div><h3 id="cool-stuff-i-learned">Cool stuff I learned</h3>
+<ul>
+<li><code>oneOf type</code> (Option, List). Read more on this: <a href="https://reasonablypolymorphic.com/blog/protos-are-wrong/">https://reasonablypolymorphic.com/blog/protos-are-wrong/</a></li>
+<li><code>Dynamic scope</code> (where a function is called) vs <code>Lexical scope</code> (where a function is defined), also learned it in R programming.</li>
+<li>That Java mutation example</li>
+<li>Pattern matching for function definitions (Function pattern)</li>
+</ul>
+<h3 id="links">Links</h3>
+<ul>
+<li>SML Basis Library: <a href="https://smlfamily.github.io/Basis/overview.html">https://smlfamily.github.io/Basis/overview.html</a></li>
+</ul>
+</article>
+
+        </main><footer id="footer">
+    
+</footer>
+</body>
+</html>
