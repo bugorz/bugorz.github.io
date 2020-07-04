@@ -32,7 +32,7 @@
   <div id="titletext"><h2 id="title"><a href="https://bugorz.github.io/">大隻雞慢啼</a></h2></div>
   <div id="title-description"><p id="subtitle">我們是小國小民，但是我們是好國好民。</p><div id=social>
     <nav>
-      <ul><li><a href="https://github.com/bugorz"><i title="Github" class="icons fab fa-github"></i></a></li></ul>
+      <ul><li><a href="https://github.com/bugorz"><i title="Github" class="icons fab fa-github"></i></a></li><li><a href="/index.xml"><i title="RSS" class="icons fas fa-rss"></i></a></li></ul>
     </nav>
   </div>
   </div>
@@ -79,21 +79,21 @@
 <li>You need to install Xcode from App Store</li>
 <li>Clone <code>googletest</code> and <code>openssl</code> from GitHub, see below:</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/google/googletest
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/google/googletest
 
-<span style="color:#75715e"># Note that there are `googlemock` and `googletest` under the root `googletest` dir,</span> 
-<span style="color:#75715e"># please use the more specific `googletest/googletest` as the `GTEST_ROOT`.</span>
-GTEST_ROOT<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>realpath googletest/googletest<span style="color:#e6db74">`</span>
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install openssl
-OPENSSL_ROOT<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>brew --prefix openssl<span style="color:#e6db74">`</span>
+<span style="color:#888"># Note that there are `googlemock` and `googletest` under the root `googletest` dir,</span> 
+<span style="color:#888"># please use the more specific `googletest/googletest` as the `GTEST_ROOT`.</span>
+<span style="color:#963">GTEST_ROOT</span><span style="color:#333">=</span><span style="background-color:#fff0f0">`</span>realpath googletest/googletest<span style="background-color:#fff0f0">`</span>
+</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install openssl
+<span style="color:#963">OPENSSL_ROOT</span><span style="color:#333">=</span><span style="background-color:#fff0f0">`</span>brew --prefix openssl<span style="background-color:#fff0f0">`</span>
 </code></pre></div><h3 id="build-s2geometry">Build s2geometry</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/google/s2geometry.git
-cd s2geometry
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/google/s2geometry.git
+<span style="color:#007020">cd</span> s2geometry
 mkdir build
-cd build
-cmake -DOPENSSL_INCLUDE_DIR<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>OPENSSL_ROOT<span style="color:#e6db74">}</span>/include -DGTEST_ROOT<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>GTEST_ROOT<span style="color:#e6db74">}</span> ..
+<span style="color:#007020">cd</span> build
+cmake -DOPENSSL_INCLUDE_DIR<span style="color:#333">=</span><span style="background-color:#eee">${</span><span style="color:#963">OPENSSL_ROOT</span><span style="background-color:#eee">}</span>/include -DGTEST_ROOT<span style="color:#333">=</span><span style="background-color:#eee">${</span><span style="color:#963">GTEST_ROOT</span><span style="background-color:#eee">}</span> ..
 make
-make test
+make <span style="color:#007020">test</span>
 sudo make install
 </code></pre></div><h3 id="run-s2geometry-tests-in-clion">Run s2geometry tests in CLion</h3>
 <ul>
@@ -225,7 +225,7 @@ sudo make install
 </div></div>
 
 </main><footer>
-
+ © Copyright notice | <a href="https://github.com/dataCobra/hugo-vitae">Vitae</a> theme for <a href="https://gohugo.io">Hugo</a> 
 
 
     

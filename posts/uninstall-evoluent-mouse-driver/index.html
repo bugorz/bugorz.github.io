@@ -38,7 +38,7 @@ sudo kextunload -b com.evoluent.driver.VerticalMouseDriver Then SteerMouse can c
   <div id="titletext"><h2 id="title"><a href="https://bugorz.github.io/">大隻雞慢啼</a></h2></div>
   <div id="title-description"><p id="subtitle">我們是小國小民，但是我們是好國好民。</p><div id=social>
     <nav>
-      <ul><li><a href="https://github.com/bugorz"><i title="Github" class="icons fab fa-github"></i></a></li></ul>
+      <ul><li><a href="https://github.com/bugorz"><i title="Github" class="icons fab fa-github"></i></a></li><li><a href="/index.xml"><i title="RSS" class="icons fas fa-rss"></i></a></li></ul>
     </nav>
   </div>
   </div>
@@ -84,14 +84,14 @@ sudo kextunload -b com.evoluent.driver.VerticalMouseDriver Then SteerMouse can c
 <p>Evoluent’s official driver doesn’t work in my friend’s macOS <a href="https://en.wikipedia.org/wiki/MacOS_Catalina">Catalina</a> 10.15.5. Therefore, I recommended <a href="https://plentycom.jp/en/steermouse/">SteerMouse</a> to him.</p>
 <p>However, he couldn&rsquo;t uninstall the Evoluent driver from the icon in System Preferences, which blocked him from installing <a href="https://plentycom.jp/en/steermouse/">SteerMouse</a> :(</p>
 <p>After some research and the reading the error message from <a href="https://plentycom.jp/en/steermouse/">SteerMouse</a> UI, we figured that we had to unload the Evoluent driver(a kernel extensions) by</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo kextunload -b com.evoluent.driver.VerticalMouseDriver
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo kextunload -b com.evoluent.driver.VerticalMouseDriver
 </code></pre></div><p>Then <a href="https://plentycom.jp/en/steermouse/">SteerMouse</a> can correctly detect his Vertical Mouse (a green light icon)</p>
 <h3 id="remaining-issues">Remaining issues</h3>
 <p>We still don&rsquo;t know how to completely remove Evoluent’s mousr driver yet. What we have done so far was removing all files in <code>com.evoluent.pkg.Installer</code> but this effort was to no avail.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># List all installed *.pkg</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#888"># List all installed *.pkg</span>
 pkgutil --packages
 
-<span style="color:#75715e"># Check the files in evoluent pkg</span>
+<span style="color:#888"># Check the files in evoluent pkg</span>
 pkgutil --files com.evoluent.pkg.Installer
 </code></pre></div>
 </div>
@@ -209,7 +209,7 @@ pkgutil --files com.evoluent.pkg.Installer
 </div></div>
 
 </main><footer>
-
+ © Copyright notice | <a href="https://github.com/dataCobra/hugo-vitae">Vitae</a> theme for <a href="https://gohugo.io">Hugo</a> 
 
 
     
