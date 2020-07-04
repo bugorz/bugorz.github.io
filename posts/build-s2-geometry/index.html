@@ -1,46 +1,80 @@
 <!DOCTYPE html>
-<html><head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="shortcut icon" href="https://bugorz.github.io/favicon.ico">
-    
-    <link rel="stylesheet" href="/css/style.min.css">
+<html lang="en"><head>
 
-    <title>Build S2 Geometry</title>
-</head>
-<body><header id="banner">
-    <h2><a href="https://bugorz.github.io/">大隻雞慢啼</a></h2>
+  <meta name="generator" content="Hugo 0.73.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="macos,google,geometry,gis"><meta property="og:title" content="Build S2 Geometry" />
+<meta property="og:description" content="Prerequisite  You need to install Xcode from App Store Clone googletest and openssl from GitHub, see below:  git clone https://github.com/google/googletest # Note that there are `googlemock` and `googletest` under the root `googletest` dir, please use the more specific `googletest/googletest` as the `GTEST_ROOT`. GTEST_ROOT=`realpath googletest/googletest` brew install openssl OPENSSL_ROOT=`brew --prefix openssl` Build s2geometry git clone https://github.com/google/s2geometry.git cd s2geometry mkdir build cd build cmake -DOPENSSL_INCLUDE_DIR=${OPENSSL_ROOT}/include -DGTEST_ROOT=${GTEST_ROOT} .. make make test sudo make install Run s2geometry tests in CLion  Please go to Preferences." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bugorz.github.io/posts/build-s2-geometry/" />
+<meta property="article:published_time" content="2020-07-04T17:19:27+08:00" />
+<meta property="article:modified_time" content="2020-07-04T17:19:27+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Build S2 Geometry"/>
+<meta name="twitter:description" content="Prerequisite  You need to install Xcode from App Store Clone googletest and openssl from GitHub, see below:  git clone https://github.com/google/googletest # Note that there are `googlemock` and `googletest` under the root `googletest` dir, please use the more specific `googletest/googletest` as the `GTEST_ROOT`. GTEST_ROOT=`realpath googletest/googletest` brew install openssl OPENSSL_ROOT=`brew --prefix openssl` Build s2geometry git clone https://github.com/google/s2geometry.git cd s2geometry mkdir build cd build cmake -DOPENSSL_INCLUDE_DIR=${OPENSSL_ROOT}/include -DGTEST_ROOT=${GTEST_ROOT} .. make make test sudo make install Run s2geometry tests in CLion  Please go to Preferences."/>
+
+  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/normalize.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/all.css" />
+<link rel="stylesheet" href="https://bugorz.github.io/css/katex.min.css" crossorigin="anonymous">
+  <script defer src="https://bugorz.github.io/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+  <script defer src="https://bugorz.github.io/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><title>Build S2 Geometry | 大隻雞慢啼</title></head>
+<body><header>
+
+  <div id="avatar">
+    <a href="https://bugorz.github.io/">
+      <img src="/img/avatar.jpg" alt="大隻雞慢啼">
+    </a>
+  </div>
+
+  <div id="titletext"><h2 id="title"><a href="https://bugorz.github.io/">大隻雞慢啼</a></h2></div>
+  <div id="title-description"><p id="subtitle">我們是小國小民，但是我們是好國好民。</p><div id=social>
     <nav>
-        <ul>
-            
-            <li>
-                <a href="/" title="">Home</a>
-            </li>
-            
-            <li>
-                <a href="/posts" title="">All Posts</a>
-            </li>
-            
-            <li>
-                <a href="/about" title="">About</a>
-            </li>
-            
-            <li>
-                <a href="/tags" title="">Tags</a>
-            </li>
-            
-            <li>
-                <a href="/categories" title="">Categories</a>
-            </li>
-            
-        </ul>
+      <ul><li><a href="https://github.com/bugorz"><i title="Github" class="icons fab fa-github"></i></a></li></ul>
     </nav>
+  </div>
+  </div>
+  <div id="mainmenu">
+    <nav>
+      <ul>
+        
+        <li><a href="/">Home</a></li>
+        
+        <li><a href="/posts">All Posts</a></li>
+        
+        <li><a href="/about">About</a></li>
+        
+        <li><a href="/tags">Tags</a></li>
+        
+        <li><a href="/categories">Categories</a></li>
+        
+      </ul>
+    </nav>
+  </div>
 </header>
-<main id="content">
-<article>
-    <header id="post-header">
-        <h1>Build S2 Geometry</h1><time>July 4, 2020</time></header><h3 id="prerequisite">Prerequisite</h3>
+<main><div class="post">
+<div class="author">
+
+</div>
+<div class="post-header">
+
+<div class="meta">
+
+<div class="date">
+<span class="day">04</span>
+<span class="rest">Jul 2020</span>
+</div>
+
+</div>
+
+<div class="matter">
+<h1 class="title">Build S2 Geometry</h1>
+</div>
+</div>
+<div class="markdown">
+<h3 id="prerequisite">Prerequisite</h3>
 <ul>
 <li>You need to install Xcode from App Store</li>
 <li>Clone <code>googletest</code> and <code>openssl</code> from GitHub, see below:</li>
@@ -66,10 +100,79 @@ sudo make install
 <li>Select the <code>Debug</code> Profile, then add <code>-DOPENSSL_INCLUDE_DIR=${path_to_openssl_include}</code> and <code>-DGTEST_ROOT=${path_to_gtest_root}</code> to <code>CMake options</code>.</li>
 <li>Reload project in CLion then you should be able to run all unit tests.</li>
 </ul>
-</article>
 
-        </main><footer id="footer">
+</div>
+<div class="tags">
+
+
+
+
+
+
+
+
+
+
+
+<div class="taxosfloating_left">
+<p>Tags</p>
+</div>
+<div class="termsfloating_right">
+<p>
+
+
+
+
+
+
+
+<a href="/tags/geometry/"> geometry </a>
+
+
+
+
+
+<a href="/tags/gis/"> gis </a>
+
+
+
+
+
+<a href="/tags/google/"> google </a>
+
+
+
+
+
+<a href="/tags/macos/"> macos </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="clearit"></div>
+
+
+
+
+
+</div></div>
+
+</main><footer>
+
+
+
     
+
 </footer>
 </body>
 </html>

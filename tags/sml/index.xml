@@ -3,27 +3,12 @@
   <channel>
     <title>sml on 大隻雞慢啼</title>
     <link>https://bugorz.github.io/tags/sml/</link>
-    <description>Recent content in sml on 大隻雞慢啼</description>
+    <description>Recent content in sml on bugorz.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 04 Jul 2020 16:38:25 +0800</lastBuildDate>
     
-	<atom:link href="https://bugorz.github.io/tags/sml/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    
-    
-    
-    <item>
-      <title>Build S2 Geometry</title>
-      <link>https://bugorz.github.io/posts/build-s2-geometry/</link>
-      <pubDate>Sat, 04 Jul 2020 17:19:27 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/build-s2-geometry/</guid>
-      <description>Prerequisite  You need to install Xcode from App Store Clone googletest and openssl from GitHub, see below:  git clone https://github.com/google/googletest # Note that there are `googlemock` and `googletest` under the root `googletest` dir, please use the more specific `googletest/googletest` as the `GTEST_ROOT`. GTEST_ROOT=`realpath googletest/googletest` brew install openssl OPENSSL_ROOT=`brew --prefix openssl` Build s2geometry git clone https://github.com/google/s2geometry.git cd s2geometry mkdir build cd build cmake -DOPENSSL_INCLUDE_DIR=${OPENSSL_ROOT}/include -DGTEST_ROOT=${GTEST_ROOT} .. make make test sudo make install Run s2geometry tests in CLion  Please go to Preferences.</description>
-    </item>
-    
-    
+    <atom:link href="https://bugorz.github.io/tags/sml/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>SML on macOS</title>
@@ -31,10 +16,12 @@
       <pubDate>Sat, 04 Jul 2020 16:38:25 +0800</pubDate>
       
       <guid>https://bugorz.github.io/posts/sml-on-macos/</guid>
-      <description>Standard ML on macOS I had a chance to complete Programming Languages, Part A by Dan Grossman from University of Washington. Dan is a great teacher and this is definitely an A+ course.
-Installation  Installing SML/NJ in macOS (recommend using homebrew): https://smlnj.org/dist/working/110.96/macos.html Remember to export the path in bash/zsh  My SML development environment  Install Visual Studio Code: https://code.visualstudio.com Install Standard ML plugin: https://marketplace.visualstudio.com/items?itemName=freebroccolo.sml Open terminal and enter SML/NJ shell load the SML code in editing  (Important) Tune your SML/NJ interactive shell:  Note that SML/NJ interactive shell doesn&amp;rsquo;t support array keys so you can&amp;rsquo;t use up/down to cycle through the history.</description>
+      <description>
+      
+      Standard ML on macOS I had a chance to complete Programming Languages, Part A by Dan Grossman from University of Washing...
+      
+      </description>
     </item>
-    
     
   </channel>
 </rss>
