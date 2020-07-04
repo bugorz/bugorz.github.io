@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+  <meta name="generator" content="Hugo 0.73.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="macos"><meta property="og:title" content="RAR in macOS" />
+<meta property="og:description" content="The Unarchiver 可以解壓縮大多數的 rar 檔案，但有少數的 rar 檔案無法解壓縮，該怎麼辦？ 其實 RARLAB 官方有提供一組 command line tool 來 壓縮 / 解壓縮 .rar 下載 RAR 5.91 for macOS (64 bit) tar zxvf rarosx-5.9.1.tar.gz # You can export" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bugorz.github.io/posts/rar-macos/" />
+<meta property="article:published_time" content="2020-07-04T20:49:12+08:00" />
+<meta property="article:modified_time" content="2020-07-04T20:49:12+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="RAR in macOS"/>
+<meta name="twitter:description" content="The Unarchiver 可以解壓縮大多數的 rar 檔案，但有少數的 rar 檔案無法解壓縮，該怎麼辦？ 其實 RARLAB 官方有提供一組 command line tool 來 壓縮 / 解壓縮 .rar 下載 RAR 5.91 for macOS (64 bit) tar zxvf rarosx-5.9.1.tar.gz # You can export"/>
+
+  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/normalize.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/all.css" />
+<link rel="stylesheet" href="https://bugorz.github.io/css/katex.min.css" crossorigin="anonymous">
+  <script defer src="https://bugorz.github.io/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+  <script defer src="https://bugorz.github.io/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><title>RAR in macOS | 大隻雞慢啼</title></head>
+<body><header>
+
+  <div id="avatar">
+    <a href="https://bugorz.github.io/">
+      <img src="/img/avatar.jpg" alt="大隻雞慢啼">
+    </a>
+  </div>
+
+  <div id="titletext"><h2 id="title"><a href="https://bugorz.github.io/">大隻雞慢啼</a></h2></div>
+  <div id="title-description"><p id="subtitle">我們是小國小民，但是我們是好國好民。</p><div id=social>
+    <nav>
+      <ul><li><a href="https://github.com/bugorz"><i title="Github" class="icons fab fa-github"></i></a></li></ul>
+    </nav>
+  </div>
+  </div>
+  <div id="mainmenu">
+    <nav>
+      <ul>
+        
+        <li><a href="/">Home</a></li>
+        
+        <li><a href="/posts">All Posts</a></li>
+        
+        <li><a href="/about">About</a></li>
+        
+        <li><a href="/tags">Tags</a></li>
+        
+        <li><a href="/categories">Categories</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+<main><div class="post">
+<div class="author">
+
+</div>
+<div class="post-header">
+
+<div class="meta">
+
+<div class="date">
+<span class="day">04</span>
+<span class="rest">Jul 2020</span>
+</div>
+
+</div>
+
+<div class="matter">
+<h1 class="title">RAR in macOS</h1>
+</div>
+</div>
+<div class="markdown">
+<p><a href="https://apps.apple.com/us/app/the-unarchiver/id425424353?mt=12">The Unarchiver</a> 可以解壓縮大多數的 rar 檔案，但有少數的 rar 檔案無法解壓縮，該怎麼辦？</p>
+<p>其實 <a href="https://www.rarlab.com">RARLAB</a> 官方有提供一組 command line tool 來 壓縮 / 解壓縮 .rar</p>
+<ul>
+<li>下載 <a href="https://www.rarlab.com/rar/rarosx-5.9.1.tar.gz">RAR 5.91</a> for macOS (64 bit)</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">tar zxvf rarosx-5.9.1.tar.gz
+
+<span style="color:#75715e"># You can export the path in bash/zsh</span>
+./rar/rar -e <span style="color:#e6db74">${</span>YOUR_RAR_FILE<span style="color:#e6db74">}</span>
+</code></pre></div>
+</div>
+<div class="tags">
+
+
+
+
+
+
+
+
+
+
+
+<div class="taxosfloating_left">
+<p>Tags</p>
+</div>
+<div class="termsfloating_right">
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/tags/macos/"> macos </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="clearit"></div>
+
+
+
+
+
+</div></div>
+
+</main><footer>
+
+
+
+    
+
+</footer>
+</body>
+</html>

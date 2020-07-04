@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+  <meta name="generator" content="Hugo 0.73.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="scala,future"><meta property="og:title" content="Future Zip Sequence Scala" />
+<meta property="og:description" content="Future.sequence is a handy method to deal with a sequence futures of the same type. However, if you want to combine futures of different types, you should use Future.zip to avoid losing type information.
+Let’s take a look at an example:
+scala&gt; import scala.concurrent.ExecutionContext.Implicits.global import scala.concurrent.ExecutionContext.Implicits.global scala&gt; val f1 = Future.successful(55) f1: scala.concurrent.Future[Int] = scala.concurrent.impl.Promise$KeptPromise@57855c9a scala&gt; val f2 = Future.successful(“Six Six”) f2: scala.concurrent.Future[String] = scala.concurrent.impl.Promise$KeptPromise@475530b9 // note the type is Future[Seq[Any]] because `55` and `Six Six` are of different types scala&gt; val fSeq = Future." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bugorz.github.io/posts/future-zip-sequence-scala/" />
+<meta property="article:published_time" content="2020-07-04T19:46:46+08:00" />
+<meta property="article:modified_time" content="2020-07-04T19:46:46+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Future Zip Sequence Scala"/>
+<meta name="twitter:description" content="Future.sequence is a handy method to deal with a sequence futures of the same type. However, if you want to combine futures of different types, you should use Future.zip to avoid losing type information.
+Let’s take a look at an example:
+scala&gt; import scala.concurrent.ExecutionContext.Implicits.global import scala.concurrent.ExecutionContext.Implicits.global scala&gt; val f1 = Future.successful(55) f1: scala.concurrent.Future[Int] = scala.concurrent.impl.Promise$KeptPromise@57855c9a scala&gt; val f2 = Future.successful(“Six Six”) f2: scala.concurrent.Future[String] = scala.concurrent.impl.Promise$KeptPromise@475530b9 // note the type is Future[Seq[Any]] because `55` and `Six Six` are of different types scala&gt; val fSeq = Future."/>
+
+  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/normalize.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/all.css" />
+<link rel="stylesheet" href="https://bugorz.github.io/css/katex.min.css" crossorigin="anonymous">
+  <script defer src="https://bugorz.github.io/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+  <script defer src="https://bugorz.github.io/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><title>Future Zip Sequence Scala | 大隻雞慢啼</title></head>
+<body><header>
+
+  <div id="avatar">
+    <a href="https://bugorz.github.io/">
+      <img src="/img/avatar.jpg" alt="大隻雞慢啼">
+    </a>
+  </div>
+
+  <div id="titletext"><h2 id="title"><a href="https://bugorz.github.io/">大隻雞慢啼</a></h2></div>
+  <div id="title-description"><p id="subtitle">我們是小國小民，但是我們是好國好民。</p><div id=social>
+    <nav>
+      <ul><li><a href="https://github.com/bugorz"><i title="Github" class="icons fab fa-github"></i></a></li></ul>
+    </nav>
+  </div>
+  </div>
+  <div id="mainmenu">
+    <nav>
+      <ul>
+        
+        <li><a href="/">Home</a></li>
+        
+        <li><a href="/posts">All Posts</a></li>
+        
+        <li><a href="/about">About</a></li>
+        
+        <li><a href="/tags">Tags</a></li>
+        
+        <li><a href="/categories">Categories</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+<main><div class="post">
+<div class="author">
+
+</div>
+<div class="post-header">
+
+<div class="meta">
+
+<div class="date">
+<span class="day">04</span>
+<span class="rest">Jul 2020</span>
+</div>
+
+</div>
+
+<div class="matter">
+<h1 class="title">Future Zip Sequence Scala</h1>
+</div>
+</div>
+<div class="markdown">
+<p><code>Future.sequence</code> is a handy method to deal with a sequence futures of the same type. However, if you want to combine futures of different types, you should use <code>Future.zip</code> to avoid losing type information.</p>
+<p>Let’s take a look at an example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Scala" data-lang="Scala">scala<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">import</span> scala.concurrent.ExecutionContext.Implicits.global
+<span style="color:#66d9ef">import</span> scala.concurrent.ExecutionContext.Implicits.global
+
+scala<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">val</span> f1 <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">Future</span><span style="color:#f92672">.</span>successful<span style="color:#f92672">(</span><span style="color:#ae81ff">55</span><span style="color:#f92672">)</span>
+f1<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">scala.concurrent.Future</span><span style="color:#f92672">[</span><span style="color:#66d9ef">Int</span><span style="color:#f92672">]</span> <span style="color:#66d9ef">=</span> scala<span style="color:#f92672">.</span>concurrent<span style="color:#f92672">.</span>impl<span style="color:#f92672">.</span><span style="color:#a6e22e">Promise$KeptPromise</span><span style="color:#66d9ef">@</span><span style="color:#ae81ff">57855</span>c9a
+
+scala<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">val</span> f2 <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">Future</span><span style="color:#f92672">.</span>successful<span style="color:#f92672">(</span><span style="color:#960050;background-color:#1e0010">“</span><span style="color:#a6e22e">Six</span> <span style="color:#a6e22e">Six</span><span style="color:#960050;background-color:#1e0010">”</span><span style="color:#f92672">)</span>
+f2<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">scala.concurrent.Future</span><span style="color:#f92672">[</span><span style="color:#66d9ef">String</span><span style="color:#f92672">]</span> <span style="color:#66d9ef">=</span> scala<span style="color:#f92672">.</span>concurrent<span style="color:#f92672">.</span>impl<span style="color:#f92672">.</span><span style="color:#a6e22e">Promise$KeptPromise</span><span style="color:#66d9ef">@</span><span style="color:#ae81ff">475530</span>b9
+
+<span style="color:#75715e">// note the type is Future[Seq[Any]] because `55` and `Six Six` are of different types
+</span><span style="color:#75715e"></span>scala<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">val</span> fSeq <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">Future</span><span style="color:#f92672">.</span>sequence<span style="color:#f92672">(</span><span style="color:#a6e22e">Seq</span><span style="color:#f92672">(</span>f1<span style="color:#f92672">,</span> f2<span style="color:#f92672">))</span>
+fSeq<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">scala.concurrent.Future</span><span style="color:#f92672">[</span><span style="color:#66d9ef">Seq</span><span style="color:#f92672">[</span><span style="color:#66d9ef">Any</span><span style="color:#f92672">]]</span> <span style="color:#66d9ef">=</span> scala<span style="color:#f92672">.</span>concurrent<span style="color:#f92672">.</span>impl<span style="color:#f92672">.</span><span style="color:#a6e22e">Promise$DefaultPromise</span><span style="color:#66d9ef">@</span><span style="color:#ae81ff">51</span>acdf2e
+
+<span style="color:#75715e">// Therefore, you have to explicitly cast types (a bad idea)
+</span><span style="color:#75715e"></span>scala<span style="color:#f92672">&gt;</span> fSeq<span style="color:#f92672">.</span>map <span style="color:#f92672">{</span> <span style="color:#66d9ef">case</span> <span style="color:#f92672">(</span>num <span style="color:#66d9ef">:</span><span style="color:#66d9ef">:</span> <span style="color:#66d9ef">str</span> <span style="color:#66d9ef">::</span> <span style="color:#66d9ef">rest</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">=&gt;</span> println<span style="color:#f92672">(</span>s<span style="color:#960050;background-color:#1e0010">”</span>$<span style="color:#f92672">{</span>num<span style="color:#f92672">.</span>asInstanceOf<span style="color:#f92672">[</span><span style="color:#66d9ef">Int</span><span style="color:#f92672">].</span>toBinaryString<span style="color:#f92672">}</span> $<span style="color:#f92672">{</span>str<span style="color:#f92672">.</span>asInstanceOf<span style="color:#f92672">[</span><span style="color:#66d9ef">String</span><span style="color:#f92672">].</span>reverse<span style="color:#f92672">}</span><span style="color:#960050;background-color:#1e0010">”</span><span style="color:#f92672">)</span> <span style="color:#f92672">}</span>
+res2<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">scala.concurrent.Future</span><span style="color:#f92672">[</span><span style="color:#66d9ef">Unit</span><span style="color:#f92672">]</span> <span style="color:#66d9ef">=</span> scala<span style="color:#f92672">.</span>concurrent<span style="color:#f92672">.</span>impl<span style="color:#f92672">.</span><span style="color:#a6e22e">Promise$DefaultPromise</span><span style="color:#66d9ef">@</span><span style="color:#ae81ff">18</span>da4dd
+<span style="color:#ae81ff">110111</span> xiS xiS
+
+<span style="color:#75715e">// note the type information is retained: Future[(Int, String)]
+</span><span style="color:#75715e"></span>scala<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">val</span> zipFuture <span style="color:#66d9ef">=</span> f1 zip f2
+zipFuture<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">scala.concurrent.Future</span><span style="color:#f92672">[(</span><span style="color:#66d9ef">Int</span>, <span style="color:#66d9ef">String</span><span style="color:#f92672">)]</span> <span style="color:#66d9ef">=</span> scala<span style="color:#f92672">.</span>concurrent<span style="color:#f92672">.</span>impl<span style="color:#f92672">.</span><span style="color:#a6e22e">Promise$DefaultPromise</span><span style="color:#66d9ef">@</span><span style="color:#ae81ff">5</span>ab14cb9
+
+<span style="color:#75715e">// No need to cast type
+</span><span style="color:#75715e"></span>scala<span style="color:#f92672">&gt;</span> zipFuture<span style="color:#f92672">.</span>map<span style="color:#f92672">{</span> <span style="color:#66d9ef">case</span> <span style="color:#f92672">(</span>num<span style="color:#f92672">,</span> str<span style="color:#f92672">)</span> <span style="color:#66d9ef">=&gt;</span> println<span style="color:#f92672">(</span><span style="color:#e6db74">s&#34;</span><span style="color:#e6db74">${</span>num<span style="color:#f92672">.</span>toBinaryString<span style="color:#e6db74">}</span><span style="color:#e6db74"> </span><span style="color:#e6db74">${</span>str<span style="color:#f92672">.</span>reverse<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">)</span> <span style="color:#f92672">}</span>
+res1<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">scala.concurrent.Future</span><span style="color:#f92672">[</span><span style="color:#66d9ef">Unit</span><span style="color:#f92672">]</span> <span style="color:#66d9ef">=</span> scala<span style="color:#f92672">.</span>concurrent<span style="color:#f92672">.</span>impl<span style="color:#f92672">.</span><span style="color:#a6e22e">Promise$DefaultPromise</span><span style="color:#66d9ef">@</span><span style="color:#ae81ff">16</span>c8b7bd
+<span style="color:#ae81ff">110111</span> xiS xiS
+</code></pre></div>
+</div>
+<div class="tags">
+
+
+
+
+
+
+
+
+
+
+
+<div class="taxosfloating_left">
+<p>Tags</p>
+</div>
+<div class="termsfloating_right">
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/tags/future/"> future </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/tags/scala/"> scala </a>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="clearit"></div>
+
+
+
+
+
+</div></div>
+
+</main><footer>
+
+
+
+    
+
+</footer>
+</body>
+</html>

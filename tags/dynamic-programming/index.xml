@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dynamic programming on 大隻雞慢啼</title>
+    <link>https://bugorz.github.io/tags/dynamic-programming/</link>
+    <description>Recent content in dynamic programming on bugorz.github.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 Jul 2020 20:39:22 +0800</lastBuildDate>
+    
+    <atom:link href="https://bugorz.github.io/tags/dynamic-programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Real world DP algorithms</title>
+      <link>https://bugorz.github.io/posts/real-world-dp/</link>
+      <pubDate>Sat, 04 Jul 2020 20:39:22 +0800</pubDate>
+      
+      <guid>https://bugorz.github.io/posts/real-world-dp/</guid>
+      <description>
+      
+      List a few DP algorithms I’ve encountered/used in real world:
+ The Selinger algorithm for relational database query opti...
+      
+      </description>
+    </item>
+    
+  </channel>
+</rss>

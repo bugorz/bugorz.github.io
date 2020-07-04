@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+  <meta name="generator" content="Hugo 0.73.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="book,review"><meta property="og:title" content="老書考古 - Writing Solid Code" />
+<meta property="og:description" content="資訊業界技術更迭之速，使得許多技術書籍在閱讀前就已經過時了。 但我認為仍有一些作品值得重讀，例如 Writing Solid Code。這本書從軟體開發的日常中提煉許多" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bugorz.github.io/posts/book-writing-solid-code/" />
+<meta property="article:published_time" content="2020-07-04T20:17:22+08:00" />
+<meta property="article:modified_time" content="2020-07-04T20:17:22+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="老書考古 - Writing Solid Code"/>
+<meta name="twitter:description" content="資訊業界技術更迭之速，使得許多技術書籍在閱讀前就已經過時了。 但我認為仍有一些作品值得重讀，例如 Writing Solid Code。這本書從軟體開發的日常中提煉許多"/>
+
+  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/normalize.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/all.css" />
+<link rel="stylesheet" href="https://bugorz.github.io/css/katex.min.css" crossorigin="anonymous">
+  <script defer src="https://bugorz.github.io/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+  <script defer src="https://bugorz.github.io/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><title>老書考古 - Writing Solid Code | 大隻雞慢啼</title></head>
+<body><header>
+
+  <div id="avatar">
+    <a href="https://bugorz.github.io/">
+      <img src="/img/avatar.jpg" alt="大隻雞慢啼">
+    </a>
+  </div>
+
+  <div id="titletext"><h2 id="title"><a href="https://bugorz.github.io/">大隻雞慢啼</a></h2></div>
+  <div id="title-description"><p id="subtitle">我們是小國小民，但是我們是好國好民。</p><div id=social>
+    <nav>
+      <ul><li><a href="https://github.com/bugorz"><i title="Github" class="icons fab fa-github"></i></a></li></ul>
+    </nav>
+  </div>
+  </div>
+  <div id="mainmenu">
+    <nav>
+      <ul>
+        
+        <li><a href="/">Home</a></li>
+        
+        <li><a href="/posts">All Posts</a></li>
+        
+        <li><a href="/about">About</a></li>
+        
+        <li><a href="/tags">Tags</a></li>
+        
+        <li><a href="/categories">Categories</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+<main><div class="post">
+<div class="author">
+
+</div>
+<div class="post-header">
+
+<div class="meta">
+
+<div class="date">
+<span class="day">04</span>
+<span class="rest">Jul 2020</span>
+</div>
+
+</div>
+
+<div class="matter">
+<h1 class="title">老書考古 - Writing Solid Code</h1>
+</div>
+</div>
+<div class="markdown">
+<p>資訊業界技術更迭之速，使得許多技術書籍在閱讀前就已經過時了。</p>
+<p>但我認為仍有一些作品值得重讀，例如 <a href="https://www.amazon.com/dp/1570740550/ref=cm_sw_em_r_mt_dp_U_djhaFbC0WN7XZ">Writing Solid Code</a>。這本書從軟體開發的日常中提煉許多實用的技巧以及心法，幫助程式設計師避免以及減少 bugs。</p>
+<h2 id="chapter-3--candy-machine-interfaces">Chapter 3 — Candy-Machine Interfaces</h2>
+<ul>
+<li><code>I can’t emphasize enough how important it is to examine your interfaces from the point of view of the caller</code> — p102</li>
+<li>寫 unit tests 的一個好處之一：強迫你從使用者的角度檢視自己的 interface。我經常在寫 unit tests 時發現可以 interface 可以改進的地方。<del>被發現我沒有嚴格遵守 Test-driven development 了</del></li>
+<li>2016 年開始，從 library user 變成 library author 的過程，讓我對第三章的內容頗有共鳴。身為一個 library author，要盡量預防使用者犯錯。</li>
+</ul>
+
+</div>
+<div class="tags">
+
+
+
+
+
+
+
+
+
+
+
+<div class="taxosfloating_left">
+<p>Tags</p>
+</div>
+<div class="termsfloating_right">
+<p>
+
+
+
+
+
+
+
+<a href="/tags/book/"> book </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="/tags/review/"> review </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<div class="clearit"></div>
+
+
+
+
+
+</div></div>
+
+</main><footer>
+
+
+
+    
+
+</footer>
+</body>
+</html>
