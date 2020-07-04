@@ -6,28 +6,14 @@
     <description>Recent content in macos on bugorz.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jul 2020 20:49:12 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jun 2020 19:50:08 +0800</lastBuildDate>
     
     <atom:link href="https://bugorz.github.io/tags/macos/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>RAR in macOS</title>
-      <link>https://bugorz.github.io/posts/rar-macos/</link>
-      <pubDate>Sat, 04 Jul 2020 20:49:12 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/rar-macos/</guid>
-      <description>
-      
-      The Unarchiver 可以解壓縮大多數的 rar 檔案，但有少數的 rar 檔案無法解壓縮，該怎麼辦？
-其實 RARLAB 官方有提供一組 command line tool 來 壓縮 / 解壓縮 .rar
- 下載 RAR 5.91...
-      
-      </description>
-    </item>
-    <item>
       <title>Uninstall Evoluent Mouse Driver</title>
       <link>https://bugorz.github.io/posts/uninstall-evoluent-mouse-driver/</link>
-      <pubDate>Sat, 04 Jul 2020 19:50:08 +0800</pubDate>
+      <pubDate>Tue, 30 Jun 2020 19:50:08 +0800</pubDate>
       
       <guid>https://bugorz.github.io/posts/uninstall-evoluent-mouse-driver/</guid>
       <description>
@@ -37,9 +23,21 @@
       </description>
     </item>
     <item>
+      <title>SML on macOS</title>
+      <link>https://bugorz.github.io/posts/sml-on-macos/</link>
+      <pubDate>Mon, 01 Jun 2020 16:38:25 +0800</pubDate>
+      
+      <guid>https://bugorz.github.io/posts/sml-on-macos/</guid>
+      <description>
+      
+      Standard ML on macOS  I completed Programming Languages, Part A by Dan Grossman from University of Washington. In Part A...
+      
+      </description>
+    </item>
+    <item>
       <title>Build S2 Geometry</title>
       <link>https://bugorz.github.io/posts/build-s2-geometry/</link>
-      <pubDate>Sat, 04 Jul 2020 17:19:27 +0800</pubDate>
+      <pubDate>Thu, 10 Jan 2019 17:19:27 +0800</pubDate>
       
       <guid>https://bugorz.github.io/posts/build-s2-geometry/</guid>
       <description>
@@ -49,14 +47,16 @@
       </description>
     </item>
     <item>
-      <title>SML on macOS</title>
-      <link>https://bugorz.github.io/posts/sml-on-macos/</link>
-      <pubDate>Sat, 04 Jul 2020 16:38:25 +0800</pubDate>
+      <title>RAR in macOS</title>
+      <link>https://bugorz.github.io/posts/rar-macos/</link>
+      <pubDate>Mon, 10 Sep 2018 10:11:12 +0800</pubDate>
       
-      <guid>https://bugorz.github.io/posts/sml-on-macos/</guid>
+      <guid>https://bugorz.github.io/posts/rar-macos/</guid>
       <description>
       
-      Standard ML on macOS  I completed Programming Languages, Part A by Dan Grossman from University of Washington. In Part A...
+      The Unarchiver 可以解壓縮大多數的 rar 檔案，但有少數的 rar 檔案無法解壓縮，該怎麼辦？
+其實 RARLAB 官方有提供一組 command line tool 來 壓縮 / 解壓縮 .rar
+ 下載 RAR 5.91...
       
       </description>
     </item>

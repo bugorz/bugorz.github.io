@@ -6,49 +6,10 @@
     <description>Recent content on bugorz.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jul 2020 20:49:12 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jul 2020 20:24:22 +0800</lastBuildDate>
     
     <atom:link href="https://bugorz.github.io/index.xml" rel="self" type="application/rss+xml" />
     
-    <item>
-      <title>RAR in macOS</title>
-      <link>https://bugorz.github.io/posts/rar-macos/</link>
-      <pubDate>Sat, 04 Jul 2020 20:49:12 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/rar-macos/</guid>
-      <description>
-      
-      The Unarchiver 可以解壓縮大多數的 rar 檔案，但有少數的 rar 檔案無法解壓縮，該怎麼辦？
-其實 RARLAB 官方有提供一組 command line tool 來 壓縮 / 解壓縮 .rar
- 下載 RAR 5.91...
-      
-      </description>
-    </item>
-    <item>
-      <title>Real world DP algorithms</title>
-      <link>https://bugorz.github.io/posts/real-world-dp/</link>
-      <pubDate>Sat, 04 Jul 2020 20:39:22 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/real-world-dp/</guid>
-      <description>
-      
-      List a few DP algorithms I’ve encountered/used in real world:
- The Selinger algorithm for relational database query opti...
-      
-      </description>
-    </item>
-    <item>
-      <title>MOOC 課程總覽</title>
-      <link>https://bugorz.github.io/posts/good-course-list/</link>
-      <pubDate>Sat, 04 Jul 2020 20:37:22 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/good-course-list/</guid>
-      <description>
-      
-       SDN: https://www.coursera.org/learn/sdn#syllabus Programming Language, Part A Programming Language, Part B Programming ...
-      
-      </description>
-    </item>
     <item>
       <title>Data Science Specialization</title>
       <link>https://bugorz.github.io/posts/learning-statistics/</link>
@@ -60,57 +21,6 @@
       因緣際會，我註冊了 Coursera 的 Data Science Specialization。
 其中 Statistical Inference，是我覺得最重要且基礎的課程，可惜老師上課的風格我不愛。
 為了搞懂這門課呼嘯而過的觀念，推薦...
-      
-      </description>
-    </item>
-    <item>
-      <title>老書考古 - Writing Solid Code</title>
-      <link>https://bugorz.github.io/posts/book-writing-solid-code/</link>
-      <pubDate>Sat, 04 Jul 2020 20:17:22 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/book-writing-solid-code/</guid>
-      <description>
-      
-      資訊業界技術更迭之速，使得許多技術書籍在閱讀前就已經過時了。
-但我認為仍有一些作品值得重讀，例如 Writing Solid Code。這本書從軟體開發的日常中提煉許多實用的技巧以及心法，幫助程式設計師避免以及減少 bugs。
-Chapte...
-      
-      </description>
-    </item>
-    <item>
-      <title>老書考古 - Code: The Hidden Language of Computer Hardware and Software</title>
-      <link>https://bugorz.github.io/posts/book-code/</link>
-      <pubDate>Sat, 04 Jul 2020 20:04:22 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/book-code/</guid>
-      <description>
-      
-      只能說相見恨晚。
-身為一個資訊從業人員，我常想，如果我是大學老師，我會怎麼樣教學呢？我會選擇 Code: The Hidden Language of Computer Hardware and Software (以下簡稱 Code) 當...
-      
-      </description>
-    </item>
-    <item>
-      <title>Uninstall Evoluent Mouse Driver</title>
-      <link>https://bugorz.github.io/posts/uninstall-evoluent-mouse-driver/</link>
-      <pubDate>Sat, 04 Jul 2020 19:50:08 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/uninstall-evoluent-mouse-driver/</guid>
-      <description>
-      
-      Problem Evoluent’s official driver doesn’t work in my friend’s macOS Catalina 10.15.5. Therefore, I recommended SteerMou...
-      
-      </description>
-    </item>
-    <item>
-      <title>Future Zip Sequence Scala</title>
-      <link>https://bugorz.github.io/posts/future-zip-sequence-scala/</link>
-      <pubDate>Sat, 04 Jul 2020 19:46:46 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/future-zip-sequence-scala/</guid>
-      <description>
-      
-      Future.sequence is a handy method to deal with a sequence futures of the same type. However, if you want to combine futu...
       
       </description>
     </item>
@@ -129,9 +39,58 @@ Chapte...
       </description>
     </item>
     <item>
+      <title>Uninstall Evoluent Mouse Driver</title>
+      <link>https://bugorz.github.io/posts/uninstall-evoluent-mouse-driver/</link>
+      <pubDate>Tue, 30 Jun 2020 19:50:08 +0800</pubDate>
+      
+      <guid>https://bugorz.github.io/posts/uninstall-evoluent-mouse-driver/</guid>
+      <description>
+      
+      Problem Evoluent’s official driver doesn’t work in my friend’s macOS Catalina 10.15.5. Therefore, I recommended SteerMou...
+      
+      </description>
+    </item>
+    <item>
+      <title>SML on macOS</title>
+      <link>https://bugorz.github.io/posts/sml-on-macos/</link>
+      <pubDate>Mon, 01 Jun 2020 16:38:25 +0800</pubDate>
+      
+      <guid>https://bugorz.github.io/posts/sml-on-macos/</guid>
+      <description>
+      
+      Standard ML on macOS  I completed Programming Languages, Part A by Dan Grossman from University of Washington. In Part A...
+      
+      </description>
+    </item>
+    <item>
+      <title>老書考古 - Code: The Hidden Language of Computer Hardware and Software</title>
+      <link>https://bugorz.github.io/posts/book-code/</link>
+      <pubDate>Mon, 15 Apr 2019 20:04:22 +0800</pubDate>
+      
+      <guid>https://bugorz.github.io/posts/book-code/</guid>
+      <description>
+      
+      只能說相見恨晚。
+身為一個資訊從業人員，我常想，如果我是大學老師，我會怎麼樣教學呢？我會選擇 Code: The Hidden Language of Computer Hardware and Software (以下簡稱 Code) 當...
+      
+      </description>
+    </item>
+    <item>
+      <title>MOOC 課程總覽</title>
+      <link>https://bugorz.github.io/posts/good-course-list/</link>
+      <pubDate>Mon, 01 Apr 2019 20:37:22 +0800</pubDate>
+      
+      <guid>https://bugorz.github.io/posts/good-course-list/</guid>
+      <description>
+      
+       SDN: https://www.coursera.org/learn/sdn#syllabus Programming Language, Part A Programming Language, Part B Programming ...
+      
+      </description>
+    </item>
+    <item>
       <title>Build S2 Geometry</title>
       <link>https://bugorz.github.io/posts/build-s2-geometry/</link>
-      <pubDate>Sat, 04 Jul 2020 17:19:27 +0800</pubDate>
+      <pubDate>Thu, 10 Jan 2019 17:19:27 +0800</pubDate>
       
       <guid>https://bugorz.github.io/posts/build-s2-geometry/</guid>
       <description>
@@ -141,14 +100,55 @@ Chapte...
       </description>
     </item>
     <item>
-      <title>SML on macOS</title>
-      <link>https://bugorz.github.io/posts/sml-on-macos/</link>
-      <pubDate>Sat, 04 Jul 2020 16:38:25 +0800</pubDate>
+      <title>老書考古 - Writing Solid Code</title>
+      <link>https://bugorz.github.io/posts/book-writing-solid-code/</link>
+      <pubDate>Fri, 21 Dec 2018 16:55:22 +0800</pubDate>
       
-      <guid>https://bugorz.github.io/posts/sml-on-macos/</guid>
+      <guid>https://bugorz.github.io/posts/book-writing-solid-code/</guid>
       <description>
       
-      Standard ML on macOS  I completed Programming Languages, Part A by Dan Grossman from University of Washington. In Part A...
+      資訊業界技術更迭之速，使得許多技術書籍在閱讀前就已經過時了。
+但我認為仍有一些作品值得重讀，例如 Writing Solid Code。這本書從軟體開發的日常中提煉許多實用的技巧以及心法，幫助程式設計師避免以及減少 bugs。
+Chapte...
+      
+      </description>
+    </item>
+    <item>
+      <title>RAR in macOS</title>
+      <link>https://bugorz.github.io/posts/rar-macos/</link>
+      <pubDate>Mon, 10 Sep 2018 10:11:12 +0800</pubDate>
+      
+      <guid>https://bugorz.github.io/posts/rar-macos/</guid>
+      <description>
+      
+      The Unarchiver 可以解壓縮大多數的 rar 檔案，但有少數的 rar 檔案無法解壓縮，該怎麼辦？
+其實 RARLAB 官方有提供一組 command line tool 來 壓縮 / 解壓縮 .rar
+ 下載 RAR 5.91...
+      
+      </description>
+    </item>
+    <item>
+      <title>Real world DP algorithms</title>
+      <link>https://bugorz.github.io/posts/real-world-dp/</link>
+      <pubDate>Mon, 27 Aug 2018 20:39:22 +0800</pubDate>
+      
+      <guid>https://bugorz.github.io/posts/real-world-dp/</guid>
+      <description>
+      
+      List a few DP algorithms I’ve encountered/used in real world:
+ The Selinger algorithm for relational database query opti...
+      
+      </description>
+    </item>
+    <item>
+      <title>Future Zip Sequence Scala</title>
+      <link>https://bugorz.github.io/posts/future-zip-sequence-scala/</link>
+      <pubDate>Wed, 15 Mar 2017 19:46:46 +0800</pubDate>
+      
+      <guid>https://bugorz.github.io/posts/future-zip-sequence-scala/</guid>
+      <description>
+      
+      Future.sequence is a handy method to deal with a sequence futures of the same type. However, if you want to combine futu...
       
       </description>
     </item>

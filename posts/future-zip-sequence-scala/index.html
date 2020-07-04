@@ -11,8 +11,8 @@ Let’s take a look at an example:
 scala&gt; import scala.concurrent.ExecutionContext.Implicits.global import scala.concurrent.ExecutionContext.Implicits.global scala&gt; val f1 = Future.successful(55) f1: scala.concurrent.Future[Int] = scala.concurrent.impl.Promise$KeptPromise@57855c9a scala&gt; val f2 = Future.successful(“Six Six”) f2: scala.concurrent.Future[String] = scala.concurrent.impl.Promise$KeptPromise@475530b9 // note the type is Future[Seq[Any]] because `55` and `Six Six` are of different types scala&gt; val fSeq = Future." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://bugorz.github.io/posts/future-zip-sequence-scala/" />
-<meta property="article:published_time" content="2020-07-04T19:46:46+08:00" />
-<meta property="article:modified_time" content="2020-07-04T19:46:46+08:00" />
+<meta property="article:published_time" content="2017-03-15T19:46:46+08:00" />
+<meta property="article:modified_time" content="2017-03-15T19:46:46+08:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Future Zip Sequence Scala"/>
 <meta name="twitter:description" content="Future.sequence is a handy method to deal with a sequence futures of the same type. However, if you want to combine futures of different types, you should use Future.zip to avoid losing type information.
@@ -67,8 +67,8 @@ scala&gt; import scala.concurrent.ExecutionContext.Implicits.global import scala
 <div class="meta">
 
 <div class="date">
-<span class="day">04</span>
-<span class="rest">Jul 2020</span>
+<span class="day">15</span>
+<span class="rest">Mar 2017</span>
 </div>
 
 </div>
