@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on 第三代宅男</title>
+    <title>Categories on 大隻雞慢啼</title>
     <link>https://bugorz.github.io/categories/</link>
-    <description>Recent content in Categories on 第三代宅男</description>
+    <description>Recent content in Categories on 大隻雞慢啼</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
 	<atom:link href="https://bugorz.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+    
+    
+    <item>
+      <title>Build S2 Geometry</title>
+      <link>https://bugorz.github.io/posts/build-s2-geometry/</link>
+      <pubDate>Sat, 04 Jul 2020 17:19:27 +0800</pubDate>
+      
+      <guid>https://bugorz.github.io/posts/build-s2-geometry/</guid>
+      <description>Prerequisite  You need to install Xcode from App Store Clone googletest and openssl from GitHub, see below:  git clone https://github.com/google/googletest # Note that there are `googlemock` and `googletest` under the root `googletest` dir, please use the more specific `googletest/googletest` as the `GTEST_ROOT`. GTEST_ROOT=`realpath googletest/googletest` brew install openssl OPENSSL_ROOT=`brew --prefix openssl` Build s2geometry git clone https://github.com/google/s2geometry.git cd s2geometry mkdir build cd build cmake -DOPENSSL_INCLUDE_DIR=${OPENSSL_ROOT}/include -DGTEST_ROOT=${GTEST_ROOT} .. make make test sudo make install Run s2geometry tests in CLion  Please go to Preferences.</description>
+    </item>
     
     
     

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="https://bugorz.github.io/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    <title>Build S2 Geometry</title>
+</head>
+<body><header id="banner">
+    <h2><a href="https://bugorz.github.io/">大隻雞慢啼</a></h2>
+    <nav>
+        <ul>
+            
+            <li>
+                <a href="/" title="">Home</a>
+            </li>
+            
+            <li>
+                <a href="/posts" title="">All Posts</a>
+            </li>
+            
+            <li>
+                <a href="/about" title="">About</a>
+            </li>
+            
+            <li>
+                <a href="/tags" title="">Tags</a>
+            </li>
+            
+            <li>
+                <a href="/categories" title="">Categories</a>
+            </li>
+            
+        </ul>
+    </nav>
+</header>
+<main id="content">
+<article>
+    <header id="post-header">
+        <h1>Build S2 Geometry</h1><time>July 4, 2020</time></header><h3 id="prerequisite">Prerequisite</h3>
+<ul>
+<li>You need to install Xcode from App Store</li>
+<li>Clone <code>googletest</code> and <code>openssl</code> from GitHub, see below:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/google/googletest
+
+<span style="color:#75715e"># Note that there are `googlemock` and `googletest` under the root `googletest` dir, please use the more specific `googletest/googletest` as the `GTEST_ROOT`.</span>
+GTEST_ROOT<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>realpath googletest/googletest<span style="color:#e6db74">`</span>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install openssl
+OPENSSL_ROOT<span style="color:#f92672">=</span><span style="color:#e6db74">`</span>brew --prefix openssl<span style="color:#e6db74">`</span>
+</code></pre></div><h3 id="build-s2geometry">Build s2geometry</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/google/s2geometry.git
+cd s2geometry
+mkdir build
+cd build
+cmake -DOPENSSL_INCLUDE_DIR<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>OPENSSL_ROOT<span style="color:#e6db74">}</span>/include -DGTEST_ROOT<span style="color:#f92672">=</span><span style="color:#e6db74">${</span>GTEST_ROOT<span style="color:#e6db74">}</span> ..
+make
+make test
+sudo make install
+</code></pre></div><h3 id="run-s2geometry-tests-in-clion">Run s2geometry tests in CLion</h3>
+<ul>
+<li>Please go to <code>Preferences...</code> -&gt; <code>Build, Execution, Deployment</code> -&gt; <code>CMake</code></li>
+<li>Select the <code>Debug</code> Profile, then add <code>-DOPENSSL_INCLUDE_DIR=${path_to_openssl_include}</code> and <code>-DGTEST_ROOT=${path_to_gtest_root}</code> to <code>CMake options</code>.</li>
+<li>Reload project in CLion then you should be able to run all unit tests.</li>
+</ul>
+</article>
+
+        </main><footer id="footer">
+    
+</footer>
+</body>
+</html>
