@@ -193,7 +193,17 @@
   </url>
   
   <url>
+    <loc>https://bugorz.github.io/series/2007-%E6%97%A5%E6%9C%AC%E9%97%9C%E6%9D%B1/</loc>
+    <lastmod>2007-08-19T00:28:05+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bugorz.github.io/tags/japan/</loc>
+    <lastmod>2007-08-19T00:28:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bugorz.github.io/series/</loc>
     <lastmod>2007-08-19T00:28:05+08:00</lastmod>
   </url>
   
@@ -289,10 +299,6 @@
   
   <url>
     <loc>https://bugorz.github.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://bugorz.github.io/series/</loc>
   </url>
   
 </urlset>
