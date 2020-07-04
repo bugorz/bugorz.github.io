@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>第三代宅男</title>
-    <link>http://example.org/</link>
+    <link>https://bugorz.github.io/</link>
     <description>Recent content on 第三代宅男</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 04 Jul 2020 16:38:25 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bugorz.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     
     <item>
       <title>SML on macOS</title>
-      <link>http://example.org/posts/sml-on-macos/</link>
+      <link>https://bugorz.github.io/posts/sml-on-macos/</link>
       <pubDate>Sat, 04 Jul 2020 16:38:25 +0800</pubDate>
       
-      <guid>http://example.org/posts/sml-on-macos/</guid>
+      <guid>https://bugorz.github.io/posts/sml-on-macos/</guid>
       <description>Standard ML on macOS I had a chance to complete Programming Languages, Part A by Dan Grossman from University of Washington. Dan is a great teacher and this is definitely an A+ course.
 Installation  Installing SML/NJ in macOS (recommend using homebrew): https://smlnj.org/dist/working/110.96/macos.html Remember to export the path in bash/zsh  My SML development environment  Install Visual Studio Code: https://code.visualstudio.com Install Standard ML plugin: https://marketplace.visualstudio.com/items?itemName=freebroccolo.sml Open terminal and enter SML/NJ shell load the SML code in editing  (Important) Tune your SML/NJ interactive shell:  Note that SML/NJ interactive shell doesn&amp;rsquo;t support array keys so you can&amp;rsquo;t use up/down to cycle through the history.</description>
     </item>
