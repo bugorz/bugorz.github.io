@@ -108,6 +108,21 @@
   </url>
   
   <url>
+    <loc>https://bugorz.github.io/tags/data-engineering/</loc>
+    <lastmod>2019-01-10T22:01:37+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bugorz.github.io/tags/programming/</loc>
+    <lastmod>2019-01-10T22:01:37+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bugorz.github.io/posts/good-etl/</loc>
+    <lastmod>2019-01-10T22:01:37+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://bugorz.github.io/posts/build-s2-geometry/</loc>
     <lastmod>2019-01-10T17:19:27+08:00</lastmod>
   </url>
@@ -150,6 +165,21 @@
   <url>
     <loc>https://bugorz.github.io/posts/real-world-dp/</loc>
     <lastmod>2018-08-27T20:39:22+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bugorz.github.io/tags/concurrency/</loc>
+    <lastmod>2018-08-27T08:45:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bugorz.github.io/posts/disruptor/</loc>
+    <lastmod>2018-08-27T08:45:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bugorz.github.io/tags/java/</loc>
+    <lastmod>2018-08-27T08:45:00+08:00</lastmod>
   </url>
   
   <url>

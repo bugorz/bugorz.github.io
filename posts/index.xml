@@ -90,6 +90,18 @@
       </description>
     </item>
     <item>
+      <title>設計一個好的 ETL pipeline</title>
+      <link>https://bugorz.github.io/posts/good-etl/</link>
+      <pubDate>Thu, 10 Jan 2019 22:01:37 +0800</pubDate>
+      
+      <guid>https://bugorz.github.io/posts/good-etl/</guid>
+      <description>
+      
+       骯髒的 raw input 必須處理乾淨，呈現一個乾淨的 view 讓所有 customers 使用。這個處理包含各式各樣的 data validation or repair (if repairable). 被歸類為無法修復的 dat...
+      
+      </description>
+    </item>
+    <item>
       <title>Build S2 Geometry</title>
       <link>https://bugorz.github.io/posts/build-s2-geometry/</link>
       <pubDate>Thu, 10 Jan 2019 17:19:27 +0800</pubDate>
@@ -139,6 +151,19 @@ Chapte...
       
       List a few DP algorithms I’ve encountered/used in real world:
  The Selinger algorithm for relational database query opti...
+      
+      </description>
+    </item>
+    <item>
+      <title>Disruptor</title>
+      <link>https://bugorz.github.io/posts/disruptor/</link>
+      <pubDate>Mon, 27 Aug 2018 08:45:00 +0800</pubDate>
+      
+      <guid>https://bugorz.github.io/posts/disruptor/</guid>
+      <description>
+      
+       Disruptor 是一個 LMAX 提出的 lock-free concurrent ring buffer library，可以用於 inter-thread communication。官方 GitHub Wiki
+log4j 2 ...
       
       </description>
     </item>
