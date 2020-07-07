@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="keywords" content="data engineering,programming"><meta property="og:title" content="設計一個好的 ETL pipeline" />
-<meta property="og:description" content="骯髒的 raw input 必須處理乾淨，呈現一個乾淨的 view 讓所有 customers 使用。這個處理包含各式各樣的 data validation or repair (if repairable). 被歸類為無法修復的 data 必須另外存放，另作調查。 T (Transform) 的算" />
+<meta property="og:description" content="骯髒的 raw input 必須處理乾淨，呈現一個乾淨的 view 讓所有用戶使用。這個處理包含各式各樣的 data validation or repair (if repairable). 被歸類為無法修復的 records 必須另外存放，另作調查。 T (Transform) 的" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://bugorz.github.io/posts/good-etl/" />
 <meta property="article:published_time" content="2019-01-10T22:01:37+08:00" />
@@ -14,7 +14,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="設計一個好的 ETL pipeline"/>
-<meta name="twitter:description" content="骯髒的 raw input 必須處理乾淨，呈現一個乾淨的 view 讓所有 customers 使用。這個處理包含各式各樣的 data validation or repair (if repairable). 被歸類為無法修復的 data 必須另外存放，另作調查。 T (Transform) 的算"/>
+<meta name="twitter:description" content="骯髒的 raw input 必須處理乾淨，呈現一個乾淨的 view 讓所有用戶使用。這個處理包含各式各樣的 data validation or repair (if repairable). 被歸類為無法修復的 records 必須另外存放，另作調查。 T (Transform) 的"/>
 
   <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/normalize.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/main.css" />
@@ -78,14 +78,15 @@
 </div>
 <div class="markdown">
 <ol>
-<li>骯髒的 raw input 必須處理乾淨，呈現一個乾淨的 view 讓所有 customers 使用。這個處理包含各式各樣的 data validation or repair (if repairable). 被歸類為無法修復的 data 必須另外存放，另作調查。</li>
-<li>T (Transform) 的算法，是不是 deterministic 的？是的話，怎麼驗證。不是的話，怎麼驗證？一個常見的錯誤是 Java comparator 不夠 exhaustive 導致排序結果 not deterministic。</li>
+<li>骯髒的 raw input 必須處理乾淨，呈現一個乾淨的 view 讓所有用戶使用。這個處理包含各式各樣的 data validation or repair (if repairable). 被歸類為無法修復的 records 必須另外存放，另作調查。</li>
+<li>T (Transform) 的算法，是不是<a href="https://terms.naer.edu.tw/detail/1276689/">確定性</a> deterministic 的？是的話，怎麼驗證。不是的話，用戶可以接受嗎？一個常見的錯誤是 Java comparator 不夠 exhaustive 導致排序結果有不確定性 not deterministic。</li>
 <li>T (Transform) 的算法，會不會影響浮點數的精準度？是的話，怎麼應付，不是的話，怎麼驗證？</li>
-<li>Mission Critical 的演算法，最好能 measure all code path，譬如說 Hadoop counters。</li>
+<li>Mission Critical 的演算法，最好能 measure all code path，譬如說 Hadoop Counters。Apache Spark 的 accumulators 只有在 actions 能保證被更新一次，是個先天的缺陷。</li>
 <li>怎麼樣的 De-duplication 合理？怎樣的 de-dup window 合理？最終能不能 streaming de-dup?</li>
 <li>Output 選擇好的 partitions，例如 時間 / Property Type / 空間。</li>
 <li>演算法的實作，最好跟 execution framework 無關。</li>
-<li>Do you follow the contracts? (Output is de-duplicated; sorted; anonymized… etc)。特別是當你/妳選擇 pass through 一些 records，這些 records 應不應該 follow the contracts? 我覺得是應該。</li>
+<li>Do all your code paths follow the contracts? (Output is de-duplicated; sorted; anonymized, privacy &hellip; etc)。特別是當你/妳選擇 pass through 一些 records，這些 records 應不應該 follow the contracts? 我覺得是應該。</li>
+<li>注意編碼，尤其要注意 partition key fields 如果可能會有不同的編碼 (e.g. not UTF-8)，要格外慎重。</li>
 </ol>
 
 </div>

@@ -19,7 +19,7 @@
       <guid>https://bugorz.github.io/posts/good-etl/</guid>
       <description>
       
-       骯髒的 raw input 必須處理乾淨，呈現一個乾淨的 view 讓所有 customers 使用。這個處理包含各式各樣的 data validation or repair (if repairable). 被歸類為無法修復的 dat...
+       骯髒的 raw input 必須處理乾淨，呈現一個乾淨的 view 讓所有用戶使用。這個處理包含各式各樣的 data validation or repair (if repairable). 被歸類為無法修復的 records 必須另外...
       
       </description>
     </item>

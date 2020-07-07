@@ -12,15 +12,15 @@
     <atom:link href="https://bugorz.github.io/tags/concurrency/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Disruptor</title>
+      <title>Disruptor &amp; LMAX Architecture</title>
       <link>https://bugorz.github.io/posts/disruptor/</link>
       <pubDate>Mon, 27 Aug 2018 08:45:00 +0800</pubDate>
       
       <guid>https://bugorz.github.io/posts/disruptor/</guid>
       <description>
       
-       Disruptor 是一個 LMAX 提出的 lock-free concurrent ring buffer library，可以用於 inter-thread communication。官方 GitHub Wiki
-log4j 2 ...
+       這篇文章是雜亂的筆記，尚待整理。
+Disruptor 是一個 LMAX 提出的 lock-free concurrent ring buffer library，可以用於 inter-thread communication。官方 Git...
       
       </description>
     </item>

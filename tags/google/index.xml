@@ -19,7 +19,7 @@
       <guid>https://bugorz.github.io/posts/build-s2-geometry/</guid>
       <description>
       
-      Prerequisite  You need to install Xcode from App Store Clone googletest and openssl from GitHub, see below:  git clone h...
+      Prerequisite  You need to install Xcode from App Store Clone googletest from GitHub and install openssl via brew see bel...
       
       </description>
     </item>

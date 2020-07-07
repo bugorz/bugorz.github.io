@@ -43,7 +43,7 @@
       <guid>https://bugorz.github.io/posts/build-s2-geometry/</guid>
       <description>
       
-      Prerequisite  You need to install Xcode from App Store Clone googletest and openssl from GitHub, see below:  git clone h...
+      Prerequisite  You need to install Xcode from App Store Clone googletest from GitHub and install openssl via brew see bel...
       
       </description>
     </item>
@@ -55,9 +55,8 @@
       <guid>https://bugorz.github.io/posts/rar-macos/</guid>
       <description>
       
-      The Unarchiver 可以解壓縮大多數的 rar 檔案，但有少數的 rar 檔案無法解壓縮，該怎麼辦？
-其實 RARLAB 官方有提供一組 command line tool 來 壓縮 / 解壓縮 .rar
- 下載 RAR 5.91...
+      The Unarchiver 可以解壓縮大多數的 rar 檔案，但有少數的 rar 檔案無法解壓縮，譬如說被壓縮的檔案名編碼不是 UTF-8，該怎麼辦呢？
+其實 RARLAB 官方有提供一組 command line tool 來 壓縮 /...
       
       </description>
     </item>

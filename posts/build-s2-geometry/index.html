@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="keywords" content="macos,google,geometry,gis"><meta property="og:title" content="Build S2 Geometry" />
-<meta property="og:description" content="Prerequisite  You need to install Xcode from App Store Clone googletest and openssl from GitHub, see below:  git clone https://github.com/google/googletest # Note that there are `googlemock` and `googletest` under the root `googletest` dir, # please use the more specific `googletest/googletest` as the `GTEST_ROOT`. GTEST_ROOT=`realpath googletest/googletest` brew install openssl OPENSSL_ROOT=`brew --prefix openssl` Build s2geometry git clone https://github.com/google/s2geometry.git cd s2geometry mkdir build cd build cmake -DOPENSSL_INCLUDE_DIR=${OPENSSL_ROOT}/include -DGTEST_ROOT=${GTEST_ROOT} .. make make test sudo make install Run s2geometry tests in CLion  Please go to Preferences." />
+<meta property="og:description" content="Prerequisite  You need to install Xcode from App Store Clone googletest from GitHub and install openssl via brew see below:  git clone https://github.com/google/googletest # Note that there are `googlemock` and `googletest` under the root `googletest` dir, # please use the more specific `googletest/googletest` as the `GTEST_ROOT`. GTEST_ROOT=`realpath googletest/googletest` # Because we need OpenSSL header files brew install openssl OPENSSL_ROOT=`brew --prefix openssl` Build s2geometry git clone https://github.com/google/s2geometry.git cd s2geometry mkdir build cd build cmake -DOPENSSL_INCLUDE_DIR=${OPENSSL_ROOT}/include -DGTEST_ROOT=${GTEST_ROOT} ." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://bugorz.github.io/posts/build-s2-geometry/" />
 <meta property="article:published_time" content="2019-01-10T17:19:27+08:00" />
 <meta property="article:modified_time" content="2019-01-10T17:19:27+08:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Build S2 Geometry"/>
-<meta name="twitter:description" content="Prerequisite  You need to install Xcode from App Store Clone googletest and openssl from GitHub, see below:  git clone https://github.com/google/googletest # Note that there are `googlemock` and `googletest` under the root `googletest` dir, # please use the more specific `googletest/googletest` as the `GTEST_ROOT`. GTEST_ROOT=`realpath googletest/googletest` brew install openssl OPENSSL_ROOT=`brew --prefix openssl` Build s2geometry git clone https://github.com/google/s2geometry.git cd s2geometry mkdir build cd build cmake -DOPENSSL_INCLUDE_DIR=${OPENSSL_ROOT}/include -DGTEST_ROOT=${GTEST_ROOT} .. make make test sudo make install Run s2geometry tests in CLion  Please go to Preferences."/>
+<meta name="twitter:description" content="Prerequisite  You need to install Xcode from App Store Clone googletest from GitHub and install openssl via brew see below:  git clone https://github.com/google/googletest # Note that there are `googlemock` and `googletest` under the root `googletest` dir, # please use the more specific `googletest/googletest` as the `GTEST_ROOT`. GTEST_ROOT=`realpath googletest/googletest` # Because we need OpenSSL header files brew install openssl OPENSSL_ROOT=`brew --prefix openssl` Build s2geometry git clone https://github.com/google/s2geometry.git cd s2geometry mkdir build cd build cmake -DOPENSSL_INCLUDE_DIR=${OPENSSL_ROOT}/include -DGTEST_ROOT=${GTEST_ROOT} ."/>
 
   <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/normalize.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/main.css" />
@@ -79,14 +79,16 @@
 <h3 id="prerequisite">Prerequisite</h3>
 <ul>
 <li>You need to install Xcode from App Store</li>
-<li>Clone <code>googletest</code> and <code>openssl</code> from GitHub, see below:</li>
+<li>Clone <code>googletest</code> from GitHub and install <code>openssl</code> via <a href="https://brew.sh">brew</a> see below:</li>
 </ul>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/google/googletest
 
 <span style="color:#586e75"># Note that there are `googlemock` and `googletest` under the root `googletest` dir,</span> 
 <span style="color:#586e75"># please use the more specific `googletest/googletest` as the `GTEST_ROOT`.</span>
 <span style="color:#268bd2">GTEST_ROOT</span><span style="color:#719e07">=</span><span style="color:#586e75">`</span>realpath googletest/googletest<span style="color:#586e75">`</span>
-</code></pre></div><div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install openssl
+
+<span style="color:#586e75"># Because we need OpenSSL header files</span>
+brew install openssl
 <span style="color:#268bd2">OPENSSL_ROOT</span><span style="color:#719e07">=</span><span style="color:#586e75">`</span>brew --prefix openssl<span style="color:#586e75">`</span>
 </code></pre></div><h3 id="build-s2geometry">Build s2geometry</h3>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/google/s2geometry.git
