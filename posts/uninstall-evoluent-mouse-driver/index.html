@@ -7,9 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="keywords" content="macos,ergonomics"><meta property="og:title" content="Uninstall Evoluent Mouse Driver" />
 <meta property="og:description" content="Problem Evoluent’s official driver doesn’t work in my friend’s macOS Catalina 10.15.5. Therefore, I recommended SteerMouse to him.
-However, he couldn&rsquo;t uninstall the Evoluent driver from the icon in System Preferences, which blocked him from installing SteerMouse :(
-After some research and the reading the error message from SteerMouse UI, we figured that we had to unload the Evoluent driver(a kernel extensions) by
-sudo kextunload -b com.evoluent.driver.VerticalMouseDriver Then SteerMouse can correctly detect his Vertical Mouse (a green light icon)" />
+However, he couldn&rsquo;t uninstall the Evoluent driver from the icon in System Preferences, which blocked SteerMouse from detecting the Vertical Mouse correctly :(. The syndrome was that not all buttons were functioning and a yellow light next to the mouse name.
+After some research and reading the error message from SteerMouse UI, we figured that we had to unload the Evoluent driver(a kernel extensions) by" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://bugorz.github.io/posts/uninstall-evoluent-mouse-driver/" />
 <meta property="article:published_time" content="2020-06-30T19:50:08+08:00" />
@@ -17,9 +16,8 @@ sudo kextunload -b com.evoluent.driver.VerticalMouseDriver Then SteerMouse can c
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Uninstall Evoluent Mouse Driver"/>
 <meta name="twitter:description" content="Problem Evoluent’s official driver doesn’t work in my friend’s macOS Catalina 10.15.5. Therefore, I recommended SteerMouse to him.
-However, he couldn&rsquo;t uninstall the Evoluent driver from the icon in System Preferences, which blocked him from installing SteerMouse :(
-After some research and the reading the error message from SteerMouse UI, we figured that we had to unload the Evoluent driver(a kernel extensions) by
-sudo kextunload -b com.evoluent.driver.VerticalMouseDriver Then SteerMouse can correctly detect his Vertical Mouse (a green light icon)"/>
+However, he couldn&rsquo;t uninstall the Evoluent driver from the icon in System Preferences, which blocked SteerMouse from detecting the Vertical Mouse correctly :(. The syndrome was that not all buttons were functioning and a yellow light next to the mouse name.
+After some research and reading the error message from SteerMouse UI, we figured that we had to unload the Evoluent driver(a kernel extensions) by"/>
 
   <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/normalize.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/main.css" />
@@ -84,10 +82,10 @@ sudo kextunload -b com.evoluent.driver.VerticalMouseDriver Then SteerMouse can c
 <div class="markdown">
 <h3 id="problem">Problem</h3>
 <p>Evoluent’s official driver doesn’t work in my friend’s macOS <a href="https://en.wikipedia.org/wiki/MacOS_Catalina">Catalina</a> 10.15.5. Therefore, I recommended <a href="https://plentycom.jp/en/steermouse/">SteerMouse</a> to him.</p>
-<p>However, he couldn&rsquo;t uninstall the Evoluent driver from the icon in System Preferences, which blocked him from installing <a href="https://plentycom.jp/en/steermouse/">SteerMouse</a> :(</p>
-<p>After some research and the reading the error message from <a href="https://plentycom.jp/en/steermouse/">SteerMouse</a> UI, we figured that we had to unload the Evoluent driver(a kernel extensions) by</p>
+<p>However, he couldn&rsquo;t uninstall the Evoluent driver from the icon in System Preferences, which blocked <a href="https://plentycom.jp/en/steermouse/">SteerMouse</a> from detecting the Vertical Mouse correctly :(. The syndrome was that not all buttons were functioning and a yellow light next to the mouse name.</p>
+<p>After some research and reading the error message from <a href="https://plentycom.jp/en/steermouse/">SteerMouse</a> UI, we figured that we had to unload the Evoluent driver(a kernel extensions) by</p>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo kextunload -b com.evoluent.driver.VerticalMouseDriver
-</code></pre></div><p>Then <a href="https://plentycom.jp/en/steermouse/">SteerMouse</a> can correctly detect his Vertical Mouse (a green light icon)</p>
+</code></pre></div><p>Then <a href="https://plentycom.jp/en/steermouse/">SteerMouse</a> can correctly detect his Vertical Mouse (a green light next to the mouse name)</p>
 <h3 id="remaining-issues">Remaining issues</h3>
 <p>We still don&rsquo;t know how to completely remove Evoluent’s mouse driver yet. What we have done so far was removing all files in <code>com.evoluent.pkg.Installer</code> but this effort was to no avail.</p>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#586e75"># List all installed *.pkg</span>
