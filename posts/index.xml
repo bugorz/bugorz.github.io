@@ -1,454 +1,494 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on 大隻雞慢啼</title>
-    <link>https://bugorz.github.io/posts/</link>
-    <description>Recent content in Posts on bugorz.github.io</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© Copyright notice | Vitae theme for Hugo</copyright>
-    <lastBuildDate>Sat, 04 Jul 2020 20:24:22 +0800</lastBuildDate>
-    
-    <atom:link href="https://bugorz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Data Science Specialization</title>
-      <link>https://bugorz.github.io/posts/learning-statistics/</link>
-      <pubDate>Sat, 04 Jul 2020 20:24:22 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/learning-statistics/</guid>
-      <description>
-      
-      Shelter in place 期間，我註冊了 Coursera 的 Data Science Specialization。
-其中 Statistical Inference，是我覺得最重要且基礎的課程，可惜老師上課的風格我不愛。
-為了...
-      
-      </description>
-    </item>
-    <item>
-      <title>Uninstall Evoluent Mouse Driver</title>
-      <link>https://bugorz.github.io/posts/uninstall-evoluent-mouse-driver/</link>
-      <pubDate>Tue, 30 Jun 2020 19:50:08 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/uninstall-evoluent-mouse-driver/</guid>
-      <description>
-      
-      Problem Evoluent’s official driver doesn’t work in my friend’s macOS Catalina 10.15.5. Therefore, I recommended SteerMou...
-      
-      </description>
-    </item>
-    <item>
-      <title>SML on macOS</title>
-      <link>https://bugorz.github.io/posts/sml-on-macos/</link>
-      <pubDate>Mon, 01 Jun 2020 16:38:25 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/sml-on-macos/</guid>
-      <description>
-      
-      Standard ML on macOS  I completed Programming Languages, Part A by Dan Grossman from University of Washington. In Part A...
-      
-      </description>
-    </item>
-    <item>
-      <title>Review 2019</title>
-      <link>https://bugorz.github.io/posts/review-2019/</link>
-      <pubDate>Wed, 26 Feb 2020 13:57:05 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/review-2019/</guid>
-      <description>
-      
-        永久刪除 FB 帳號，多了很多時間。
+	<channel>
+		<title>Posts on 大隻雞慢啼</title>
+		<link>https://bugorz.github.io/posts/</link>
+		<description>Recent content in Posts on bugorz.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>© Copyright notice | Vitae theme for Hugo</copyright>
+		<lastBuildDate>Sun, 20 Jun 2021 15:19:19 -0700</lastBuildDate>
+		
+		<atom:link href="https://bugorz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Review 2020</title>
+			<link>https://bugorz.github.io/posts/review-2020/</link>
+			<pubDate>Sun, 20 Jun 2021 15:19:19 -0700</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/review-2020/</guid>
+			<description>
+			
+				  外公過世，爸爸媽媽生病。進入要照顧家人的年紀了。
+  慢跑週年慶，除了特殊情況，一週至少跑一次。新的一年要一週兩次。
+  在家工作滿一週年，其實不想回辦公室XD
+  平日自己煮飯的頻率變高，有點累有點花時間，但是也有成就感。
+  工作還算穩定，但是下階段的突破真的不容易，要加 …
+			
+			</description>
+		</item>
+		<item>
+			<title>李登輝</title>
+			<link>https://bugorz.github.io/posts/teng-hui-lee/</link>
+			<pubDate>Fri, 31 Jul 2020 11:59:51 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/teng-hui-lee/</guid>
+			<description>
+			
+				僅以這篇文章，紀念台灣的民主之父: 李登輝 博士。
+李登輝博士 於 2020/07/30 在台北榮民總醫院去世。
+台灣就交給我們了。
+來自 Ian Easton 的 Tweet
+ 
+
+			
+			</description>
+		</item>
+		<item>
+			<title>Data Science Specialization</title>
+			<link>https://bugorz.github.io/posts/learning-statistics/</link>
+			<pubDate>Sat, 04 Jul 2020 20:24:22 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/learning-statistics/</guid>
+			<description>
+			
+				Shelter in place 期間，我註冊了 Coursera 的 Data Science Specialization 。
+其中 Statistical Inference ，是我覺得最重要且基礎的課程，可惜老師上課的風格我不愛。
+為了搞懂這門課呼嘯而過的觀念，推薦一些對 …
+			
+			</description>
+		</item>
+		<item>
+			<title>Uninstall Evoluent Mouse Driver</title>
+			<link>https://bugorz.github.io/posts/uninstall-evoluent-mouse-driver/</link>
+			<pubDate>Tue, 30 Jun 2020 19:50:08 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/uninstall-evoluent-mouse-driver/</guid>
+			<description>
+			
+				Problem Evoluent’s official driver doesn’t work in my friend’s macOS Catalina 10.15.5. Therefore, I recommended SteerMouse to him.
+However, …
+			
+			</description>
+		</item>
+		<item>
+			<title>SML on macOS</title>
+			<link>https://bugorz.github.io/posts/sml-on-macos/</link>
+			<pubDate>Mon, 01 Jun 2020 16:38:25 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/sml-on-macos/</guid>
+			<description>
+			
+				Standard ML on macOS  I completed Programming Languages, Part A by Dan Grossman from University of Washington. In Part A, Dan taught us many …
+			
+			</description>
+		</item>
+		<item>
+			<title>Review 2019</title>
+			<link>https://bugorz.github.io/posts/review-2019/</link>
+			<pubDate>Wed, 26 Feb 2020 13:57:05 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/review-2019/</guid>
+			<description>
+			
+				  永久刪除 FB 帳號，多了很多時間。
   重新開始念一點數學，雖然真的只有一點點，目標是能看懂目前應用的數學。
   開始常規地買繁體中文電子書 (Readmoo)，否則長期累積的書真是搬家最大負擔。
-  用英語做 Whiteboard ...
-      
-      </description>
-    </item>
-    <item>
-      <title>老書考古 - Code: The Hidden Language of Computer Hardware and Software</title>
-      <link>https://bugorz.github.io/posts/book-code/</link>
-      <pubDate>Mon, 15 Apr 2019 20:04:22 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/book-code/</guid>
-      <description>
-      
-      只能說相見恨晚。
-身為一個資訊從業人員，我常想，如果我是大學老師，我會怎麼樣教學呢？我會選擇 Code: The Hidden Language of Computer Hardware and Software (以下簡稱 Code) 當...
-      
-      </description>
-    </item>
-    <item>
-      <title>MOOC 課程總覽</title>
-      <link>https://bugorz.github.io/posts/good-course-list/</link>
-      <pubDate>Mon, 01 Apr 2019 20:37:22 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/good-course-list/</guid>
-      <description>
-      
-       SDN: https://www.coursera.org/learn/sdn#syllabus Programming Language, Part A Programming Language, Part B Programming ...
-      
-      </description>
-    </item>
-    <item>
-      <title>設計一個好的 ETL pipeline</title>
-      <link>https://bugorz.github.io/posts/good-etl/</link>
-      <pubDate>Thu, 10 Jan 2019 22:01:37 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/good-etl/</guid>
-      <description>
-      
-       骯髒的 raw input 必須處理乾淨，呈現一個乾淨的 view 讓所有用戶使用。這個處理包含各式各樣的 data validation or repair (if repairable). 被歸類為無法修復的 records 必須另外...
-      
-      </description>
-    </item>
-    <item>
-      <title>Build S2 Geometry</title>
-      <link>https://bugorz.github.io/posts/build-s2-geometry/</link>
-      <pubDate>Thu, 10 Jan 2019 17:19:27 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/build-s2-geometry/</guid>
-      <description>
-      
-      Prerequisite  You need to install Xcode from App Store Clone googletest from GitHub and install openssl via brew see bel...
-      
-      </description>
-    </item>
-    <item>
-      <title>老書考古 - Writing Solid Code</title>
-      <link>https://bugorz.github.io/posts/book-writing-solid-code/</link>
-      <pubDate>Fri, 21 Dec 2018 16:55:22 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/book-writing-solid-code/</guid>
-      <description>
-      
-      資訊業界技術更迭之速，使得許多技術書籍在閱讀前就已經過時了。
-但我認為仍有一些作品值得重讀，例如 Writing Solid Code。這本書從軟體開發的日常中提煉許多實用的技巧以及心法，幫助程式設計師避免以及減少 bugs。
-Chapte...
-      
-      </description>
-    </item>
-    <item>
-      <title>RAR in macOS</title>
-      <link>https://bugorz.github.io/posts/rar-macos/</link>
-      <pubDate>Mon, 10 Sep 2018 10:11:12 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/rar-macos/</guid>
-      <description>
-      
-      The Unarchiver 可以解壓縮大多數的 rar 檔案，但有少數的 rar 檔案無法解壓縮，譬如說被壓縮的檔案名編碼不是 UTF-8，該怎麼辦呢？
-其實 RARLAB 官方有提供一組 command line tool 來 壓縮 /...
-      
-      </description>
-    </item>
-    <item>
-      <title>Real world DP algorithms</title>
-      <link>https://bugorz.github.io/posts/real-world-dp/</link>
-      <pubDate>Mon, 27 Aug 2018 20:39:22 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/real-world-dp/</guid>
-      <description>
-      
-      List a few DP algorithms I’ve encountered/used in real world:
- The Selinger algorithm for relational database query opti...
-      
-      </description>
-    </item>
-    <item>
-      <title>Disruptor &amp; LMAX Architecture</title>
-      <link>https://bugorz.github.io/posts/disruptor/</link>
-      <pubDate>Mon, 27 Aug 2018 08:45:00 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/disruptor/</guid>
-      <description>
-      
-       這篇文章是雜亂的筆記，尚待整理。
-Disruptor 是一個 LMAX 提出的 lock-free concurrent ring buffer library，可以用於 inter-thread communication。官方 Git...
-      
-      </description>
-    </item>
-    <item>
-      <title>Future.zip versus Future.sequence in Scala</title>
-      <link>https://bugorz.github.io/posts/future-zip-sequence-scala/</link>
-      <pubDate>Wed, 15 Mar 2017 19:46:46 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/future-zip-sequence-scala/</guid>
-      <description>
-      
-      Future.sequence is a handy method to deal with a sequence futures of the same type. However, if you want to combine futu...
-      
-      </description>
-    </item>
-    <item>
-      <title>Polaroid</title>
-      <link>https://bugorz.github.io/posts/polaroid/</link>
-      <pubDate>Sat, 21 Mar 2009 21:08:22 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/polaroid/</guid>
-      <description>
-      
-      紀念走入歷史的 Polaroid 各式拍立得和顯影相紙。
+  用英語做 Whiteboard presentation …
+			
+			</description>
+		</item>
+		<item>
+			<title>老書考古 - Code: The Hidden Language of Computer Hardware and Software</title>
+			<link>https://bugorz.github.io/posts/book-code/</link>
+			<pubDate>Mon, 15 Apr 2019 20:04:22 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/book-code/</guid>
+			<description>
+			
+				只能說相見恨晚。
+身為一個資訊從業人員，我常想，如果我是大學老師，我會怎麼樣教學呢？我會選擇 Code: The Hidden Language of Computer Hardware and Software (以下簡稱 Code) 當作計算機結構的導讀教材。
+Code 的章 …
+			
+			</description>
+		</item>
+		<item>
+			<title>MOOC 課程總覽</title>
+			<link>https://bugorz.github.io/posts/good-course-list/</link>
+			<pubDate>Mon, 01 Apr 2019 20:37:22 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/good-course-list/</guid>
+			<description>
+			
+				 SDN: https://www.coursera.org/learn/sdn#syllabus Programming Language, Part A Programming Language, Part B Programming Language, Part C …
+			
+			</description>
+		</item>
+		<item>
+			<title>設計一個好的 ETL pipeline</title>
+			<link>https://bugorz.github.io/posts/good-etl/</link>
+			<pubDate>Thu, 10 Jan 2019 22:01:37 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/good-etl/</guid>
+			<description>
+			
+				 骯髒的 raw input 必須處理乾淨，呈現一個乾淨的 view 讓所有用戶使用。這個處理包含各式各樣的 data validation or repair (if repairable). 被歸類為無法修復的 records 必須另外存放，另作調查。 T …
+			
+			</description>
+		</item>
+		<item>
+			<title>Build S2 Geometry</title>
+			<link>https://bugorz.github.io/posts/build-s2-geometry/</link>
+			<pubDate>Thu, 10 Jan 2019 17:19:27 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/build-s2-geometry/</guid>
+			<description>
+			
+				Prerequisite  You need to install Xcode from App Store Clone googletest from GitHub and install openssl via brew see below:  git clone …
+			
+			</description>
+		</item>
+		<item>
+			<title>老書考古 - Writing Solid Code</title>
+			<link>https://bugorz.github.io/posts/book-writing-solid-code/</link>
+			<pubDate>Fri, 21 Dec 2018 16:55:22 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/book-writing-solid-code/</guid>
+			<description>
+			
+				資訊業界技術更迭之速，使得許多技術書籍在閱讀前就已經過時了。
+但我認為仍有一些作品值得重讀，例如 Writing Solid Code 。這本書從軟體開發的日常中提煉許多實用的技巧以及心法，幫助程式設計師避免以及減少 bugs。
+Chapter 3 — Candy-Machine …
+			
+			</description>
+		</item>
+		<item>
+			<title>RAR in macOS</title>
+			<link>https://bugorz.github.io/posts/rar-macos/</link>
+			<pubDate>Mon, 10 Sep 2018 10:11:12 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/rar-macos/</guid>
+			<description>
+			
+				The Unarchiver 可以解壓縮大多數的 rar 檔案，但有少數的 rar 檔案無法解壓縮，譬如說被壓縮的檔案名編碼不是 UTF-8，該怎麼辦呢？
+其實 RARLAB 官方有提供一組 command line tool 來 壓縮 / 解壓縮 rar 檔案。 …
+			
+			</description>
+		</item>
+		<item>
+			<title>Real world DP algorithms</title>
+			<link>https://bugorz.github.io/posts/real-world-dp/</link>
+			<pubDate>Mon, 27 Aug 2018 20:39:22 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/real-world-dp/</guid>
+			<description>
+			
+				List a few DP algorithms I’ve encountered/used in real world:
+ The Selinger algorithm for relational database query optimization. The …
+			
+			</description>
+		</item>
+		<item>
+			<title>Disruptor &amp; LMAX Architecture</title>
+			<link>https://bugorz.github.io/posts/disruptor/</link>
+			<pubDate>Mon, 27 Aug 2018 08:45:00 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/disruptor/</guid>
+			<description>
+			
+				 這篇文章是雜亂的筆記，尚待整理。
+Disruptor 是一個 LMAX 提出的 lock-free concurrent ring buffer library，可以用於 inter-thread communication。官方 GitHub Wiki log4j 2 …
+			
+			</description>
+		</item>
+		<item>
+			<title>Future.zip versus Future.sequence in Scala</title>
+			<link>https://bugorz.github.io/posts/future-zip-sequence-scala/</link>
+			<pubDate>Wed, 15 Mar 2017 19:46:46 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/future-zip-sequence-scala/</guid>
+			<description>
+			
+				Future.sequence is a handy method to deal with a sequence futures of the same type. However, if you want to combine futures of different …
+			
+			</description>
+		</item>
+		<item>
+			<title>Polaroid</title>
+			<link>https://bugorz.github.io/posts/polaroid/</link>
+			<pubDate>Sat, 21 Mar 2009 21:08:22 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/polaroid/</guid>
+			<description>
+			
+				紀念走入歷史的 Polaroid 各式拍立得和顯影相紙。
 我很幸運能在 eBay 上標到一台八成新、工作穩定的 Polaroid SX-70。
 這台相機比我還老(http://en.wikipedia.org/wiki/SX-70)
-如果重...
-      
-      </description>
-    </item>
-    <item>
-      <title>DSLR 大戰</title>
-      <link>https://bugorz.github.io/posts/dslr/</link>
-      <pubDate>Fri, 19 Sep 2008 10:52:49 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/dslr/</guid>
-      <description>
-      
-      德國 PHOTONIKA 2008 展前夕，各大廠果然殺紅眼。
-開第一砲的是 Nikon: D90 首次搭載錄影功能(嚇死人)、D700 全片幅(下放中階) 我不知道 Nikon 在 CCD or CMOS 技術自主沒? 之前 LBCAST...
-      
-      </description>
-    </item>
-    <item>
-      <title>Honorary Discharge</title>
-      <link>https://bugorz.github.io/posts/honorary-discharge/</link>
-      <pubDate>Fri, 18 Jul 2008 01:48:25 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/honorary-discharge/</guid>
-      <description>
-      
-      放假的日子結束了，這幾天整理房間，把部隊帶回來的東西丟光，特別是軍用內衣XD
+如果重新量產相紙的計畫失敗 …
+			
+			</description>
+		</item>
+		<item>
+			<title>DSLR 大戰</title>
+			<link>https://bugorz.github.io/posts/dslr/</link>
+			<pubDate>Fri, 19 Sep 2008 10:52:49 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/dslr/</guid>
+			<description>
+			
+				德國 PHOTONIKA 2008 展前夕，各大廠果然殺紅眼。
+開第一砲的是 Nikon: D90 首次搭載錄影功能(嚇死人)、D700 全片幅(下放中階) 我不知道 Nikon 在 CCD or CMOS 技術自主沒? 之前 LBCAST 應該不算吧，沒辦法 自產真的太傷 …
+			
+			</description>
+		</item>
+		<item>
+			<title>Honorary Discharge</title>
+			<link>https://bugorz.github.io/posts/honorary-discharge/</link>
+			<pubDate>Fri, 18 Jul 2008 01:48:25 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/honorary-discharge/</guid>
+			<description>
+			
+				放假的日子結束了，這幾天整理房間，把部隊帶回來的東西丟光，特別是軍用內衣XD
 彷彿看到迷彩和綠色會衰一樣的迷信。
 我也很想抽根煙，像個歷盡滄桑的老兵對男孩女孩們講講這些年是怎麼熬過來的。
-然而，縮減的役期就像未煮開的水，我們泡著泡著半生不熟...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 17</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day17/</link>
-      <pubDate>Sun, 19 Aug 2007 00:28:05 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day17/</guid>
-      <description>
-      
-      Tokyo Midtown，東京中城。
- 我最早接觸到城中城這個名詞是沉迷 “模擬城市2000” 的國中時期 XD，多年之後在日本看到實體。除了中城外面沒有會飛來飛去的交通工具，Tokyo Midtown 的外型符合...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 16</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day16/</link>
-      <pubDate>Fri, 10 Aug 2007 00:14:06 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day16/</guid>
-      <description>
-      
-      橫濱之行是自己獨奏，小頭另有要事所以這天我們行程不同。
- 颱風影響最大的日子反而是抵達前一天，搭上橫須賀線前往橫濱，在電車上看著窗外的雨勢，一直希望有奇蹟出現。轉乘電車一出站我就非常後悔今天沒有乖乖待在東京，強風帶豪雨，斜著打過來。7-11...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 15</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day15/</link>
-      <pubDate>Thu, 09 Aug 2007 15:28:16 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day15/</guid>
-      <description>
-      
-      前往吉卜力美術館的小路有個美麗的名字，叫做 “風の散步道”。當然也可以在三鷹站搭乘公車，不用像我們一樣傻傻的走路。
-吉卜力美術館僅是井之頭公園旁邊的一個小角落，不是非常大的建築。延續一早就到的傳統，手裡拿著傳真有點緊...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 14</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day14/</link>
-      <pubDate>Thu, 09 Aug 2007 00:21:54 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day14/</guid>
-      <description>
-      
-      由於颱風逐漸接近關東，東京的天氣陰雨不斷，少有晴天。所幸今天早上參觀位於兩國的江戶東京博物館，可以在室內耗掉整個早上。
- 江戶東京博物館大有看頭，借由情境模擬或展出用具，描述庶民生活以及風土民情，是間非常用心的博物館。我自己覺得，對生活在東...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 13</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day13/</link>
-      <pubDate>Wed, 08 Aug 2007 00:45:57 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day13/</guid>
-      <description>
-      
-      這次對東京的行程安排很隨意，只列出幾個要去的點，每天的行程像群雄割據似的在東京地圖上切出今天要走的區域，然後一一用雙腳征服 :p
- 今天來到原宿(Harajuku)、明治神宮、表參道週邊。先去竹下通，結果昨天認識的潘羅傑一陣風似走過，完全沒...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 12</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day12/</link>
-      <pubDate>Mon, 06 Aug 2007 02:09:43 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day12/</guid>
-      <description>
-      
-      輕井澤再見。
+然而，縮減的役期就像未煮開的水，我們泡著泡著半生不熟地就退伍了。感覺看到很多，
+卻又看不透 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 17</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day17/</link>
+			<pubDate>Sun, 19 Aug 2007 00:28:05 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day17/</guid>
+			<description>
+			
+				Tokyo Midtown，東京中城。
+ 我最早接觸到城中城這個名詞是沉迷 “模擬城市2000” 的國中時期 XD，多年之後在日本看到實體。除了中城外面沒有會飛來飛去的交通工具，Tokyo Midtown 的外型符合我的想像。
+我們從地下一樓進入中城，進去的感覺只有一句話，極盡華 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 16</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day16/</link>
+			<pubDate>Fri, 10 Aug 2007 00:14:06 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day16/</guid>
+			<description>
+			
+				橫濱之行是自己獨奏，小頭另有要事所以這天我們行程不同。
+ 颱風影響最大的日子反而是抵達前一天，搭上橫須賀線前往橫濱，在電車上看著窗外的雨勢，一直希望有奇蹟出現。轉乘電車一出站我就非常後悔今天沒有乖乖待在東京，強風帶豪雨，斜著打過來。7-11 買的脆弱小摺傘真的可以活著回家嗎? 不 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 15</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day15/</link>
+			<pubDate>Thu, 09 Aug 2007 15:28:16 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day15/</guid>
+			<description>
+			
+				前往吉卜力美術館的小路有個美麗的名字，叫做 “風の散步道”。當然也可以在三鷹站搭乘公車，不用像我們一樣傻傻的走路。
+吉卜力美術館僅是井之頭公園旁邊的一個小角落，不是非常大的建築。延續一早就到的傳統，手裡拿著傳真有點緊張的排在前五個等待入場，所幸一切順利。一進去吉卜力，他們會根據你 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 14</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day14/</link>
+			<pubDate>Thu, 09 Aug 2007 00:21:54 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day14/</guid>
+			<description>
+			
+				由於颱風逐漸接近關東，東京的天氣陰雨不斷，少有晴天。所幸今天早上參觀位於兩國的江戶東京博物館，可以在室內耗掉整個早上。
+ 江戶東京博物館大有看頭，借由情境模擬或展出用具，描述庶民生活以及風土民情，是間非常用心的博物館。我自己覺得，對生活在東京的人來說，了解自己所處地方歷史，進而產 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 13</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day13/</link>
+			<pubDate>Wed, 08 Aug 2007 00:45:57 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day13/</guid>
+			<description>
+			
+				這次對東京的行程安排很隨意，只列出幾個要去的點，每天的行程像群雄割據似的在東京地圖上切出今天要走的區域，然後一一用雙腳征服 :p
+ 今天來到原宿(Harajuku)、明治神宮、表參道週邊。先去竹下通，結果昨天認識的潘羅傑一陣風似走過，完全沒發現我們的存在 :p，似乎也是走健行路線 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 12</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day12/</link>
+			<pubDate>Mon, 06 Aug 2007 02:09:43 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day12/</guid>
+			<description>
+			
+				輕井澤再見。
  新幹線飆回東京，抵達淺草橋的隅田川 YH，放下行李去淺草寺，這一切都在十點前完成，大眾運輸的效率令人驚訝。
- 可是淺草寺怎麼會這麼多人啊…今天不是假日，觀光客這麼多也太誇張了。原來這兩天是 “四萬六...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 11</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day11/</link>
-      <pubDate>Sat, 28 Jul 2007 22:13:19 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day11/</guid>
-      <description>
-      
-      去輕井澤推薦的遊玩方式是騎腳踏車，時間從早上八點到下午五點。
- 輕井澤雖然不大，不過加上中輕井澤、鹽澤湖這兩個點的距離，用走路的會出人命。租借腳踏車的店家九點開門，五點之前要還車，不過在輕井澤站出站右手邊走三分鐘有家車店，兩層樓木造建築。租...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 10</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day10/</link>
-      <pubDate>Fri, 27 Jul 2007 18:20:36 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day10/</guid>
-      <description>
-      
-      天數終於進位了，寫的手軟，不過剩下 9 天只在 2 個地方活動，可以寫的精簡些。
- 終於要跟河口湖說再見，一早在這間物超所值的旅館吃早餐，坐我們後面的是前天打過招呼的泰國人。容我形容一下他的長相，他有一張你會想找他聊個天的臉，我轉身剛好看見...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 9 (富士山河口湖山開きまつり花火大会)</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day09/</link>
-      <pubDate>Fri, 27 Jul 2007 00:27:58 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day09/</guid>
-      <description>
-      
-      河口湖觀光第二天來到西湖，西湖是個景點很多又不多的地方。因為景點的吸引力不如河口湖強，看了半天勉強擠出三、四個名字特殊的地方列入行程。
- 我們先去野鳥之森，走入樹海(博學程小頭說是鬼眼狂刀的富士樹海)，可惜裡面沒有怪物，不能享受打怪撿寶升級...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 8</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day08/</link>
-      <pubDate>Thu, 26 Jul 2007 11:09:49 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day08/</guid>
-      <description>
-      
-      爬山沒有預期中累，八點多就醒了，昨天神谷先生送的水蜜桃當成今天早餐，真是健康。改走觀光客路線，利用兩天巴士周遊券在河口湖邊活動，這兩天不走路啦。
- 巴士最後一站是大石公園，雖然今天是好天氣，但是富士山不輕易露面。原本期望在公園拍張以富士山為...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 7 (富士山我來啦)</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day07/</link>
-      <pubDate>Thu, 26 Jul 2007 10:57:41 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day07/</guid>
-      <description>
-      
-      這天終於到了! 五點被叫醒，過動小頭說他看到富士山，翻身湊到窗前看見朝思暮想的山型，被雨追打的這些天都值得了，有點感動。
-大約七點正式起床，先去 7-11 買齊一整天要吃的東西，包括今天早餐，今天山上的晚餐還有隔天的早餐。還有礦泉水運動飲料...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 6</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day06/</link>
-      <pubDate>Thu, 26 Jul 2007 02:43:20 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day06/</guid>
-      <description>
-      
-      肇因昨晚被阿婆驚嚇，我們決定提早離開箱根。騙你的，其實是為了避免原定的行程一抵達河口湖就要準備上富士山。一早帶著行李前往仙石的箱根玻璃之森，在仙石案內所前看著日幣好幾百又特別小的置物櫃，怎麼樣就是不想花錢放大行李。於是把重要的東西放一袋，衣...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 5</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day05/</link>
-      <pubDate>Mon, 23 Jul 2007 14:50:04 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day05/</guid>
-      <description>
-      
-      雨過天晴。
+ 可是淺草寺怎麼會這麼多人啊…今天不是假日，觀光客這麼多也太誇張了。原來這兩天是 “四萬六千日”，拜一天的效力相當於拜了四萬六千天，所以忙碌的日本人都跑來衝 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 11</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day11/</link>
+			<pubDate>Sat, 28 Jul 2007 22:13:19 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day11/</guid>
+			<description>
+			
+				去輕井澤推薦的遊玩方式是騎腳踏車，時間從早上八點到下午五點。
+ 輕井澤雖然不大，不過加上中輕井澤、鹽澤湖這兩個點的距離，用走路的會出人命。租借腳踏車的店家九點開門，五點之前要還車，不過在輕井澤站出站右手邊走三分鐘有家車店，兩層樓木造建築。租車五點前還只要 700 日幣，超過五點只 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 10</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day10/</link>
+			<pubDate>Fri, 27 Jul 2007 18:20:36 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day10/</guid>
+			<description>
+			
+				天數終於進位了，寫的手軟，不過剩下 9 天只在 2 個地方活動，可以寫的精簡些。
+ 終於要跟河口湖說再見，一早在這間物超所值的旅館吃早餐，坐我們後面的是前天打過招呼的泰國人。容我形容一下他的長相，他有一張你會想找他聊個天的臉，我轉身剛好看見他的攝影包是打開的，所以就打開話匣子了。 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 9 (富士山河口湖山開きまつり花火大会)</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day09/</link>
+			<pubDate>Fri, 27 Jul 2007 00:27:58 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day09/</guid>
+			<description>
+			
+				河口湖觀光第二天來到西湖，西湖是個景點很多又不多的地方。因為景點的吸引力不如河口湖強，看了半天勉強擠出三、四個名字特殊的地方列入行程。
+ 我們先去野鳥之森，走入樹海(博學程小頭說是鬼眼狂刀的富士樹海)，可惜裡面沒有怪物，不能享受打怪撿寶升級的樂趣，喂喂，不要因為到哪裡都一片綠色開 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 8</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day08/</link>
+			<pubDate>Thu, 26 Jul 2007 11:09:49 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day08/</guid>
+			<description>
+			
+				爬山沒有預期中累，八點多就醒了，昨天神谷先生送的水蜜桃當成今天早餐，真是健康。改走觀光客路線，利用兩天巴士周遊券在河口湖邊活動，這兩天不走路啦。
+ 巴士最後一站是大石公園，雖然今天是好天氣，但是富士山不輕易露面。原本期望在公園拍張以富士山為背景的照片，可惜一整天不能如願。夏天是薰 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 7 (富士山我來啦)</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day07/</link>
+			<pubDate>Thu, 26 Jul 2007 10:57:41 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day07/</guid>
+			<description>
+			
+				這天終於到了! 五點被叫醒，過動小頭說他看到富士山，翻身湊到窗前看見朝思暮想的山型，被雨追打的這些天都值得了，有點感動。
+大約七點正式起床，先去 7-11 買齊一整天要吃的東西，包括今天早餐，今天山上的晚餐還有隔天的早餐。還有礦泉水運動飲料各一瓶。
+許多人登富士山會買一枝金剛杖， …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 6</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day06/</link>
+			<pubDate>Thu, 26 Jul 2007 02:43:20 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day06/</guid>
+			<description>
+			
+				肇因昨晚被阿婆驚嚇，我們決定提早離開箱根。騙你的，其實是為了避免原定的行程一抵達河口湖就要準備上富士山。一早帶著行李前往仙石的箱根玻璃之森，在仙石案內所前看著日幣好幾百又特別小的置物櫃，怎麼樣就是不想花錢放大行李。於是把重要的東西放一袋，衣物那包塞進去也不上鎖了。
+小頭的行李箱放 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 5</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day05/</link>
+			<pubDate>Mon, 23 Jul 2007 14:50:04 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day05/</guid>
+			<description>
+			
+				雨過天晴。
  阿本仔的氣象報告說不會下雨，接近中午會出太陽，下午三點轉多雲，非常準確。
-一早回到蘆之湖畔，看著湖面上雲霧飄渺，多少有點擔心今天又是一場空。在湖畔公園閒逛的時候，遊覽船的汽笛聲響徹雲霄，心情也跟著飛起來XD。總算如願以償搭上海...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 4</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day04/</link>
-      <pubDate>Mon, 23 Jul 2007 01:31:07 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day04/</guid>
-      <description>
-      
-      最慘烈最蠢的一天揭開序幕。這天是移動日，我們往溫泉地箱根前進。
+一早回到蘆之湖畔，看著湖面上雲霧飄渺，多少有點擔心今天又是一場空。在湖畔公園閒逛的時候，遊覽船的汽笛聲響徹雲霄，心情也跟著飛起來XD。總算如願以償搭上海賊船霧氣消散，視野逐漸開闊，乘風遊湖好不 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 4</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day04/</link>
+			<pubDate>Mon, 23 Jul 2007 01:31:07 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day04/</guid>
+			<description>
+			
+				最慘烈最蠢的一天揭開序幕。這天是移動日，我們往溫泉地箱根前進。
  一早雨就沒停過，當我們抵達箱根青年旅社前的雙子茶屋站，不只下雨，還起濃霧。
-最幹的是這間青年旅社門關的死緊，只好花錢用他&#34;門前&#34;的寄物箱寄放行李，不能寄放...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 3</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day03/</link>
-      <pubDate>Sun, 22 Jul 2007 17:25:44 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day03/</guid>
-      <description>
-      
-      這次旅行運氣可以說很好，也能說不好。壞在 19 天只有一兩天好天氣，還有颱風。
+最幹的是這間青年旅社門關的死緊，只好花錢用他"門前"的寄物箱寄放行李，不能寄放櫃檯。走下箱根後，霧實在太大了，遊湖海盜船停開(囧)、纜車停 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 3</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day03/</link>
+			<pubDate>Sun, 22 Jul 2007 17:25:44 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day03/</guid>
+			<description>
+			
+				這次旅行運氣可以說很好，也能說不好。壞在 19 天只有一兩天好天氣，還有颱風。
 好在陰雨天氣減輕炎熱帶來的負擔，而且非移動日的天氣狀況都相當不錯。第三天就是這樣的好日子。
- 一早我們按照老闆的建議，前往極樂寺附近找一個可以俯瞰湘南海岸的地方...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 2</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day02/</link>
-      <pubDate>Sun, 22 Jul 2007 14:07:07 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day02/</guid>
-      <description>
-      
-      第二天早上在築地市場著名的大和壽司前看了一眼，大和壽司排隊的人龍，似乎沒有消散的一天。
+ 一早我們按照老闆的建議，前往極樂寺附近找一個可以俯瞰湘南海岸的地方。不過沒找到XD。幸好另外一個寺廟位於小 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 2</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day02/</link>
+			<pubDate>Sun, 22 Jul 2007 14:07:07 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day02/</guid>
+			<description>
+			
+				第二天早上在築地市場著名的大和壽司前看了一眼，大和壽司排隊的人龍，似乎沒有消散的一天。
 只好乖乖的在市場找一家低調的小店解決早午餐。小店的食材除了海膽腥味重了點，都很新鮮好吃。
- 築地下一站是銀座。銀座是購物天堂，卻是我的地獄。因為我一逛街...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 1</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day01/</link>
-      <pubDate>Sat, 21 Jul 2007 01:05:53 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day01/</guid>
-      <description>
-      
-      出發前一刻
+ 築地下一站是銀座。銀座是購物天堂，卻是我的地獄。因為我一逛街就腳酸……而且現在買的東西還要背 17  …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 1</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day01/</link>
+			<pubDate>Sat, 21 Jul 2007 01:05:53 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day01/</guid>
+			<description>
+			
+				出發前一刻
 富士山上的小木屋傳真來要取消我們的預約，附贈積雪未消無法營業的消息。
 這種驚悚傳真頗讓人雞飛狗跳，沒有登上富士山，之前放的話不成了笑柄?
 就這樣忐忑地抵達日本。
-(出海關前，有個福建阿婆排隊的時候突然找我聊天，唸了一長串才發現我...
-      
-      </description>
-    </item>
-    
-  </channel>
+(出海關前，有個福建阿婆排隊的時候突然找我聊天，唸了一長串才發現我不是老鄉…)
+抵達池袋，大行李寄放在池袋 …
+			
+			</description>
+		</item>
+		
+	</channel>
 </rss>

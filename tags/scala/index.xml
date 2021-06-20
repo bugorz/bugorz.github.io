@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>scala on 大隻雞慢啼</title>
-    <link>https://bugorz.github.io/tags/scala/</link>
-    <description>Recent content in scala on bugorz.github.io</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© Copyright notice | Vitae theme for Hugo</copyright>
-    <lastBuildDate>Wed, 15 Mar 2017 19:46:46 +0800</lastBuildDate>
-    
-    <atom:link href="https://bugorz.github.io/tags/scala/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Future.zip versus Future.sequence in Scala</title>
-      <link>https://bugorz.github.io/posts/future-zip-sequence-scala/</link>
-      <pubDate>Wed, 15 Mar 2017 19:46:46 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/future-zip-sequence-scala/</guid>
-      <description>
-      
-      Future.sequence is a handy method to deal with a sequence futures of the same type. However, if you want to combine futu...
-      
-      </description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>scala on 大隻雞慢啼</title>
+		<link>https://bugorz.github.io/tags/scala/</link>
+		<description>Recent content in scala on bugorz.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>© Copyright notice | Vitae theme for Hugo</copyright>
+		<lastBuildDate>Wed, 15 Mar 2017 19:46:46 +0800</lastBuildDate>
+		
+		<atom:link href="https://bugorz.github.io/tags/scala/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Future.zip versus Future.sequence in Scala</title>
+			<link>https://bugorz.github.io/posts/future-zip-sequence-scala/</link>
+			<pubDate>Wed, 15 Mar 2017 19:46:46 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/future-zip-sequence-scala/</guid>
+			<description>
+			
+				Future.sequence is a handy method to deal with a sequence futures of the same type. However, if you want to combine futures of different …
+			
+			</description>
+		</item>
+		
+	</channel>
 </rss>

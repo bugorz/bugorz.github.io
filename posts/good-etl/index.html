@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-
-  <meta name="generator" content="Hugo 0.73.0" />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="keywords" content="data engineering,programming"><meta property="og:title" content="設計一個好的 ETL pipeline" />
+	
+	<meta name="generator" content="Hugo 0.73.0" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta property="og:title" content="設計一個好的 ETL pipeline">
+	
+	
+	<meta name="keywords" content="data engineering,programming"><meta property="og:title" content="設計一個好的 ETL pipeline" />
 <meta property="og:description" content="骯髒的 raw input 必須處理乾淨，呈現一個乾淨的 view 讓所有用戶使用。這個處理包含各式各樣的 data validation or repair (if repairable). 被歸類為無法修復的 records 必須另外存放，另作調查。 T (Transform) 的" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://bugorz.github.io/posts/good-etl/" />
@@ -16,70 +20,89 @@
 <meta name="twitter:title" content="設計一個好的 ETL pipeline"/>
 <meta name="twitter:description" content="骯髒的 raw input 必須處理乾淨，呈現一個乾淨的 view 讓所有用戶使用。這個處理包含各式各樣的 data validation or repair (if repairable). 被歸類為無法修復的 records 必須另外存放，另作調查。 T (Transform) 的"/>
 
-  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/normalize.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/main.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/all.css" />
-<link rel="stylesheet" href="https://bugorz.github.io/css/katex.min.css" crossorigin="anonymous">
-  <script defer src="https://bugorz.github.io/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-  <script defer src="https://bugorz.github.io/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><title>設計一個好的 ETL pipeline | 大隻雞慢啼</title></head>
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/all.css" />
+	<link rel="stylesheet" href="/css/katex.min.css" crossorigin="anonymous">
+	<script defer src="/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+	<script defer src="/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			renderMathInElement(document.body, {
+				delimiters: [
+					{left: "$$", right: "$$", display: true},
+					{left: "$", right: "$", display: false}
+				]
+		});
+		});
+	</script><title>設計一個好的 ETL pipeline | 大隻雞慢啼</title>
+
+
+</head>
 <body><header>
-
-  <div id="avatar">
-    <a href="https://bugorz.github.io/">
-      <img src="/img/avatar.jpg" alt="大隻雞慢啼">
-    </a>
-  </div>
-
-  <div id="titletext"><h2 id="title"><a href="https://bugorz.github.io/">大隻雞慢啼</a></h2></div>
-  <div id="title-description"><p id="subtitle">我們是小國小民，但是我們是好國好民。 - 鄭南榕</p><div id=social>
-    <nav>
-      <ul><li><a href="https://github.com/bugorz"><i title="Github" class="icons fab fa-github"></i></a></li><li><a href="/index.xml"><i title="RSS" class="icons fas fa-rss"></i></a></li></ul>
-    </nav>
-  </div>
-  </div>
-  <div id="mainmenu">
-    <nav>
-      <ul>
-        
-        <li><a href="/">Home</a></li>
-        
-        <li><a href="/posts">All Posts</a></li>
-        
-        <li><a href="/about">About</a></li>
-        
-        <li><a href="/tags">Tags</a></li>
-        
-        <li><a href="/series">Series</a></li>
-        
-        <li><a href="/categories">Categories</a></li>
-        
-      </ul>
-    </nav>
-  </div>
+	
+	<div id="avatar">
+		<a href="https://bugorz.github.io/">
+		  <img src="/img/avatar.jpg" alt="大隻雞慢啼">
+		</a>
+	</div>
+	
+	<div id="titletext"><h2 id="title"><a href="https://bugorz.github.io/">大隻雞慢啼</a></h2></div>
+	<div id="title-description"><p id="subtitle">我們是小國小民，但是我們是好國好民。 - 鄭南榕</p><div id="social">
+			<nav>
+				<ul>
+					<li><a href="https://github.com/bugorz"><i title="Github" class="icons fab fa-github"></i></a></li>
+					<li><a href="/index.xml"><i title="RSS" class="icons fas fa-rss"></i></a></li></ul>
+			</nav>
+		</div>
+	</div>
+	
+	<div id="mainmenu">
+		<nav>
+			<ul>
+				
+				<li><a href="/">Home</a></li>
+				
+				<li><a href="/posts">All Posts</a></li>
+				
+				<li><a href="/about">About</a></li>
+				
+				<li><a href="/tags">Tags</a></li>
+				
+				<li><a href="/series">Series</a></li>
+				
+				<li><a href="/categories">Categories</a></li>
+				
+			</ul>
+		</nav>
+	</div>
+	
 </header>
 <main><div class="post">
-<div class="author">
-
-</div>
-<div class="post-header">
-
-<div class="meta">
-
-<div class="date">
-<span class="day">10</span>
-<span class="rest">Jan 2019</span>
-</div>
-
-</div>
-
-<div class="matter">
-<h1 class="title">設計一個好的 ETL pipeline</h1>
-</div>
-</div>
-<div class="markdown">
-<ol>
+	
+	<div class="author">
+	
+	</div>
+	<div class="post-header">
+	
+		<div class="meta">
+			
+			<div class="date">
+				<span class="day">10</span>
+				<span class="rest">Jan 2019</span>
+			</div>
+			
+		</div>
+		
+		<div class="matter">
+			<h1 class="title">設計一個好的 ETL pipeline</h1>
+		</div>
+	</div>
+	<div class="markdown">
+		<ol>
 <li>骯髒的 raw input 必須處理乾淨，呈現一個乾淨的 view 讓所有用戶使用。這個處理包含各式各樣的 data validation or repair (if repairable). 被歸類為無法修復的 records 必須另外存放，另作調查。</li>
-<li>T (Transform) 的算法，是不是<a href="https://terms.naer.edu.tw/detail/1276689/">確定性</a> deterministic 的？是的話，怎麼驗證。不是的話，用戶可以接受嗎？一個常見的錯誤是 Java comparator 不夠 exhaustive 導致排序結果有不確定性 not deterministic。</li>
+<li>T (Transform) 的算法，是不是<a href="https://terms.naer.edu.tw/detail/1276689/" target="_blank">確定性</a>
+ deterministic 的？是的話，怎麼驗證。不是的話，用戶可以接受嗎？一個常見的錯誤是 Java comparator 不夠 exhaustive 導致排序結果有不確定性 not deterministic。</li>
 <li>T (Transform) 的算法，會不會影響浮點數的精準度？是的話，怎麼應付，不是的話，怎麼驗證？</li>
 <li>Mission Critical 的演算法，最好能 measure all code path，譬如說 Hadoop Counters。Apache Spark 的 accumulators 只有在 actions 能保證被更新一次，是個先天的缺陷。</li>
 <li>怎麼樣的 De-duplication 合理？怎樣的 de-dup window 合理？最終能不能 streaming de-dup?</li>
@@ -89,290 +112,305 @@
 <li>注意編碼，尤其要注意 partition key fields 如果可能會有不同的編碼 (e.g. not UTF-8)，要格外慎重。</li>
 </ol>
 
-</div>
-<div class="tags">
-
-
-
-
-
-
-
-<div class="taxosfloating_left">
-<p>Categories</p>
-</div>
-<div class="termsfloating_right">
-<p>
-
-</div>
-<div class="clearit"></div>
-
-
-
-
-
-
-
-<div class="taxosfloating_left">
-<p>Series</p>
-</div>
-<div class="termsfloating_right">
-<p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-<div class="clearit"></div>
-
-
-
-
-
-
-
-<div class="taxosfloating_left">
-<p>Tags</p>
-</div>
-<div class="termsfloating_right">
-<p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a href="/tags/data-engineering/"> data-engineering </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a href="/tags/programming/"> programming </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-<div class="clearit"></div>
-
-
-
-
-
-</div></div>
-
-</main><footer>
- © Copyright notice | <a href="https://github.com/dataCobra/hugo-vitae">Vitae</a> theme for <a href="https://gohugo.io">Hugo</a> 
-
-
-    
-
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="tags">
+		<div class="taxosfloating_left">
+			<p>Categories</p>
+		</div>
+		<div class="termsfloating_right">
+			<p>
+			
+			</p>
+		</div>
+		<div class="clearit"></div>
+		
+		
+		
+		
+	
+	
+	
+	<div class="tags">
+		<div class="taxosfloating_left">
+			<p>Series</p>
+		</div>
+		<div class="termsfloating_right">
+			<p>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</p>
+		</div>
+		<div class="clearit"></div>
+		
+		
+		
+		
+	
+	
+	
+	<div class="tags">
+		<div class="taxosfloating_left">
+			<p>Tags</p>
+		</div>
+		<div class="termsfloating_right">
+			<p>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<a href="/tags/data-engineering/"> data-engineering </a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<a href="/tags/programming/"> programming </a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</p>
+		</div>
+		<div class="clearit"></div>
+		
+		
+		
+		
+		
+	</div></div>
+
+  </main>
+<footer>
+	 © Copyright notice | <a href="https://github.com/dataCobra/hugo-vitae">Vitae</a> theme for <a href="https://gohugo.io">Hugo</a> 
+	
+	
+	
 </footer>
+
+
 </body>
 </html>

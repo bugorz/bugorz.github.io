@@ -1,328 +1,340 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tags on 大隻雞慢啼</title>
-    <link>https://bugorz.github.io/tags/</link>
-    <description>Recent content in Tags on bugorz.github.io</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© Copyright notice | Vitae theme for Hugo</copyright>
-    <lastBuildDate>Sat, 04 Jul 2020 20:24:22 +0800</lastBuildDate>
-    
-    <atom:link href="https://bugorz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>coursera</title>
-      <link>https://bugorz.github.io/tags/coursera/</link>
-      <pubDate>Sat, 04 Jul 2020 20:24:22 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/tags/coursera/</guid>
-      <description>
-      
-      
-      
-      </description>
-    </item>
-    <item>
-      <title>statistics</title>
-      <link>https://bugorz.github.io/tags/statistics/</link>
-      <pubDate>Sat, 04 Jul 2020 20:24:22 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/tags/statistics/</guid>
-      <description>
-      
-      
-      
-      </description>
-    </item>
-    <item>
-      <title>ergonomics</title>
-      <link>https://bugorz.github.io/tags/ergonomics/</link>
-      <pubDate>Tue, 30 Jun 2020 19:50:08 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/tags/ergonomics/</guid>
-      <description>
-      
-      
-      
-      </description>
-    </item>
-    <item>
-      <title>macos</title>
-      <link>https://bugorz.github.io/tags/macos/</link>
-      <pubDate>Tue, 30 Jun 2020 19:50:08 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/tags/macos/</guid>
-      <description>
-      
-      
-      
-      </description>
-    </item>
-    <item>
-      <title>programming language</title>
-      <link>https://bugorz.github.io/tags/programming-language/</link>
-      <pubDate>Mon, 01 Jun 2020 16:38:25 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/tags/programming-language/</guid>
-      <description>
-      
-      
-      
-      </description>
-    </item>
-    <item>
-      <title>sml</title>
-      <link>https://bugorz.github.io/tags/sml/</link>
-      <pubDate>Mon, 01 Jun 2020 16:38:25 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/tags/sml/</guid>
-      <description>
-      
-      
-      
-      </description>
-    </item>
-    <item>
-      <title>life</title>
-      <link>https://bugorz.github.io/tags/life/</link>
-      <pubDate>Wed, 26 Feb 2020 13:57:05 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/tags/life/</guid>
-      <description>
-      
-      
-      
-      </description>
-    </item>
-    <item>
-      <title>book</title>
-      <link>https://bugorz.github.io/tags/book/</link>
-      <pubDate>Mon, 15 Apr 2019 20:04:22 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/tags/book/</guid>
-      <description>
-      
-      
-      
-      </description>
-    </item>
-    <item>
-      <title>review</title>
-      <link>https://bugorz.github.io/tags/review/</link>
-      <pubDate>Mon, 15 Apr 2019 20:04:22 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/tags/review/</guid>
-      <description>
-      
-      
-      
-      </description>
-    </item>
-    <item>
-      <title>mooc</title>
-      <link>https://bugorz.github.io/tags/mooc/</link>
-      <pubDate>Mon, 01 Apr 2019 20:37:22 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/tags/mooc/</guid>
-      <description>
-      
-      
-      
-      </description>
-    </item>
-    <item>
-      <title>ocw</title>
-      <link>https://bugorz.github.io/tags/ocw/</link>
-      <pubDate>Mon, 01 Apr 2019 20:37:22 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/tags/ocw/</guid>
-      <description>
-      
-      
-      
-      </description>
-    </item>
-    <item>
-      <title>data engineering</title>
-      <link>https://bugorz.github.io/tags/data-engineering/</link>
-      <pubDate>Thu, 10 Jan 2019 22:01:37 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/tags/data-engineering/</guid>
-      <description>
-      
-      
-      
-      </description>
-    </item>
-    <item>
-      <title>programming</title>
-      <link>https://bugorz.github.io/tags/programming/</link>
-      <pubDate>Thu, 10 Jan 2019 22:01:37 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/tags/programming/</guid>
-      <description>
-      
-      
-      
-      </description>
-    </item>
-    <item>
-      <title>geometry</title>
-      <link>https://bugorz.github.io/tags/geometry/</link>
-      <pubDate>Thu, 10 Jan 2019 17:19:27 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/tags/geometry/</guid>
-      <description>
-      
-      
-      
-      </description>
-    </item>
-    <item>
-      <title>gis</title>
-      <link>https://bugorz.github.io/tags/gis/</link>
-      <pubDate>Thu, 10 Jan 2019 17:19:27 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/tags/gis/</guid>
-      <description>
-      
-      
-      
-      </description>
-    </item>
-    <item>
-      <title>google</title>
-      <link>https://bugorz.github.io/tags/google/</link>
-      <pubDate>Thu, 10 Jan 2019 17:19:27 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/tags/google/</guid>
-      <description>
-      
-      
-      
-      </description>
-    </item>
-    <item>
-      <title>algorithm</title>
-      <link>https://bugorz.github.io/tags/algorithm/</link>
-      <pubDate>Mon, 27 Aug 2018 20:39:22 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/tags/algorithm/</guid>
-      <description>
-      
-      
-      
-      </description>
-    </item>
-    <item>
-      <title>dynamic programming</title>
-      <link>https://bugorz.github.io/tags/dynamic-programming/</link>
-      <pubDate>Mon, 27 Aug 2018 20:39:22 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/tags/dynamic-programming/</guid>
-      <description>
-      
-      
-      
-      </description>
-    </item>
-    <item>
-      <title>concurrency</title>
-      <link>https://bugorz.github.io/tags/concurrency/</link>
-      <pubDate>Mon, 27 Aug 2018 08:45:00 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/tags/concurrency/</guid>
-      <description>
-      
-      
-      
-      </description>
-    </item>
-    <item>
-      <title>java</title>
-      <link>https://bugorz.github.io/tags/java/</link>
-      <pubDate>Mon, 27 Aug 2018 08:45:00 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/tags/java/</guid>
-      <description>
-      
-      
-      
-      </description>
-    </item>
-    <item>
-      <title>future</title>
-      <link>https://bugorz.github.io/tags/future/</link>
-      <pubDate>Wed, 15 Mar 2017 19:46:46 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/tags/future/</guid>
-      <description>
-      
-      
-      
-      </description>
-    </item>
-    <item>
-      <title>scala</title>
-      <link>https://bugorz.github.io/tags/scala/</link>
-      <pubDate>Wed, 15 Mar 2017 19:46:46 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/tags/scala/</guid>
-      <description>
-      
-      
-      
-      </description>
-    </item>
-    <item>
-      <title>photography</title>
-      <link>https://bugorz.github.io/tags/photography/</link>
-      <pubDate>Fri, 19 Sep 2008 10:52:49 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/tags/photography/</guid>
-      <description>
-      
-      
-      
-      </description>
-    </item>
-    <item>
-      <title>military</title>
-      <link>https://bugorz.github.io/tags/military/</link>
-      <pubDate>Fri, 18 Jul 2008 01:48:25 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/tags/military/</guid>
-      <description>
-      
-      
-      
-      </description>
-    </item>
-    <item>
-      <title>japan</title>
-      <link>https://bugorz.github.io/tags/japan/</link>
-      <pubDate>Sun, 19 Aug 2007 00:28:05 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/tags/japan/</guid>
-      <description>
-      
-      
-      
-      </description>
-    </item>
-    <item>
-      <title>travel</title>
-      <link>https://bugorz.github.io/tags/travel/</link>
-      <pubDate>Sun, 19 Aug 2007 00:28:05 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/tags/travel/</guid>
-      <description>
-      
-      
-      
-      </description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>Tags on 大隻雞慢啼</title>
+		<link>https://bugorz.github.io/tags/</link>
+		<description>Recent content in Tags on bugorz.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>© Copyright notice | Vitae theme for Hugo</copyright>
+		<lastBuildDate>Sun, 20 Jun 2021 15:19:19 -0700</lastBuildDate>
+		
+		<atom:link href="https://bugorz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>life</title>
+			<link>https://bugorz.github.io/tags/life/</link>
+			<pubDate>Sun, 20 Jun 2021 15:19:19 -0700</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/life/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>taiwan</title>
+			<link>https://bugorz.github.io/tags/taiwan/</link>
+			<pubDate>Fri, 31 Jul 2020 11:59:51 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/taiwan/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>coursera</title>
+			<link>https://bugorz.github.io/tags/coursera/</link>
+			<pubDate>Sat, 04 Jul 2020 20:24:22 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/coursera/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>statistics</title>
+			<link>https://bugorz.github.io/tags/statistics/</link>
+			<pubDate>Sat, 04 Jul 2020 20:24:22 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/statistics/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>ergonomics</title>
+			<link>https://bugorz.github.io/tags/ergonomics/</link>
+			<pubDate>Tue, 30 Jun 2020 19:50:08 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/ergonomics/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>macos</title>
+			<link>https://bugorz.github.io/tags/macos/</link>
+			<pubDate>Tue, 30 Jun 2020 19:50:08 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/macos/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>programming language</title>
+			<link>https://bugorz.github.io/tags/programming-language/</link>
+			<pubDate>Mon, 01 Jun 2020 16:38:25 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/programming-language/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>sml</title>
+			<link>https://bugorz.github.io/tags/sml/</link>
+			<pubDate>Mon, 01 Jun 2020 16:38:25 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/sml/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>book</title>
+			<link>https://bugorz.github.io/tags/book/</link>
+			<pubDate>Mon, 15 Apr 2019 20:04:22 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/book/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>review</title>
+			<link>https://bugorz.github.io/tags/review/</link>
+			<pubDate>Mon, 15 Apr 2019 20:04:22 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/review/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>mooc</title>
+			<link>https://bugorz.github.io/tags/mooc/</link>
+			<pubDate>Mon, 01 Apr 2019 20:37:22 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/mooc/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>ocw</title>
+			<link>https://bugorz.github.io/tags/ocw/</link>
+			<pubDate>Mon, 01 Apr 2019 20:37:22 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/ocw/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>data engineering</title>
+			<link>https://bugorz.github.io/tags/data-engineering/</link>
+			<pubDate>Thu, 10 Jan 2019 22:01:37 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/data-engineering/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>programming</title>
+			<link>https://bugorz.github.io/tags/programming/</link>
+			<pubDate>Thu, 10 Jan 2019 22:01:37 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/programming/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>geometry</title>
+			<link>https://bugorz.github.io/tags/geometry/</link>
+			<pubDate>Thu, 10 Jan 2019 17:19:27 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/geometry/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>gis</title>
+			<link>https://bugorz.github.io/tags/gis/</link>
+			<pubDate>Thu, 10 Jan 2019 17:19:27 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/gis/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>google</title>
+			<link>https://bugorz.github.io/tags/google/</link>
+			<pubDate>Thu, 10 Jan 2019 17:19:27 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/google/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>algorithm</title>
+			<link>https://bugorz.github.io/tags/algorithm/</link>
+			<pubDate>Mon, 27 Aug 2018 20:39:22 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/algorithm/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>dynamic programming</title>
+			<link>https://bugorz.github.io/tags/dynamic-programming/</link>
+			<pubDate>Mon, 27 Aug 2018 20:39:22 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/dynamic-programming/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>concurrency</title>
+			<link>https://bugorz.github.io/tags/concurrency/</link>
+			<pubDate>Mon, 27 Aug 2018 08:45:00 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/concurrency/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>java</title>
+			<link>https://bugorz.github.io/tags/java/</link>
+			<pubDate>Mon, 27 Aug 2018 08:45:00 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/java/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>future</title>
+			<link>https://bugorz.github.io/tags/future/</link>
+			<pubDate>Wed, 15 Mar 2017 19:46:46 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/future/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>scala</title>
+			<link>https://bugorz.github.io/tags/scala/</link>
+			<pubDate>Wed, 15 Mar 2017 19:46:46 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/scala/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>photography</title>
+			<link>https://bugorz.github.io/tags/photography/</link>
+			<pubDate>Fri, 19 Sep 2008 10:52:49 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/photography/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>military</title>
+			<link>https://bugorz.github.io/tags/military/</link>
+			<pubDate>Fri, 18 Jul 2008 01:48:25 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/military/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>japan</title>
+			<link>https://bugorz.github.io/tags/japan/</link>
+			<pubDate>Sun, 19 Aug 2007 00:28:05 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/japan/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		<item>
+			<title>travel</title>
+			<link>https://bugorz.github.io/tags/travel/</link>
+			<pubDate>Sun, 19 Aug 2007 00:28:05 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/tags/travel/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
+		
+	</channel>
 </rss>

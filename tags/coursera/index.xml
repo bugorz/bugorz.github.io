@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>coursera on 大隻雞慢啼</title>
-    <link>https://bugorz.github.io/tags/coursera/</link>
-    <description>Recent content in coursera on bugorz.github.io</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© Copyright notice | Vitae theme for Hugo</copyright>
-    <lastBuildDate>Sat, 04 Jul 2020 20:24:22 +0800</lastBuildDate>
-    
-    <atom:link href="https://bugorz.github.io/tags/coursera/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Data Science Specialization</title>
-      <link>https://bugorz.github.io/posts/learning-statistics/</link>
-      <pubDate>Sat, 04 Jul 2020 20:24:22 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/learning-statistics/</guid>
-      <description>
-      
-      Shelter in place 期間，我註冊了 Coursera 的 Data Science Specialization。
-其中 Statistical Inference，是我覺得最重要且基礎的課程，可惜老師上課的風格我不愛。
-為了...
-      
-      </description>
-    </item>
-    <item>
-      <title>SML on macOS</title>
-      <link>https://bugorz.github.io/posts/sml-on-macos/</link>
-      <pubDate>Mon, 01 Jun 2020 16:38:25 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/sml-on-macos/</guid>
-      <description>
-      
-      Standard ML on macOS  I completed Programming Languages, Part A by Dan Grossman from University of Washington. In Part A...
-      
-      </description>
-    </item>
-    <item>
-      <title>MOOC 課程總覽</title>
-      <link>https://bugorz.github.io/posts/good-course-list/</link>
-      <pubDate>Mon, 01 Apr 2019 20:37:22 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/good-course-list/</guid>
-      <description>
-      
-       SDN: https://www.coursera.org/learn/sdn#syllabus Programming Language, Part A Programming Language, Part B Programming ...
-      
-      </description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>coursera on 大隻雞慢啼</title>
+		<link>https://bugorz.github.io/tags/coursera/</link>
+		<description>Recent content in coursera on bugorz.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>© Copyright notice | Vitae theme for Hugo</copyright>
+		<lastBuildDate>Sat, 04 Jul 2020 20:24:22 +0800</lastBuildDate>
+		
+		<atom:link href="https://bugorz.github.io/tags/coursera/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Data Science Specialization</title>
+			<link>https://bugorz.github.io/posts/learning-statistics/</link>
+			<pubDate>Sat, 04 Jul 2020 20:24:22 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/learning-statistics/</guid>
+			<description>
+			
+				Shelter in place 期間，我註冊了 Coursera 的 Data Science Specialization 。
+其中 Statistical Inference ，是我覺得最重要且基礎的課程，可惜老師上課的風格我不愛。
+為了搞懂這門課呼嘯而過的觀念，推薦一些對 …
+			
+			</description>
+		</item>
+		<item>
+			<title>SML on macOS</title>
+			<link>https://bugorz.github.io/posts/sml-on-macos/</link>
+			<pubDate>Mon, 01 Jun 2020 16:38:25 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/sml-on-macos/</guid>
+			<description>
+			
+				Standard ML on macOS  I completed Programming Languages, Part A by Dan Grossman from University of Washington. In Part A, Dan taught us many …
+			
+			</description>
+		</item>
+		<item>
+			<title>MOOC 課程總覽</title>
+			<link>https://bugorz.github.io/posts/good-course-list/</link>
+			<pubDate>Mon, 01 Apr 2019 20:37:22 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/good-course-list/</guid>
+			<description>
+			
+				 SDN: https://www.coursera.org/learn/sdn#syllabus Programming Language, Part A Programming Language, Part B Programming Language, Part C …
+			
+			</description>
+		</item>
+		
+	</channel>
 </rss>

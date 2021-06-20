@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-
-  <meta name="generator" content="Hugo 0.73.0" />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="keywords" content="java,concurrency"><meta property="og:title" content="Disruptor &amp; LMAX Architecture" />
+	
+	<meta name="generator" content="Hugo 0.73.0" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta property="og:title" content="Disruptor &amp; LMAX Architecture">
+	
+	
+	<meta name="keywords" content="java,concurrency"><meta property="og:title" content="Disruptor &amp; LMAX Architecture" />
 <meta property="og:description" content="這篇文章是雜亂的筆記，尚待整理。 Disruptor 是一個 LMAX 提出的 lock-free concurrent ring buffer library，可以用於 inter-thread communication。官方 GitHub Wiki log4j 2 的 asynchronous loggers 實作使用 di" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://bugorz.github.io/posts/disruptor/" />
@@ -16,371 +20,416 @@
 <meta name="twitter:title" content="Disruptor &amp; LMAX Architecture"/>
 <meta name="twitter:description" content="這篇文章是雜亂的筆記，尚待整理。 Disruptor 是一個 LMAX 提出的 lock-free concurrent ring buffer library，可以用於 inter-thread communication。官方 GitHub Wiki log4j 2 的 asynchronous loggers 實作使用 di"/>
 
-  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/normalize.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/main.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/all.css" />
-<link rel="stylesheet" href="https://bugorz.github.io/css/katex.min.css" crossorigin="anonymous">
-  <script defer src="https://bugorz.github.io/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-  <script defer src="https://bugorz.github.io/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><title>Disruptor &amp; LMAX Architecture | 大隻雞慢啼</title></head>
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/all.css" />
+	<link rel="stylesheet" href="/css/katex.min.css" crossorigin="anonymous">
+	<script defer src="/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+	<script defer src="/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			renderMathInElement(document.body, {
+				delimiters: [
+					{left: "$$", right: "$$", display: true},
+					{left: "$", right: "$", display: false}
+				]
+		});
+		});
+	</script><title>Disruptor &amp; LMAX Architecture | 大隻雞慢啼</title>
+
+
+</head>
 <body><header>
-
-  <div id="avatar">
-    <a href="https://bugorz.github.io/">
-      <img src="/img/avatar.jpg" alt="大隻雞慢啼">
-    </a>
-  </div>
-
-  <div id="titletext"><h2 id="title"><a href="https://bugorz.github.io/">大隻雞慢啼</a></h2></div>
-  <div id="title-description"><p id="subtitle">我們是小國小民，但是我們是好國好民。 - 鄭南榕</p><div id=social>
-    <nav>
-      <ul><li><a href="https://github.com/bugorz"><i title="Github" class="icons fab fa-github"></i></a></li><li><a href="/index.xml"><i title="RSS" class="icons fas fa-rss"></i></a></li></ul>
-    </nav>
-  </div>
-  </div>
-  <div id="mainmenu">
-    <nav>
-      <ul>
-        
-        <li><a href="/">Home</a></li>
-        
-        <li><a href="/posts">All Posts</a></li>
-        
-        <li><a href="/about">About</a></li>
-        
-        <li><a href="/tags">Tags</a></li>
-        
-        <li><a href="/series">Series</a></li>
-        
-        <li><a href="/categories">Categories</a></li>
-        
-      </ul>
-    </nav>
-  </div>
+	
+	<div id="avatar">
+		<a href="https://bugorz.github.io/">
+		  <img src="/img/avatar.jpg" alt="大隻雞慢啼">
+		</a>
+	</div>
+	
+	<div id="titletext"><h2 id="title"><a href="https://bugorz.github.io/">大隻雞慢啼</a></h2></div>
+	<div id="title-description"><p id="subtitle">我們是小國小民，但是我們是好國好民。 - 鄭南榕</p><div id="social">
+			<nav>
+				<ul>
+					<li><a href="https://github.com/bugorz"><i title="Github" class="icons fab fa-github"></i></a></li>
+					<li><a href="/index.xml"><i title="RSS" class="icons fas fa-rss"></i></a></li></ul>
+			</nav>
+		</div>
+	</div>
+	
+	<div id="mainmenu">
+		<nav>
+			<ul>
+				
+				<li><a href="/">Home</a></li>
+				
+				<li><a href="/posts">All Posts</a></li>
+				
+				<li><a href="/about">About</a></li>
+				
+				<li><a href="/tags">Tags</a></li>
+				
+				<li><a href="/series">Series</a></li>
+				
+				<li><a href="/categories">Categories</a></li>
+				
+			</ul>
+		</nav>
+	</div>
+	
 </header>
 <main><div class="post">
-<div class="author">
-
-</div>
-<div class="post-header">
-
-<div class="meta">
-
-<div class="date">
-<span class="day">27</span>
-<span class="rest">Aug 2018</span>
-</div>
-
-</div>
-
-<div class="matter">
-<h1 class="title">Disruptor &amp; LMAX Architecture</h1>
-</div>
-</div>
-<div class="markdown">
-<hr>
+	
+	<div class="author">
+	
+	</div>
+	<div class="post-header">
+	
+		<div class="meta">
+			
+			<div class="date">
+				<span class="day">27</span>
+				<span class="rest">Aug 2018</span>
+			</div>
+			
+		</div>
+		
+		<div class="matter">
+			<h1 class="title">Disruptor &amp; LMAX Architecture</h1>
+		</div>
+	</div>
+	<div class="markdown">
+		<hr>
 <p>這篇文章是雜亂的筆記，尚待整理。</p>
-<p><a href="https://github.com/LMAX-Exchange/disruptor">Disruptor</a> 是一個 LMAX 提出的 lock-free concurrent <a href="http://performantcode.com/latency/ring-buffer-a-data-structure-behind-disruptor/">ring buffer</a> library，可以用於 inter-thread communication。<a href="https://github.com/LMAX-Exchange/disruptor/wiki">官方 GitHub Wiki</a></p>
-<p>log4j 2 的 <a href="https://logging.apache.org/log4j/2.x/manual/async.html">asynchronous loggers</a> 實作使用 disruptor。</p>
-<p>Patricia Gee，其中一個作者，在自己的<a href="http://mechanitis.blogspot.com/search/label/disruptor">舊blog</a> 上面有詳細的介紹。摘錄幾個重點</p>
+<p><a href="https://github.com/LMAX-Exchange/disruptor" target="_blank">Disruptor</a>
+ 是一個 LMAX 提出的 lock-free concurrent <a href="http://performantcode.com/latency/ring-buffer-a-data-structure-behind-disruptor/" target="_blank">ring buffer</a>
+ library，可以用於 inter-thread communication。<a href="https://github.com/LMAX-Exchange/disruptor/wiki" target="_blank">官方 GitHub Wiki</a>
+</p>
+<p>log4j 2 的 <a href="https://logging.apache.org/log4j/2.x/manual/async.html" target="_blank">asynchronous loggers</a>
+ 實作使用 disruptor。</p>
+<p>Patricia Gee，其中一個作者，在自己的<a href="http://mechanitis.blogspot.com/search/label/disruptor" target="_blank">舊blog</a>
+ 上面有詳細的介紹。摘錄幾個重點</p>
 <ul>
 <li>Single thread is fast</li>
-<li>Lock-free, except <a href="https://lmax-exchange.github.io/disruptor/docs/com/lmax/disruptor/BlockingWaitStrategy.html">BlockingWaitStrategy</a></li>
+<li>Lock-free, except <a href="https://lmax-exchange.github.io/disruptor/docs/com/lmax/disruptor/BlockingWaitStrategy.html" target="_blank">BlockingWaitStrategy</a>
+</li>
 <li>Ring buffer</li>
 <li>Cache line padding</li>
 <li>Memory barriers</li>
 </ul>
-<p>關於 queue，Communication of ACM 有篇<a href="https://medium.com/r/?url=https%3A%2F%2Fqueue.acm.org%2Fdetail.cfm%3Fid%3D2991130">文章</a>討論 multi-core 的情境下要怎麼 scale up。</p>
+<p>關於 queue，Communication of ACM 有篇<a href="https://medium.com/r/?url=https%3A%2F%2Fqueue.acm.org%2Fdetail.cfm%3Fid%3D2991130" target="_blank">文章</a>
+討論 multi-core 的情境下要怎麼 scale up。</p>
 <h3 id="notes">Notes</h3>
 <ul>
 <li>Martin Fowler 介紹 LMAX 架構: <a href="https://martinfowler.com/articles/lmax.html">https://martinfowler.com/articles/lmax.html</a></li>
-<li><a href="https://github.com/LMAX-Exchange/disruptor">Disruptor</a> 第一作者，Martin Thompson 的公司: <a href="https://medium.com/r/?url=https%3A%2F%2Freal-logic.co.uk">Real Logic</a> 的 <a href="https://github.com/real-logic">GitHub</a> 有許多有趣的專案，記錄下來日後待查。</li>
-<li><a href="https://github.com/real-logic/agrona">agrona</a>: 其中一個貢獻者是 Richard Warburton，他是 <a href="https://learning.oreilly.com/library/view/java-8-lambdas/9781449370831/">Java 8 Lambdas</a> 的作者，這本書很清楚易懂。讓我感覺能把技術說的深入淺出，才是真正有實力的人。</li>
+<li><a href="https://github.com/LMAX-Exchange/disruptor" target="_blank">Disruptor</a>
+ 第一作者，Martin Thompson 的公司: <a href="https://medium.com/r/?url=https%3A%2F%2Freal-logic.co.uk" target="_blank">Real Logic</a>
+ 的 <a href="https://github.com/real-logic" target="_blank">GitHub</a>
+ 有許多有趣的專案，記錄下來日後待查。</li>
+<li><a href="https://github.com/real-logic/agrona" target="_blank">agrona</a>
+: 其中一個貢獻者是 Richard Warburton，他是 <a href="https://learning.oreilly.com/library/view/java-8-lambdas/9781449370831/" target="_blank">Java 8 Lambdas</a>
+ 的作者，這本書很清楚易懂。讓我感覺能把技術說的深入淺出，才是真正有實力的人。</li>
 </ul>
 
-</div>
-<div class="tags">
-
-
-
-
-
-
-
-<div class="taxosfloating_left">
-<p>Categories</p>
-</div>
-<div class="termsfloating_right">
-<p>
-
-</div>
-<div class="clearit"></div>
-
-
-
-
-
-
-
-<div class="taxosfloating_left">
-<p>Series</p>
-</div>
-<div class="termsfloating_right">
-<p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-<div class="clearit"></div>
-
-
-
-
-
-
-
-<div class="taxosfloating_left">
-<p>Tags</p>
-</div>
-<div class="termsfloating_right">
-<p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a href="/tags/concurrency/"> concurrency </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a href="/tags/java/"> java </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-<div class="clearit"></div>
-
-
-
-
-
-</div></div>
-
-</main><footer>
- © Copyright notice | <a href="https://github.com/dataCobra/hugo-vitae">Vitae</a> theme for <a href="https://gohugo.io">Hugo</a> 
-
-
-    
-
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="tags">
+		<div class="taxosfloating_left">
+			<p>Categories</p>
+		</div>
+		<div class="termsfloating_right">
+			<p>
+			
+			</p>
+		</div>
+		<div class="clearit"></div>
+		
+		
+		
+		
+	
+	
+	
+	<div class="tags">
+		<div class="taxosfloating_left">
+			<p>Series</p>
+		</div>
+		<div class="termsfloating_right">
+			<p>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</p>
+		</div>
+		<div class="clearit"></div>
+		
+		
+		
+		
+	
+	
+	
+	<div class="tags">
+		<div class="taxosfloating_left">
+			<p>Tags</p>
+		</div>
+		<div class="termsfloating_right">
+			<p>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<a href="/tags/concurrency/"> concurrency </a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<a href="/tags/java/"> java </a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</p>
+		</div>
+		<div class="clearit"></div>
+		
+		
+		
+		
+		
+	</div></div>
+
+  </main>
+<footer>
+	 © Copyright notice | <a href="https://github.com/dataCobra/hugo-vitae">Vitae</a> theme for <a href="https://gohugo.io">Hugo</a> 
+	
+	
+	
 </footer>
+
+
 </body>
 </html>

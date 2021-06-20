@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-
-  <meta name="generator" content="Hugo 0.73.0" />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="keywords" content="macos,sml,programming language,coursera"><meta property="og:title" content="SML on macOS" />
+	
+	<meta name="generator" content="Hugo 0.73.0" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta property="og:title" content="SML on macOS">
+	
+	
+	<meta name="keywords" content="macos,sml,programming language,coursera"><meta property="og:title" content="SML on macOS" />
 <meta property="og:description" content="Standard ML on macOS  I completed Programming Languages, Part A by Dan Grossman from University of Washington. In Part A, Dan taught us many programming language concepts using Standard ML (SML) Dan is a great teacher and this course definitely deserve an A&#43;.  SML Installation  Installing SML/NJ in macOS (recommend using homebrew): https://smlnj.org/dist/working/110.96/macos.html  brew cask install smlnj  Remember to export the path to SML in bash/zsh:  export PATH=$(brew --prefix)/smlnj/bin:&#34;$PATH&#34; My REPL-like SML development environment  I am too lazy to memorize those Emasc keyboard shortcuts so I decided to create a REPL-like environment by myself." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://bugorz.github.io/posts/sml-on-macos/" />
@@ -15,70 +19,90 @@
 <meta name="twitter:title" content="SML on macOS"/>
 <meta name="twitter:description" content="Standard ML on macOS  I completed Programming Languages, Part A by Dan Grossman from University of Washington. In Part A, Dan taught us many programming language concepts using Standard ML (SML) Dan is a great teacher and this course definitely deserve an A&#43;.  SML Installation  Installing SML/NJ in macOS (recommend using homebrew): https://smlnj.org/dist/working/110.96/macos.html  brew cask install smlnj  Remember to export the path to SML in bash/zsh:  export PATH=$(brew --prefix)/smlnj/bin:&#34;$PATH&#34; My REPL-like SML development environment  I am too lazy to memorize those Emasc keyboard shortcuts so I decided to create a REPL-like environment by myself."/>
 
-  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/normalize.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/main.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/all.css" />
-<link rel="stylesheet" href="https://bugorz.github.io/css/katex.min.css" crossorigin="anonymous">
-  <script defer src="https://bugorz.github.io/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-  <script defer src="https://bugorz.github.io/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><title>SML on macOS | 大隻雞慢啼</title></head>
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/all.css" />
+	<link rel="stylesheet" href="/css/katex.min.css" crossorigin="anonymous">
+	<script defer src="/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+	<script defer src="/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			renderMathInElement(document.body, {
+				delimiters: [
+					{left: "$$", right: "$$", display: true},
+					{left: "$", right: "$", display: false}
+				]
+		});
+		});
+	</script><title>SML on macOS | 大隻雞慢啼</title>
+
+
+</head>
 <body><header>
-
-  <div id="avatar">
-    <a href="https://bugorz.github.io/">
-      <img src="/img/avatar.jpg" alt="大隻雞慢啼">
-    </a>
-  </div>
-
-  <div id="titletext"><h2 id="title"><a href="https://bugorz.github.io/">大隻雞慢啼</a></h2></div>
-  <div id="title-description"><p id="subtitle">我們是小國小民，但是我們是好國好民。 - 鄭南榕</p><div id=social>
-    <nav>
-      <ul><li><a href="https://github.com/bugorz"><i title="Github" class="icons fab fa-github"></i></a></li><li><a href="/index.xml"><i title="RSS" class="icons fas fa-rss"></i></a></li></ul>
-    </nav>
-  </div>
-  </div>
-  <div id="mainmenu">
-    <nav>
-      <ul>
-        
-        <li><a href="/">Home</a></li>
-        
-        <li><a href="/posts">All Posts</a></li>
-        
-        <li><a href="/about">About</a></li>
-        
-        <li><a href="/tags">Tags</a></li>
-        
-        <li><a href="/series">Series</a></li>
-        
-        <li><a href="/categories">Categories</a></li>
-        
-      </ul>
-    </nav>
-  </div>
+	
+	<div id="avatar">
+		<a href="https://bugorz.github.io/">
+		  <img src="/img/avatar.jpg" alt="大隻雞慢啼">
+		</a>
+	</div>
+	
+	<div id="titletext"><h2 id="title"><a href="https://bugorz.github.io/">大隻雞慢啼</a></h2></div>
+	<div id="title-description"><p id="subtitle">我們是小國小民，但是我們是好國好民。 - 鄭南榕</p><div id="social">
+			<nav>
+				<ul>
+					<li><a href="https://github.com/bugorz"><i title="Github" class="icons fab fa-github"></i></a></li>
+					<li><a href="/index.xml"><i title="RSS" class="icons fas fa-rss"></i></a></li></ul>
+			</nav>
+		</div>
+	</div>
+	
+	<div id="mainmenu">
+		<nav>
+			<ul>
+				
+				<li><a href="/">Home</a></li>
+				
+				<li><a href="/posts">All Posts</a></li>
+				
+				<li><a href="/about">About</a></li>
+				
+				<li><a href="/tags">Tags</a></li>
+				
+				<li><a href="/series">Series</a></li>
+				
+				<li><a href="/categories">Categories</a></li>
+				
+			</ul>
+		</nav>
+	</div>
+	
 </header>
 <main><div class="post">
-<div class="author">
-
-</div>
-<div class="post-header">
-
-<div class="meta">
-
-<div class="date">
-<span class="day">01</span>
-<span class="rest">Jun 2020</span>
-</div>
-
-</div>
-
-<div class="matter">
-<h1 class="title">SML on macOS</h1>
-</div>
-</div>
-<div class="markdown">
-<h2 id="standard-ml-onmacos">Standard ML on macOS</h2>
+	
+	<div class="author">
+	
+	</div>
+	<div class="post-header">
+	
+		<div class="meta">
+			
+			<div class="date">
+				<span class="day">01</span>
+				<span class="rest">Jun 2020</span>
+			</div>
+			
+		</div>
+		
+		<div class="matter">
+			<h1 class="title">SML on macOS</h1>
+		</div>
+	</div>
+	<div class="markdown">
+		<h2 id="standard-ml-onmacos">Standard ML on macOS</h2>
 <ul>
-<li>I completed <a href="https://www.coursera.org/learn/programming-languages">Programming Languages, Part A</a> by <a href="https://homes.cs.washington.edu/~djg/">Dan Grossman</a> from University of Washington.</li>
+<li>I completed <a href="https://www.coursera.org/learn/programming-languages" target="_blank">Programming Languages, Part A</a>
+ by <a href="https://homes.cs.washington.edu/~djg/" target="_blank">Dan Grossman</a>
+ from University of Washington.</li>
 <li>In Part A, Dan taught us many programming language concepts using Standard ML (SML)</li>
 <li>Dan is a great teacher and this course definitely deserve an A+.</li>
 </ul>
@@ -105,7 +129,8 @@
 </ul>
 <h3 id="important-tune-your-smlnj-interactive-shell">(Important) Tune your SML/NJ interactive shell:</h3>
 <ul>
-<li>Note that SML/NJ interactive shell doesn&rsquo;t support array keys so you can&rsquo;t use up/down to cycle through the history. However, I found a stack overflow <a href="https://stackoverflow.com/questions/1911861/how-to-fix-the-sml-nj-interactive-system-to-use-arrow-keys">post</a> and resolved it by <code>socat</code></li>
+<li>Note that SML/NJ interactive shell doesn&rsquo;t support array keys so you can&rsquo;t use up/down to cycle through the history. However, I found a stack overflow <a href="https://stackoverflow.com/questions/1911861/how-to-fix-the-sml-nj-interactive-system-to-use-arrow-keys" target="_blank">post</a>
+ and resolved it by <code>socat</code></li>
 </ul>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install socat
 
@@ -123,232 +148,243 @@
 <li>SML Basis Library: <a href="https://smlfamily.github.io/Basis/overview.html">https://smlfamily.github.io/Basis/overview.html</a></li>
 </ul>
 
-</div>
-<div class="tags">
-
-
-
-
-
-
-
-
-
-
-
-<div class="taxosfloating_left">
-<p>Tags</p>
-</div>
-<div class="termsfloating_right">
-<p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a href="/tags/coursera/"> coursera </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a href="/tags/macos/"> macos </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a href="/tags/programming-language/"> programming-language </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a href="/tags/sml/"> sml </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-<div class="clearit"></div>
-
-
-
-
-
-</div></div>
-
-</main><footer>
- © Copyright notice | <a href="https://github.com/dataCobra/hugo-vitae">Vitae</a> theme for <a href="https://gohugo.io">Hugo</a> 
-
-
-    
-
+	</div>
+	
+	
+	
+	
+	
+		
+	
+		
+	
+	
+	
+	<div class="tags">
+		<div class="taxosfloating_left">
+			<p>Tags</p>
+		</div>
+		<div class="termsfloating_right">
+			<p>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<a href="/tags/coursera/"> coursera </a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<a href="/tags/macos/"> macos </a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<a href="/tags/programming-language/"> programming-language </a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<a href="/tags/sml/"> sml </a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</p>
+		</div>
+		<div class="clearit"></div>
+		
+		
+		
+		
+		
+	</div></div>
+
+  </main>
+<footer>
+	 © Copyright notice | <a href="https://github.com/dataCobra/hugo-vitae">Vitae</a> theme for <a href="https://gohugo.io">Hugo</a> 
+	
+	
+	
 </footer>
+
+
 </body>
 </html>

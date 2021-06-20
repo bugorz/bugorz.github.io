@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-
-  <meta name="generator" content="Hugo 0.73.0" />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="keywords" content="book,review"><meta property="og:title" content="老書考古 - Code: The Hidden Language of Computer Hardware and Software" />
+	
+	<meta name="generator" content="Hugo 0.73.0" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta property="og:title" content="老書考古 - Code: The Hidden Language of Computer Hardware and Software">
+	
+	
+	<meta name="keywords" content="book,review"><meta property="og:title" content="老書考古 - Code: The Hidden Language of Computer Hardware and Software" />
 <meta property="og:description" content="只能說相見恨晚。 身為一個資訊從業人員，我常想，如果我是大學老師，我會怎麼樣教學呢？我會選擇 Code: The Hidden Language of Computer Hardware and Software (以下簡稱 Code) 當作計算機結構的導讀" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://bugorz.github.io/posts/book-code/" />
@@ -15,294 +19,325 @@
 <meta name="twitter:title" content="老書考古 - Code: The Hidden Language of Computer Hardware and Software"/>
 <meta name="twitter:description" content="只能說相見恨晚。 身為一個資訊從業人員，我常想，如果我是大學老師，我會怎麼樣教學呢？我會選擇 Code: The Hidden Language of Computer Hardware and Software (以下簡稱 Code) 當作計算機結構的導讀"/>
 
-  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/normalize.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/main.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/all.css" />
-<link rel="stylesheet" href="https://bugorz.github.io/css/katex.min.css" crossorigin="anonymous">
-  <script defer src="https://bugorz.github.io/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-  <script defer src="https://bugorz.github.io/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><title>老書考古 - Code: The Hidden Language of Computer Hardware and Software | 大隻雞慢啼</title></head>
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/all.css" />
+	<link rel="stylesheet" href="/css/katex.min.css" crossorigin="anonymous">
+	<script defer src="/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+	<script defer src="/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			renderMathInElement(document.body, {
+				delimiters: [
+					{left: "$$", right: "$$", display: true},
+					{left: "$", right: "$", display: false}
+				]
+		});
+		});
+	</script><title>老書考古 - Code: The Hidden Language of Computer Hardware and Software | 大隻雞慢啼</title>
+
+
+</head>
 <body><header>
-
-  <div id="avatar">
-    <a href="https://bugorz.github.io/">
-      <img src="/img/avatar.jpg" alt="大隻雞慢啼">
-    </a>
-  </div>
-
-  <div id="titletext"><h2 id="title"><a href="https://bugorz.github.io/">大隻雞慢啼</a></h2></div>
-  <div id="title-description"><p id="subtitle">我們是小國小民，但是我們是好國好民。 - 鄭南榕</p><div id=social>
-    <nav>
-      <ul><li><a href="https://github.com/bugorz"><i title="Github" class="icons fab fa-github"></i></a></li><li><a href="/index.xml"><i title="RSS" class="icons fas fa-rss"></i></a></li></ul>
-    </nav>
-  </div>
-  </div>
-  <div id="mainmenu">
-    <nav>
-      <ul>
-        
-        <li><a href="/">Home</a></li>
-        
-        <li><a href="/posts">All Posts</a></li>
-        
-        <li><a href="/about">About</a></li>
-        
-        <li><a href="/tags">Tags</a></li>
-        
-        <li><a href="/series">Series</a></li>
-        
-        <li><a href="/categories">Categories</a></li>
-        
-      </ul>
-    </nav>
-  </div>
+	
+	<div id="avatar">
+		<a href="https://bugorz.github.io/">
+		  <img src="/img/avatar.jpg" alt="大隻雞慢啼">
+		</a>
+	</div>
+	
+	<div id="titletext"><h2 id="title"><a href="https://bugorz.github.io/">大隻雞慢啼</a></h2></div>
+	<div id="title-description"><p id="subtitle">我們是小國小民，但是我們是好國好民。 - 鄭南榕</p><div id="social">
+			<nav>
+				<ul>
+					<li><a href="https://github.com/bugorz"><i title="Github" class="icons fab fa-github"></i></a></li>
+					<li><a href="/index.xml"><i title="RSS" class="icons fas fa-rss"></i></a></li></ul>
+			</nav>
+		</div>
+	</div>
+	
+	<div id="mainmenu">
+		<nav>
+			<ul>
+				
+				<li><a href="/">Home</a></li>
+				
+				<li><a href="/posts">All Posts</a></li>
+				
+				<li><a href="/about">About</a></li>
+				
+				<li><a href="/tags">Tags</a></li>
+				
+				<li><a href="/series">Series</a></li>
+				
+				<li><a href="/categories">Categories</a></li>
+				
+			</ul>
+		</nav>
+	</div>
+	
 </header>
 <main><div class="post">
-<div class="author">
-
-</div>
-<div class="post-header">
-
-<div class="meta">
-
-<div class="date">
-<span class="day">15</span>
-<span class="rest">Apr 2019</span>
-</div>
-
-</div>
-
-<div class="matter">
-<h1 class="title">老書考古 - Code: The Hidden Language of Computer Hardware and Software</h1>
-</div>
-</div>
-<div class="markdown">
-<p>只能說相見恨晚。</p>
-<p>身為一個資訊從業人員，我常想，如果我是大學老師，我會怎麼樣教學呢？我會選擇 <a href="https://www.amazon.com/dp/0735611319/ref=cm_sw_em_r_mt_dp_U_2chaFbCDN3HSB">Code: The Hidden Language of Computer Hardware and Software</a> (以下簡稱 Code) 當作計算機結構的導讀教材。</p>
+	
+	<div class="author">
+	
+	</div>
+	<div class="post-header">
+	
+		<div class="meta">
+			
+			<div class="date">
+				<span class="day">15</span>
+				<span class="rest">Apr 2019</span>
+			</div>
+			
+		</div>
+		
+		<div class="matter">
+			<h1 class="title">老書考古 - Code: The Hidden Language of Computer Hardware and Software</h1>
+		</div>
+	</div>
+	<div class="markdown">
+		<p>只能說相見恨晚。</p>
+<p>身為一個資訊從業人員，我常想，如果我是大學老師，我會怎麼樣教學呢？我會選擇 <a href="https://www.amazon.com/dp/0735611319/ref=cm_sw_em_r_mt_dp_U_2chaFbCDN3HSB" target="_blank">Code: The Hidden Language of Computer Hardware and Software</a>
+ (以下簡稱 Code) 當作計算機結構的導讀教材。</p>
 <p>Code 的章節編排，描述由基礎元件開始，一路向上建構出硬體，然後作業系統的過程。我喜歡這種先建立架構，再深入細節的方法。</p>
-<p>然後作業參考 <a href="https://www.nand2tetris.org">From Nand to Tetris</a></p>
-
-</div>
-<div class="tags">
-
-
-
-
-
-
-
-
-
-
-
-<div class="taxosfloating_left">
-<p>Tags</p>
-</div>
-<div class="termsfloating_right">
-<p>
-
-
-
-
-
-
-
-<a href="/tags/book/"> book </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a href="/tags/review/"> review </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-<div class="clearit"></div>
-
-
-
-
-
-</div></div>
-
-</main><footer>
- © Copyright notice | <a href="https://github.com/dataCobra/hugo-vitae">Vitae</a> theme for <a href="https://gohugo.io">Hugo</a> 
-
-
-    
-
+<p>然後作業參考 <a href="https://www.nand2tetris.org" target="_blank">From Nand to Tetris</a>
+</p>
+
+	</div>
+	
+	
+	
+	
+	
+		
+	
+		
+	
+	
+	
+	<div class="tags">
+		<div class="taxosfloating_left">
+			<p>Tags</p>
+		</div>
+		<div class="termsfloating_right">
+			<p>
+			
+			
+			
+			
+			
+			
+			
+			<a href="/tags/book/"> book </a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<a href="/tags/review/"> review </a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</p>
+		</div>
+		<div class="clearit"></div>
+		
+		
+		
+		
+		
+	</div></div>
+
+  </main>
+<footer>
+	 © Copyright notice | <a href="https://github.com/dataCobra/hugo-vitae">Vitae</a> theme for <a href="https://gohugo.io">Hugo</a> 
+	
+	
+	
 </footer>
+
+
 </body>
 </html>

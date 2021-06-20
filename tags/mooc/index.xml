@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>mooc on 大隻雞慢啼</title>
-    <link>https://bugorz.github.io/tags/mooc/</link>
-    <description>Recent content in mooc on bugorz.github.io</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© Copyright notice | Vitae theme for Hugo</copyright>
-    <lastBuildDate>Mon, 01 Apr 2019 20:37:22 +0800</lastBuildDate>
-    
-    <atom:link href="https://bugorz.github.io/tags/mooc/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>MOOC 課程總覽</title>
-      <link>https://bugorz.github.io/posts/good-course-list/</link>
-      <pubDate>Mon, 01 Apr 2019 20:37:22 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/good-course-list/</guid>
-      <description>
-      
-       SDN: https://www.coursera.org/learn/sdn#syllabus Programming Language, Part A Programming Language, Part B Programming ...
-      
-      </description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>mooc on 大隻雞慢啼</title>
+		<link>https://bugorz.github.io/tags/mooc/</link>
+		<description>Recent content in mooc on bugorz.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>© Copyright notice | Vitae theme for Hugo</copyright>
+		<lastBuildDate>Mon, 01 Apr 2019 20:37:22 +0800</lastBuildDate>
+		
+		<atom:link href="https://bugorz.github.io/tags/mooc/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>MOOC 課程總覽</title>
+			<link>https://bugorz.github.io/posts/good-course-list/</link>
+			<pubDate>Mon, 01 Apr 2019 20:37:22 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/good-course-list/</guid>
+			<description>
+			
+				 SDN: https://www.coursera.org/learn/sdn#syllabus Programming Language, Part A Programming Language, Part B Programming Language, Part C …
+			
+			</description>
+		</item>
+		
+	</channel>
 </rss>

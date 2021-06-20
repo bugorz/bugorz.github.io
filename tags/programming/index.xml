@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>programming on 大隻雞慢啼</title>
-    <link>https://bugorz.github.io/tags/programming/</link>
-    <description>Recent content in programming on bugorz.github.io</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© Copyright notice | Vitae theme for Hugo</copyright>
-    <lastBuildDate>Thu, 10 Jan 2019 22:01:37 +0800</lastBuildDate>
-    
-    <atom:link href="https://bugorz.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>設計一個好的 ETL pipeline</title>
-      <link>https://bugorz.github.io/posts/good-etl/</link>
-      <pubDate>Thu, 10 Jan 2019 22:01:37 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/good-etl/</guid>
-      <description>
-      
-       骯髒的 raw input 必須處理乾淨，呈現一個乾淨的 view 讓所有用戶使用。這個處理包含各式各樣的 data validation or repair (if repairable). 被歸類為無法修復的 records 必須另外...
-      
-      </description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>programming on 大隻雞慢啼</title>
+		<link>https://bugorz.github.io/tags/programming/</link>
+		<description>Recent content in programming on bugorz.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>© Copyright notice | Vitae theme for Hugo</copyright>
+		<lastBuildDate>Thu, 10 Jan 2019 22:01:37 +0800</lastBuildDate>
+		
+		<atom:link href="https://bugorz.github.io/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>設計一個好的 ETL pipeline</title>
+			<link>https://bugorz.github.io/posts/good-etl/</link>
+			<pubDate>Thu, 10 Jan 2019 22:01:37 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/good-etl/</guid>
+			<description>
+			
+				 骯髒的 raw input 必須處理乾淨，呈現一個乾淨的 view 讓所有用戶使用。這個處理包含各式各樣的 data validation or repair (if repairable). 被歸類為無法修復的 records 必須另外存放，另作調查。 T …
+			
+			</description>
+		</item>
+		
+	</channel>
 </rss>

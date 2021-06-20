@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>photography on 大隻雞慢啼</title>
-    <link>https://bugorz.github.io/tags/photography/</link>
-    <description>Recent content in photography on bugorz.github.io</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© Copyright notice | Vitae theme for Hugo</copyright>
-    <lastBuildDate>Fri, 19 Sep 2008 10:52:49 +0800</lastBuildDate>
-    
-    <atom:link href="https://bugorz.github.io/tags/photography/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>DSLR 大戰</title>
-      <link>https://bugorz.github.io/posts/dslr/</link>
-      <pubDate>Fri, 19 Sep 2008 10:52:49 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/dslr/</guid>
-      <description>
-      
-      德國 PHOTONIKA 2008 展前夕，各大廠果然殺紅眼。
-開第一砲的是 Nikon: D90 首次搭載錄影功能(嚇死人)、D700 全片幅(下放中階) 我不知道 Nikon 在 CCD or CMOS 技術自主沒? 之前 LBCAST...
-      
-      </description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>photography on 大隻雞慢啼</title>
+		<link>https://bugorz.github.io/tags/photography/</link>
+		<description>Recent content in photography on bugorz.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>© Copyright notice | Vitae theme for Hugo</copyright>
+		<lastBuildDate>Fri, 19 Sep 2008 10:52:49 +0800</lastBuildDate>
+		
+		<atom:link href="https://bugorz.github.io/tags/photography/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>DSLR 大戰</title>
+			<link>https://bugorz.github.io/posts/dslr/</link>
+			<pubDate>Fri, 19 Sep 2008 10:52:49 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/dslr/</guid>
+			<description>
+			
+				德國 PHOTONIKA 2008 展前夕，各大廠果然殺紅眼。
+開第一砲的是 Nikon: D90 首次搭載錄影功能(嚇死人)、D700 全片幅(下放中階) 我不知道 Nikon 在 CCD or CMOS 技術自主沒? 之前 LBCAST 應該不算吧，沒辦法 自產真的太傷 …
+			
+			</description>
+		</item>
+		
+	</channel>
 </rss>

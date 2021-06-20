@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-
-  <meta name="generator" content="Hugo 0.73.0" />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="keywords" content="macos,google,geometry,gis"><meta property="og:title" content="Build S2 Geometry" />
+	
+	<meta name="generator" content="Hugo 0.73.0" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta property="og:title" content="Build S2 Geometry">
+	
+	
+	<meta name="keywords" content="macos,google,geometry,gis"><meta property="og:title" content="Build S2 Geometry" />
 <meta property="og:description" content="Prerequisite  You need to install Xcode from App Store Clone googletest from GitHub and install openssl via brew see below:  git clone https://github.com/google/googletest # Note that there are `googlemock` and `googletest` under the root `googletest` dir, # please use the more specific `googletest/googletest` as the `GTEST_ROOT`. GTEST_ROOT=`realpath googletest/googletest` # Because we need OpenSSL header files brew install openssl OPENSSL_ROOT=`brew --prefix openssl` Build s2geometry git clone https://github.com/google/s2geometry.git cd s2geometry mkdir build cd build cmake -DOPENSSL_INCLUDE_DIR=${OPENSSL_ROOT}/include -DGTEST_ROOT=${GTEST_ROOT} ." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://bugorz.github.io/posts/build-s2-geometry/" />
@@ -15,71 +19,90 @@
 <meta name="twitter:title" content="Build S2 Geometry"/>
 <meta name="twitter:description" content="Prerequisite  You need to install Xcode from App Store Clone googletest from GitHub and install openssl via brew see below:  git clone https://github.com/google/googletest # Note that there are `googlemock` and `googletest` under the root `googletest` dir, # please use the more specific `googletest/googletest` as the `GTEST_ROOT`. GTEST_ROOT=`realpath googletest/googletest` # Because we need OpenSSL header files brew install openssl OPENSSL_ROOT=`brew --prefix openssl` Build s2geometry git clone https://github.com/google/s2geometry.git cd s2geometry mkdir build cd build cmake -DOPENSSL_INCLUDE_DIR=${OPENSSL_ROOT}/include -DGTEST_ROOT=${GTEST_ROOT} ."/>
 
-  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/normalize.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/main.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="https://bugorz.github.io/css/all.css" />
-<link rel="stylesheet" href="https://bugorz.github.io/css/katex.min.css" crossorigin="anonymous">
-  <script defer src="https://bugorz.github.io/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-  <script defer src="https://bugorz.github.io/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><title>Build S2 Geometry | 大隻雞慢啼</title></head>
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/all.css" />
+	<link rel="stylesheet" href="/css/katex.min.css" crossorigin="anonymous">
+	<script defer src="/js/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+	<script defer src="/js/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			renderMathInElement(document.body, {
+				delimiters: [
+					{left: "$$", right: "$$", display: true},
+					{left: "$", right: "$", display: false}
+				]
+		});
+		});
+	</script><title>Build S2 Geometry | 大隻雞慢啼</title>
+
+
+</head>
 <body><header>
-
-  <div id="avatar">
-    <a href="https://bugorz.github.io/">
-      <img src="/img/avatar.jpg" alt="大隻雞慢啼">
-    </a>
-  </div>
-
-  <div id="titletext"><h2 id="title"><a href="https://bugorz.github.io/">大隻雞慢啼</a></h2></div>
-  <div id="title-description"><p id="subtitle">我們是小國小民，但是我們是好國好民。 - 鄭南榕</p><div id=social>
-    <nav>
-      <ul><li><a href="https://github.com/bugorz"><i title="Github" class="icons fab fa-github"></i></a></li><li><a href="/index.xml"><i title="RSS" class="icons fas fa-rss"></i></a></li></ul>
-    </nav>
-  </div>
-  </div>
-  <div id="mainmenu">
-    <nav>
-      <ul>
-        
-        <li><a href="/">Home</a></li>
-        
-        <li><a href="/posts">All Posts</a></li>
-        
-        <li><a href="/about">About</a></li>
-        
-        <li><a href="/tags">Tags</a></li>
-        
-        <li><a href="/series">Series</a></li>
-        
-        <li><a href="/categories">Categories</a></li>
-        
-      </ul>
-    </nav>
-  </div>
+	
+	<div id="avatar">
+		<a href="https://bugorz.github.io/">
+		  <img src="/img/avatar.jpg" alt="大隻雞慢啼">
+		</a>
+	</div>
+	
+	<div id="titletext"><h2 id="title"><a href="https://bugorz.github.io/">大隻雞慢啼</a></h2></div>
+	<div id="title-description"><p id="subtitle">我們是小國小民，但是我們是好國好民。 - 鄭南榕</p><div id="social">
+			<nav>
+				<ul>
+					<li><a href="https://github.com/bugorz"><i title="Github" class="icons fab fa-github"></i></a></li>
+					<li><a href="/index.xml"><i title="RSS" class="icons fas fa-rss"></i></a></li></ul>
+			</nav>
+		</div>
+	</div>
+	
+	<div id="mainmenu">
+		<nav>
+			<ul>
+				
+				<li><a href="/">Home</a></li>
+				
+				<li><a href="/posts">All Posts</a></li>
+				
+				<li><a href="/about">About</a></li>
+				
+				<li><a href="/tags">Tags</a></li>
+				
+				<li><a href="/series">Series</a></li>
+				
+				<li><a href="/categories">Categories</a></li>
+				
+			</ul>
+		</nav>
+	</div>
+	
 </header>
 <main><div class="post">
-<div class="author">
-
-</div>
-<div class="post-header">
-
-<div class="meta">
-
-<div class="date">
-<span class="day">10</span>
-<span class="rest">Jan 2019</span>
-</div>
-
-</div>
-
-<div class="matter">
-<h1 class="title">Build S2 Geometry</h1>
-</div>
-</div>
-<div class="markdown">
-<h3 id="prerequisite">Prerequisite</h3>
+	
+	<div class="author">
+	
+	</div>
+	<div class="post-header">
+	
+		<div class="meta">
+			
+			<div class="date">
+				<span class="day">10</span>
+				<span class="rest">Jan 2019</span>
+			</div>
+			
+		</div>
+		
+		<div class="matter">
+			<h1 class="title">Build S2 Geometry</h1>
+		</div>
+	</div>
+	<div class="markdown">
+		<h3 id="prerequisite">Prerequisite</h3>
 <ul>
 <li>You need to install Xcode from App Store</li>
-<li>Clone <code>googletest</code> from GitHub and install <code>openssl</code> via <a href="https://brew.sh">brew</a> see below:</li>
+<li>Clone <code>googletest</code> from GitHub and install <code>openssl</code> via <a href="https://brew.sh" target="_blank">brew</a>
+ see below:</li>
 </ul>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/google/googletest
 
@@ -107,235 +130,247 @@ sudo make install
 </ul>
 <h3 id="links">Links</h3>
 <ul>
-<li>Uber&rsquo;s H3 project: <a href="https://eng.uber.com/h3/">https://eng.uber.com/h3/</a></li>
+<li>Uber&rsquo;s H3 project: <a href="https://eng.uber.com/h3/" target="_blank">https://eng.uber.com/h3/</a>
+</li>
 </ul>
 
-</div>
-<div class="tags">
-
-
-
-
-
-
-
-
-
-
-
-<div class="taxosfloating_left">
-<p>Tags</p>
-</div>
-<div class="termsfloating_right">
-<p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a href="/tags/geometry/"> geometry </a>
-
-
-
-
-
-<a href="/tags/gis/"> gis </a>
-
-
-
-
-
-<a href="/tags/google/"> google </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a href="/tags/macos/"> macos </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-<div class="clearit"></div>
-
-
-
-
-
-</div></div>
-
-</main><footer>
- © Copyright notice | <a href="https://github.com/dataCobra/hugo-vitae">Vitae</a> theme for <a href="https://gohugo.io">Hugo</a> 
-
-
-    
-
+	</div>
+	
+	
+	
+	
+	
+		
+	
+		
+	
+	
+	
+	<div class="tags">
+		<div class="taxosfloating_left">
+			<p>Tags</p>
+		</div>
+		<div class="termsfloating_right">
+			<p>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<a href="/tags/geometry/"> geometry </a>
+			
+			
+			
+			
+			
+			<a href="/tags/gis/"> gis </a>
+			
+			
+			
+			
+			
+			<a href="/tags/google/"> google </a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<a href="/tags/macos/"> macos </a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</p>
+		</div>
+		<div class="clearit"></div>
+		
+		
+		
+		
+		
+	</div></div>
+
+  </main>
+<footer>
+	 © Copyright notice | <a href="https://github.com/dataCobra/hugo-vitae">Vitae</a> theme for <a href="https://gohugo.io">Hugo</a> 
+	
+	
+	
 </footer>
+
+
 </body>
 </html>

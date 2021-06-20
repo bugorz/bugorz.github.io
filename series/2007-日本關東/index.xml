@@ -1,244 +1,248 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>2007 - 日本關東 on 大隻雞慢啼</title>
-    <link>https://bugorz.github.io/series/2007-%E6%97%A5%E6%9C%AC%E9%97%9C%E6%9D%B1/</link>
-    <description>Recent content in 2007 - 日本關東 on bugorz.github.io</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© Copyright notice | Vitae theme for Hugo</copyright>
-    <lastBuildDate>Sun, 19 Aug 2007 00:28:05 +0800</lastBuildDate>
-    
-    <atom:link href="https://bugorz.github.io/series/2007-%E6%97%A5%E6%9C%AC%E9%97%9C%E6%9D%B1/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>關東趴趴走 - Day 17</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day17/</link>
-      <pubDate>Sun, 19 Aug 2007 00:28:05 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day17/</guid>
-      <description>
-      
-      Tokyo Midtown，東京中城。
- 我最早接觸到城中城這個名詞是沉迷 “模擬城市2000” 的國中時期 XD，多年之後在日本看到實體。除了中城外面沒有會飛來飛去的交通工具，Tokyo Midtown 的外型符合...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 16</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day16/</link>
-      <pubDate>Fri, 10 Aug 2007 00:14:06 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day16/</guid>
-      <description>
-      
-      橫濱之行是自己獨奏，小頭另有要事所以這天我們行程不同。
- 颱風影響最大的日子反而是抵達前一天，搭上橫須賀線前往橫濱，在電車上看著窗外的雨勢，一直希望有奇蹟出現。轉乘電車一出站我就非常後悔今天沒有乖乖待在東京，強風帶豪雨，斜著打過來。7-11...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 15</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day15/</link>
-      <pubDate>Thu, 09 Aug 2007 15:28:16 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day15/</guid>
-      <description>
-      
-      前往吉卜力美術館的小路有個美麗的名字，叫做 “風の散步道”。當然也可以在三鷹站搭乘公車，不用像我們一樣傻傻的走路。
-吉卜力美術館僅是井之頭公園旁邊的一個小角落，不是非常大的建築。延續一早就到的傳統，手裡拿著傳真有點緊...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 14</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day14/</link>
-      <pubDate>Thu, 09 Aug 2007 00:21:54 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day14/</guid>
-      <description>
-      
-      由於颱風逐漸接近關東，東京的天氣陰雨不斷，少有晴天。所幸今天早上參觀位於兩國的江戶東京博物館，可以在室內耗掉整個早上。
- 江戶東京博物館大有看頭，借由情境模擬或展出用具，描述庶民生活以及風土民情，是間非常用心的博物館。我自己覺得，對生活在東...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 13</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day13/</link>
-      <pubDate>Wed, 08 Aug 2007 00:45:57 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day13/</guid>
-      <description>
-      
-      這次對東京的行程安排很隨意，只列出幾個要去的點，每天的行程像群雄割據似的在東京地圖上切出今天要走的區域，然後一一用雙腳征服 :p
- 今天來到原宿(Harajuku)、明治神宮、表參道週邊。先去竹下通，結果昨天認識的潘羅傑一陣風似走過，完全沒...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 12</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day12/</link>
-      <pubDate>Mon, 06 Aug 2007 02:09:43 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day12/</guid>
-      <description>
-      
-      輕井澤再見。
+	<channel>
+		<title>2007 - 日本關東 on 大隻雞慢啼</title>
+		<link>https://bugorz.github.io/series/2007-%E6%97%A5%E6%9C%AC%E9%97%9C%E6%9D%B1/</link>
+		<description>Recent content in 2007 - 日本關東 on bugorz.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>© Copyright notice | Vitae theme for Hugo</copyright>
+		<lastBuildDate>Sun, 19 Aug 2007 00:28:05 +0800</lastBuildDate>
+		
+		<atom:link href="https://bugorz.github.io/series/2007-%E6%97%A5%E6%9C%AC%E9%97%9C%E6%9D%B1/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>關東趴趴走 - Day 17</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day17/</link>
+			<pubDate>Sun, 19 Aug 2007 00:28:05 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day17/</guid>
+			<description>
+			
+				Tokyo Midtown，東京中城。
+ 我最早接觸到城中城這個名詞是沉迷 “模擬城市2000” 的國中時期 XD，多年之後在日本看到實體。除了中城外面沒有會飛來飛去的交通工具，Tokyo Midtown 的外型符合我的想像。
+我們從地下一樓進入中城，進去的感覺只有一句話，極盡華 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 16</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day16/</link>
+			<pubDate>Fri, 10 Aug 2007 00:14:06 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day16/</guid>
+			<description>
+			
+				橫濱之行是自己獨奏，小頭另有要事所以這天我們行程不同。
+ 颱風影響最大的日子反而是抵達前一天，搭上橫須賀線前往橫濱，在電車上看著窗外的雨勢，一直希望有奇蹟出現。轉乘電車一出站我就非常後悔今天沒有乖乖待在東京，強風帶豪雨，斜著打過來。7-11 買的脆弱小摺傘真的可以活著回家嗎? 不 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 15</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day15/</link>
+			<pubDate>Thu, 09 Aug 2007 15:28:16 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day15/</guid>
+			<description>
+			
+				前往吉卜力美術館的小路有個美麗的名字，叫做 “風の散步道”。當然也可以在三鷹站搭乘公車，不用像我們一樣傻傻的走路。
+吉卜力美術館僅是井之頭公園旁邊的一個小角落，不是非常大的建築。延續一早就到的傳統，手裡拿著傳真有點緊張的排在前五個等待入場，所幸一切順利。一進去吉卜力，他們會根據你 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 14</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day14/</link>
+			<pubDate>Thu, 09 Aug 2007 00:21:54 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day14/</guid>
+			<description>
+			
+				由於颱風逐漸接近關東，東京的天氣陰雨不斷，少有晴天。所幸今天早上參觀位於兩國的江戶東京博物館，可以在室內耗掉整個早上。
+ 江戶東京博物館大有看頭，借由情境模擬或展出用具，描述庶民生活以及風土民情，是間非常用心的博物館。我自己覺得，對生活在東京的人來說，了解自己所處地方歷史，進而產 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 13</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day13/</link>
+			<pubDate>Wed, 08 Aug 2007 00:45:57 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day13/</guid>
+			<description>
+			
+				這次對東京的行程安排很隨意，只列出幾個要去的點，每天的行程像群雄割據似的在東京地圖上切出今天要走的區域，然後一一用雙腳征服 :p
+ 今天來到原宿(Harajuku)、明治神宮、表參道週邊。先去竹下通，結果昨天認識的潘羅傑一陣風似走過，完全沒發現我們的存在 :p，似乎也是走健行路線 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 12</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day12/</link>
+			<pubDate>Mon, 06 Aug 2007 02:09:43 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day12/</guid>
+			<description>
+			
+				輕井澤再見。
  新幹線飆回東京，抵達淺草橋的隅田川 YH，放下行李去淺草寺，這一切都在十點前完成，大眾運輸的效率令人驚訝。
- 可是淺草寺怎麼會這麼多人啊…今天不是假日，觀光客這麼多也太誇張了。原來這兩天是 “四萬六...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 11</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day11/</link>
-      <pubDate>Sat, 28 Jul 2007 22:13:19 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day11/</guid>
-      <description>
-      
-      去輕井澤推薦的遊玩方式是騎腳踏車，時間從早上八點到下午五點。
- 輕井澤雖然不大，不過加上中輕井澤、鹽澤湖這兩個點的距離，用走路的會出人命。租借腳踏車的店家九點開門，五點之前要還車，不過在輕井澤站出站右手邊走三分鐘有家車店，兩層樓木造建築。租...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 10</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day10/</link>
-      <pubDate>Fri, 27 Jul 2007 18:20:36 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day10/</guid>
-      <description>
-      
-      天數終於進位了，寫的手軟，不過剩下 9 天只在 2 個地方活動，可以寫的精簡些。
- 終於要跟河口湖說再見，一早在這間物超所值的旅館吃早餐，坐我們後面的是前天打過招呼的泰國人。容我形容一下他的長相，他有一張你會想找他聊個天的臉，我轉身剛好看見...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 9 (富士山河口湖山開きまつり花火大会)</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day09/</link>
-      <pubDate>Fri, 27 Jul 2007 00:27:58 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day09/</guid>
-      <description>
-      
-      河口湖觀光第二天來到西湖，西湖是個景點很多又不多的地方。因為景點的吸引力不如河口湖強，看了半天勉強擠出三、四個名字特殊的地方列入行程。
- 我們先去野鳥之森，走入樹海(博學程小頭說是鬼眼狂刀的富士樹海)，可惜裡面沒有怪物，不能享受打怪撿寶升級...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 8</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day08/</link>
-      <pubDate>Thu, 26 Jul 2007 11:09:49 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day08/</guid>
-      <description>
-      
-      爬山沒有預期中累，八點多就醒了，昨天神谷先生送的水蜜桃當成今天早餐，真是健康。改走觀光客路線，利用兩天巴士周遊券在河口湖邊活動，這兩天不走路啦。
- 巴士最後一站是大石公園，雖然今天是好天氣，但是富士山不輕易露面。原本期望在公園拍張以富士山為...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 7 (富士山我來啦)</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day07/</link>
-      <pubDate>Thu, 26 Jul 2007 10:57:41 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day07/</guid>
-      <description>
-      
-      這天終於到了! 五點被叫醒，過動小頭說他看到富士山，翻身湊到窗前看見朝思暮想的山型，被雨追打的這些天都值得了，有點感動。
-大約七點正式起床，先去 7-11 買齊一整天要吃的東西，包括今天早餐，今天山上的晚餐還有隔天的早餐。還有礦泉水運動飲料...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 6</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day06/</link>
-      <pubDate>Thu, 26 Jul 2007 02:43:20 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day06/</guid>
-      <description>
-      
-      肇因昨晚被阿婆驚嚇，我們決定提早離開箱根。騙你的，其實是為了避免原定的行程一抵達河口湖就要準備上富士山。一早帶著行李前往仙石的箱根玻璃之森，在仙石案內所前看著日幣好幾百又特別小的置物櫃，怎麼樣就是不想花錢放大行李。於是把重要的東西放一袋，衣...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 5</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day05/</link>
-      <pubDate>Mon, 23 Jul 2007 14:50:04 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day05/</guid>
-      <description>
-      
-      雨過天晴。
+ 可是淺草寺怎麼會這麼多人啊…今天不是假日，觀光客這麼多也太誇張了。原來這兩天是 “四萬六千日”，拜一天的效力相當於拜了四萬六千天，所以忙碌的日本人都跑來衝 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 11</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day11/</link>
+			<pubDate>Sat, 28 Jul 2007 22:13:19 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day11/</guid>
+			<description>
+			
+				去輕井澤推薦的遊玩方式是騎腳踏車，時間從早上八點到下午五點。
+ 輕井澤雖然不大，不過加上中輕井澤、鹽澤湖這兩個點的距離，用走路的會出人命。租借腳踏車的店家九點開門，五點之前要還車，不過在輕井澤站出站右手邊走三分鐘有家車店，兩層樓木造建築。租車五點前還只要 700 日幣，超過五點只 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 10</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day10/</link>
+			<pubDate>Fri, 27 Jul 2007 18:20:36 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day10/</guid>
+			<description>
+			
+				天數終於進位了，寫的手軟，不過剩下 9 天只在 2 個地方活動，可以寫的精簡些。
+ 終於要跟河口湖說再見，一早在這間物超所值的旅館吃早餐，坐我們後面的是前天打過招呼的泰國人。容我形容一下他的長相，他有一張你會想找他聊個天的臉，我轉身剛好看見他的攝影包是打開的，所以就打開話匣子了。 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 9 (富士山河口湖山開きまつり花火大会)</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day09/</link>
+			<pubDate>Fri, 27 Jul 2007 00:27:58 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day09/</guid>
+			<description>
+			
+				河口湖觀光第二天來到西湖，西湖是個景點很多又不多的地方。因為景點的吸引力不如河口湖強，看了半天勉強擠出三、四個名字特殊的地方列入行程。
+ 我們先去野鳥之森，走入樹海(博學程小頭說是鬼眼狂刀的富士樹海)，可惜裡面沒有怪物，不能享受打怪撿寶升級的樂趣，喂喂，不要因為到哪裡都一片綠色開 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 8</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day08/</link>
+			<pubDate>Thu, 26 Jul 2007 11:09:49 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day08/</guid>
+			<description>
+			
+				爬山沒有預期中累，八點多就醒了，昨天神谷先生送的水蜜桃當成今天早餐，真是健康。改走觀光客路線，利用兩天巴士周遊券在河口湖邊活動，這兩天不走路啦。
+ 巴士最後一站是大石公園，雖然今天是好天氣，但是富士山不輕易露面。原本期望在公園拍張以富士山為背景的照片，可惜一整天不能如願。夏天是薰 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 7 (富士山我來啦)</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day07/</link>
+			<pubDate>Thu, 26 Jul 2007 10:57:41 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day07/</guid>
+			<description>
+			
+				這天終於到了! 五點被叫醒，過動小頭說他看到富士山，翻身湊到窗前看見朝思暮想的山型，被雨追打的這些天都值得了，有點感動。
+大約七點正式起床，先去 7-11 買齊一整天要吃的東西，包括今天早餐，今天山上的晚餐還有隔天的早餐。還有礦泉水運動飲料各一瓶。
+許多人登富士山會買一枝金剛杖， …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 6</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day06/</link>
+			<pubDate>Thu, 26 Jul 2007 02:43:20 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day06/</guid>
+			<description>
+			
+				肇因昨晚被阿婆驚嚇，我們決定提早離開箱根。騙你的，其實是為了避免原定的行程一抵達河口湖就要準備上富士山。一早帶著行李前往仙石的箱根玻璃之森，在仙石案內所前看著日幣好幾百又特別小的置物櫃，怎麼樣就是不想花錢放大行李。於是把重要的東西放一袋，衣物那包塞進去也不上鎖了。
+小頭的行李箱放 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 5</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day05/</link>
+			<pubDate>Mon, 23 Jul 2007 14:50:04 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day05/</guid>
+			<description>
+			
+				雨過天晴。
  阿本仔的氣象報告說不會下雨，接近中午會出太陽，下午三點轉多雲，非常準確。
-一早回到蘆之湖畔，看著湖面上雲霧飄渺，多少有點擔心今天又是一場空。在湖畔公園閒逛的時候，遊覽船的汽笛聲響徹雲霄，心情也跟著飛起來XD。總算如願以償搭上海...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 4</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day04/</link>
-      <pubDate>Mon, 23 Jul 2007 01:31:07 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day04/</guid>
-      <description>
-      
-      最慘烈最蠢的一天揭開序幕。這天是移動日，我們往溫泉地箱根前進。
+一早回到蘆之湖畔，看著湖面上雲霧飄渺，多少有點擔心今天又是一場空。在湖畔公園閒逛的時候，遊覽船的汽笛聲響徹雲霄，心情也跟著飛起來XD。總算如願以償搭上海賊船霧氣消散，視野逐漸開闊，乘風遊湖好不 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 4</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day04/</link>
+			<pubDate>Mon, 23 Jul 2007 01:31:07 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day04/</guid>
+			<description>
+			
+				最慘烈最蠢的一天揭開序幕。這天是移動日，我們往溫泉地箱根前進。
  一早雨就沒停過，當我們抵達箱根青年旅社前的雙子茶屋站，不只下雨，還起濃霧。
-最幹的是這間青年旅社門關的死緊，只好花錢用他&#34;門前&#34;的寄物箱寄放行李，不能寄放...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 3</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day03/</link>
-      <pubDate>Sun, 22 Jul 2007 17:25:44 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day03/</guid>
-      <description>
-      
-      這次旅行運氣可以說很好，也能說不好。壞在 19 天只有一兩天好天氣，還有颱風。
+最幹的是這間青年旅社門關的死緊，只好花錢用他"門前"的寄物箱寄放行李，不能寄放櫃檯。走下箱根後，霧實在太大了，遊湖海盜船停開(囧)、纜車停 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 3</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day03/</link>
+			<pubDate>Sun, 22 Jul 2007 17:25:44 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day03/</guid>
+			<description>
+			
+				這次旅行運氣可以說很好，也能說不好。壞在 19 天只有一兩天好天氣，還有颱風。
 好在陰雨天氣減輕炎熱帶來的負擔，而且非移動日的天氣狀況都相當不錯。第三天就是這樣的好日子。
- 一早我們按照老闆的建議，前往極樂寺附近找一個可以俯瞰湘南海岸的地方...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 2</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day02/</link>
-      <pubDate>Sun, 22 Jul 2007 14:07:07 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day02/</guid>
-      <description>
-      
-      第二天早上在築地市場著名的大和壽司前看了一眼，大和壽司排隊的人龍，似乎沒有消散的一天。
+ 一早我們按照老闆的建議，前往極樂寺附近找一個可以俯瞰湘南海岸的地方。不過沒找到XD。幸好另外一個寺廟位於小 …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 2</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day02/</link>
+			<pubDate>Sun, 22 Jul 2007 14:07:07 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day02/</guid>
+			<description>
+			
+				第二天早上在築地市場著名的大和壽司前看了一眼，大和壽司排隊的人龍，似乎沒有消散的一天。
 只好乖乖的在市場找一家低調的小店解決早午餐。小店的食材除了海膽腥味重了點，都很新鮮好吃。
- 築地下一站是銀座。銀座是購物天堂，卻是我的地獄。因為我一逛街...
-      
-      </description>
-    </item>
-    <item>
-      <title>關東趴趴走 - Day 1</title>
-      <link>https://bugorz.github.io/posts/travel-japan-day01/</link>
-      <pubDate>Sat, 21 Jul 2007 01:05:53 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/travel-japan-day01/</guid>
-      <description>
-      
-      出發前一刻
+ 築地下一站是銀座。銀座是購物天堂，卻是我的地獄。因為我一逛街就腳酸……而且現在買的東西還要背 17  …
+			
+			</description>
+		</item>
+		<item>
+			<title>關東趴趴走 - Day 1</title>
+			<link>https://bugorz.github.io/posts/travel-japan-day01/</link>
+			<pubDate>Sat, 21 Jul 2007 01:05:53 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/travel-japan-day01/</guid>
+			<description>
+			
+				出發前一刻
 富士山上的小木屋傳真來要取消我們的預約，附贈積雪未消無法營業的消息。
 這種驚悚傳真頗讓人雞飛狗跳，沒有登上富士山，之前放的話不成了笑柄?
 就這樣忐忑地抵達日本。
-(出海關前，有個福建阿婆排隊的時候突然找我聊天，唸了一長串才發現我...
-      
-      </description>
-    </item>
-    
-  </channel>
+(出海關前，有個福建阿婆排隊的時候突然找我聊天，唸了一長串才發現我不是老鄉…)
+抵達池袋，大行李寄放在池袋 …
+			
+			</description>
+		</item>
+		
+	</channel>
 </rss>

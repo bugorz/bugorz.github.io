@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>sml on 大隻雞慢啼</title>
-    <link>https://bugorz.github.io/tags/sml/</link>
-    <description>Recent content in sml on bugorz.github.io</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© Copyright notice | Vitae theme for Hugo</copyright>
-    <lastBuildDate>Mon, 01 Jun 2020 16:38:25 +0800</lastBuildDate>
-    
-    <atom:link href="https://bugorz.github.io/tags/sml/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>SML on macOS</title>
-      <link>https://bugorz.github.io/posts/sml-on-macos/</link>
-      <pubDate>Mon, 01 Jun 2020 16:38:25 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/sml-on-macos/</guid>
-      <description>
-      
-      Standard ML on macOS  I completed Programming Languages, Part A by Dan Grossman from University of Washington. In Part A...
-      
-      </description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>sml on 大隻雞慢啼</title>
+		<link>https://bugorz.github.io/tags/sml/</link>
+		<description>Recent content in sml on bugorz.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>© Copyright notice | Vitae theme for Hugo</copyright>
+		<lastBuildDate>Mon, 01 Jun 2020 16:38:25 +0800</lastBuildDate>
+		
+		<atom:link href="https://bugorz.github.io/tags/sml/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>SML on macOS</title>
+			<link>https://bugorz.github.io/posts/sml-on-macos/</link>
+			<pubDate>Mon, 01 Jun 2020 16:38:25 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/sml-on-macos/</guid>
+			<description>
+			
+				Standard ML on macOS  I completed Programming Languages, Part A by Dan Grossman from University of Washington. In Part A, Dan taught us many …
+			
+			</description>
+		</item>
+		
+	</channel>
 </rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>taiwan on 大隻雞慢啼</title>
+		<link>https://bugorz.github.io/tags/taiwan/</link>
+		<description>Recent content in taiwan on bugorz.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>© Copyright notice | Vitae theme for Hugo</copyright>
+		<lastBuildDate>Fri, 31 Jul 2020 11:59:51 +0800</lastBuildDate>
+		
+		<atom:link href="https://bugorz.github.io/tags/taiwan/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>李登輝</title>
+			<link>https://bugorz.github.io/posts/teng-hui-lee/</link>
+			<pubDate>Fri, 31 Jul 2020 11:59:51 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/teng-hui-lee/</guid>
+			<description>
+			
+				僅以這篇文章，紀念台灣的民主之父: 李登輝 博士。
+李登輝博士 於 2020/07/30 在台北榮民總醫院去世。
+台灣就交給我們了。
+來自 Ian Easton 的 Tweet
+ 
+
+			
+			</description>
+		</item>
+		
+	</channel>
+</rss>

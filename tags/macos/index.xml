@@ -1,65 +1,66 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>macos on 大隻雞慢啼</title>
-    <link>https://bugorz.github.io/tags/macos/</link>
-    <description>Recent content in macos on bugorz.github.io</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© Copyright notice | Vitae theme for Hugo</copyright>
-    <lastBuildDate>Tue, 30 Jun 2020 19:50:08 +0800</lastBuildDate>
-    
-    <atom:link href="https://bugorz.github.io/tags/macos/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Uninstall Evoluent Mouse Driver</title>
-      <link>https://bugorz.github.io/posts/uninstall-evoluent-mouse-driver/</link>
-      <pubDate>Tue, 30 Jun 2020 19:50:08 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/uninstall-evoluent-mouse-driver/</guid>
-      <description>
-      
-      Problem Evoluent’s official driver doesn’t work in my friend’s macOS Catalina 10.15.5. Therefore, I recommended SteerMou...
-      
-      </description>
-    </item>
-    <item>
-      <title>SML on macOS</title>
-      <link>https://bugorz.github.io/posts/sml-on-macos/</link>
-      <pubDate>Mon, 01 Jun 2020 16:38:25 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/sml-on-macos/</guid>
-      <description>
-      
-      Standard ML on macOS  I completed Programming Languages, Part A by Dan Grossman from University of Washington. In Part A...
-      
-      </description>
-    </item>
-    <item>
-      <title>Build S2 Geometry</title>
-      <link>https://bugorz.github.io/posts/build-s2-geometry/</link>
-      <pubDate>Thu, 10 Jan 2019 17:19:27 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/build-s2-geometry/</guid>
-      <description>
-      
-      Prerequisite  You need to install Xcode from App Store Clone googletest from GitHub and install openssl via brew see bel...
-      
-      </description>
-    </item>
-    <item>
-      <title>RAR in macOS</title>
-      <link>https://bugorz.github.io/posts/rar-macos/</link>
-      <pubDate>Mon, 10 Sep 2018 10:11:12 +0800</pubDate>
-      
-      <guid>https://bugorz.github.io/posts/rar-macos/</guid>
-      <description>
-      
-      The Unarchiver 可以解壓縮大多數的 rar 檔案，但有少數的 rar 檔案無法解壓縮，譬如說被壓縮的檔案名編碼不是 UTF-8，該怎麼辦呢？
-其實 RARLAB 官方有提供一組 command line tool 來 壓縮 /...
-      
-      </description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>macos on 大隻雞慢啼</title>
+		<link>https://bugorz.github.io/tags/macos/</link>
+		<description>Recent content in macos on bugorz.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>© Copyright notice | Vitae theme for Hugo</copyright>
+		<lastBuildDate>Tue, 30 Jun 2020 19:50:08 +0800</lastBuildDate>
+		
+		<atom:link href="https://bugorz.github.io/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Uninstall Evoluent Mouse Driver</title>
+			<link>https://bugorz.github.io/posts/uninstall-evoluent-mouse-driver/</link>
+			<pubDate>Tue, 30 Jun 2020 19:50:08 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/uninstall-evoluent-mouse-driver/</guid>
+			<description>
+			
+				Problem Evoluent’s official driver doesn’t work in my friend’s macOS Catalina 10.15.5. Therefore, I recommended SteerMouse to him.
+However, …
+			
+			</description>
+		</item>
+		<item>
+			<title>SML on macOS</title>
+			<link>https://bugorz.github.io/posts/sml-on-macos/</link>
+			<pubDate>Mon, 01 Jun 2020 16:38:25 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/sml-on-macos/</guid>
+			<description>
+			
+				Standard ML on macOS  I completed Programming Languages, Part A by Dan Grossman from University of Washington. In Part A, Dan taught us many …
+			
+			</description>
+		</item>
+		<item>
+			<title>Build S2 Geometry</title>
+			<link>https://bugorz.github.io/posts/build-s2-geometry/</link>
+			<pubDate>Thu, 10 Jan 2019 17:19:27 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/build-s2-geometry/</guid>
+			<description>
+			
+				Prerequisite  You need to install Xcode from App Store Clone googletest from GitHub and install openssl via brew see below:  git clone …
+			
+			</description>
+		</item>
+		<item>
+			<title>RAR in macOS</title>
+			<link>https://bugorz.github.io/posts/rar-macos/</link>
+			<pubDate>Mon, 10 Sep 2018 10:11:12 +0800</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/rar-macos/</guid>
+			<description>
+			
+				The Unarchiver 可以解壓縮大多數的 rar 檔案，但有少數的 rar 檔案無法解壓縮，譬如說被壓縮的檔案名編碼不是 UTF-8，該怎麼辦呢？
+其實 RARLAB 官方有提供一組 command line tool 來 壓縮 / 解壓縮 rar 檔案。 …
+			
+			</description>
+		</item>
+		
+	</channel>
 </rss>
