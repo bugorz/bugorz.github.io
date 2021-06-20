@@ -7,9 +7,22 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>© Copyright notice | Vitae theme for Hugo</copyright>
+		<lastBuildDate>Sun, 20 Jun 2021 15:31:30 -0700</lastBuildDate>
 		
 		<atom:link href="https://bugorz.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
 		
+		<item>
+			<title>coffee</title>
+			<link>https://bugorz.github.io/categories/coffee/</link>
+			<pubDate>Sun, 20 Jun 2021 15:31:30 -0700</pubDate>
+			
+			<guid>https://bugorz.github.io/categories/coffee/</guid>
+			<description>
+			
+				
+			
+			</description>
+		</item>
 		
 	</channel>
 </rss>

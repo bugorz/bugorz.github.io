@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>coffee on 大隻雞慢啼</title>
+		<link>https://bugorz.github.io/tags/coffee/</link>
+		<description>Recent content in coffee on bugorz.github.io</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>© Copyright notice | Vitae theme for Hugo</copyright>
+		<lastBuildDate>Sun, 20 Jun 2021 15:31:30 -0700</lastBuildDate>
+		
+		<atom:link href="https://bugorz.github.io/tags/coffee/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Coffee 2021</title>
+			<link>https://bugorz.github.io/posts/coffee-2021/</link>
+			<pubDate>Sun, 20 Jun 2021 15:31:30 -0700</pubDate>
+			
+			<guid>https://bugorz.github.io/posts/coffee-2021/</guid>
+			<description>
+			
+				紀錄 2021 磨過的豆子
+   From Name Roast Description Note     Caffe Nero Classico Original Blend Medium Roast 香濃順口 陳與祥從 Boston 買的禮物   Barefoot Finca …
+			
+			</description>
+		</item>
+		
+	</channel>
+</rss>
